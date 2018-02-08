@@ -1,0 +1,223 @@
+.image {
+    border-radius: 50%;
+    padding-top: 40px;
+}
+
+.portfolio {
+    padding-top: 90px;
+}
+
+.parallax-container {
+  height: 600px;
+  z-index: 1;
+}
+
+#intro-header {
+  padding: 0px;
+  margin: 0px;
+  width: 100%    !important;
+  height: auto   !important;
+  filter: grayscale(10%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#index-banner {
+    background: linear-gradient(rgba(0, 0, .34, 0.10), rgba(0, 0, 0, 0.55)),
+    rgba(0, 0, 0, 0.55) no-repeat center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    padding: 0px;
+    margin: 0px;
+    height: 1000px;
+    color: #fff;
+    text-rendering: optimizeLegibility;
+    margin: 0;
+    padding: 15px 80px 15px;
+    text-align: right;
+    min-height: 640px;
+}
+
+.material-icons{
+  text-align: right;
+}
+
+#emailBtn{
+  margin-right: 2%;
+}
+
+#resumeBtn{
+   margin-left: 2%;
+}
+
+.contact{
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.btn.waves-effect.waves-light { 
+    border: 2px solid #fff;
+}
+
+.card-action a{
+  filter: grayscale(100%);
+}
+
+.activator {
+  height: 300px;
+  margin: 0 auto;
+}
+
+.projectvid {
+  height: 100%;
+  width: 100%;
+}
+
+#index-banner2{
+    width: 100%;
+    overflow: hidden;
+    background: #f5f4f4;
+}
+
+#index-banner2 img{
+float: left;
+       width: 100%;
+    margin-top: -5%;
+    min-width: 707px;
+    position: relative;
+}
+
+#index-banner2 .row{
+margin-bottom: 0px;
+margin: 0px;
+}
+
+.col .s6 .right{
+  margin-right: 5%;
+  color: red;
+}
+
+.aboutme{
+  margin-left: 30px;
+  padding-bottom: 5%;
+}
+
+.portfolio{
+  padding-bottom: 5%;
+  padding-top: 3%;
+}
+
+
+h3{
+text-align: center;
+font-family: 'Satisfy', cursive;
+color: black;
+}
+
+
+.card{
+  border-style: solid;
+  border-color: grey;
+  border-width: 1px;
+}
+
+.card-image{
+  opacity: .5;
+}
+
+.card-image:hover {
+  opacity: 1;
+  filter: alpha(opacity=1); 
+}
+
+h5 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 200;
+  margin: 0.4em 0;
+  color: #fff;
+}
+
+.footer{
+  padding-top: 2%;
+}
+
+#emailTag {
+  margin-left: 2%;
+}
+
+.contactIcon {
+  margin-left: 1%;
+}
+
+.contactIcon:hover {
+  filter:invert(100%);
+}
+
+.connectBlock {
+  margin-left: 1%;
+}
+
+@media only screen and (min-width: 601px) {
+  #global-nav {
+    height: 70px;
+  }
+}
+
+.carouselSize {
+  height: 500px !important;
+  width: 500px !important;
+}
+
+#mobile-nav li a {
+  color: white;
+}
+
+.navOption:hover {
+  color: #383630;
+  filter:invert(100%);
+}
+
+/*//////////////////////////////////////////////////////////////////////////*/
+
+#global-nav {
+  position: fixed;
+  top: 0;
+  height: 40px;
+  line-height: 38px;
+  z-index: 9999; /*/always at top of page.*/
+  font-size: 20px;
+}
+
+.main-logo {
+  display: inline-block;
+  -webkit-transition: all .5s;
+    transition: all .5s;
+}
+
+.scrolled-nav .main-logo  {
+  font-size: 16px;
+}
+
+.main-navigation {
+  padding: 0px;
+  margin: 0px;
+}
+
+.scrolled-nav {
+  height: 70px !important;
+  line-height: 90px !important;
+}
+
+.counter {
+  width: 20px;
+  height: 20px;
+  background: black;
+  color: #fff;
+  position: fixed;
+  top: 120px;
+  right: 0;
+}
