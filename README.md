@@ -14,7 +14,7 @@ These 24 weeks were my very first introduction to code and to the world of devel
 - - - -
 
 
- ### Featured Applications: ###
+ ## Featured Applications: ##
 
 **Mavens and Mavericks:** 
 >Full Stack social media app that pairs mentors and mentees together to foster growth and help individuals discern how their personal abilities can improve a company or impact an industry throughout their career. Matching is completed through sorting logic based on a user’s career level, industry experience, and coding languages of choice.
