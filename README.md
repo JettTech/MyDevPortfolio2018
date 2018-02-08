@@ -100,7 +100,7 @@ These 24 weeks were my very first introduction to code and to the world of devel
 
 - - - -
  ## Awards Won ##
- - Zoe Quinn Award: Presentd at the Women Who Code 3rd Anuual Hackathon
+ - Zoe Quinn Award: Presented at the Women Who Code 3rd Anuual Hackathon
 - - - -
 
 Built by [Lisa Jetton](https://github.com/JettTech/).
