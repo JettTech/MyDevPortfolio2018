@@ -19,76 +19,76 @@ These 24 weeks were my very first introduction to code and to the world of devel
 **Mavens and Mavericks:** 
 >Full Stack social media app that pairs mentors and mentees together to foster growth and help individuals discern how their personal abilities can improve a company or impact an industry throughout their career. Matching is completed through sorting logic based on a user’s career level, industry experience, and coding languages of choice.
 >- Mongoose
-- Express
-- React
-- Node.js
-- Axios
-- JavaScript ES6
-- Bootstrap
-- Materialize
+>- Express
+>- React
+>- Node.js
+>- Axios
+>- JavaScript ES6
+>- Bootstrap
+>- Materialize
 
 **Sound Hound:**
 >An interactive website that provides the user a means to search for both venue locations as well as favorite artists to learn when and where they are playing locally. This web app incorporates Google Maps and Eventbrite API to provide listing of ticket prices and locations of venues for navigation purposes.
-- JavaScript
-- jQuery
-- HTML5/CSS3
-- Bootstrap
+>- JavaScript
+>- jQuery
+>- HTML5/CSS3
+>- Bootstrap
 
 **iceBreakr:**
 >A dynamic web application which allows individuals to create profiles and find matches based on predetermined interests. As this app is intended for those already out and about, we included geolocation by Google Maps to faciliate each user meeting his or her designated match.
-- MySQL
-- JavaScript
-- HTML5/CSS3
-- Node.js
-- Express
+>- MySQL
+>- JavaScript
+>- HTML5/CSS3
+>- Node.js
+>- Express
 
 **Bamazon Store:**
 >This App allows shoppers to view the items for purchase, along with department, price and stock quantity, by solely using backend functionality.
-- MySQL
-- Node.js
+>- MySQL
+>- Node.js
 
 **Burger Time:**
 >A full stack restaurant app that lets users input the names of burgers they'd like to eat, display their burger titles, and "eat" them, all within a few clicks.
-- MySQL
-- Express
-- Node.js
-- Handlebars
-- CSS3
-- JavaScript
-- Bootstrap
-- Homemade ORM
+>- MySQL
+>- Express
+>- Node.js
+>- Handlebars
+>- CSS3
+>- JavaScript
+>- Bootstrap
+>- Homemade ORM
 
 **Giftastic:**
 >An interative GIF-themed website that uses the Giphy API to search and dynamically display GIFs of choice. GIFs change animation state through clicking them on and off. What GIF will you find?
-- HTML5/CSS3
-- JavaScript
-- jQuery
-- Bootstrap
+>- HTML5/CSS3
+>- JavaScript
+>- jQuery
+>- Bootstrap
 
 **Friend Finder:**
 >A friend paring or date matching application. Answer a survey, find your match! Who will you befriend today?
-- jQuery
-- JavaScript
-- HTML5/CSS3
-- Bootstrap
-- Node.js
-- Express
-- Materialize
+>- jQuery
+>- JavaScript
+>- HTML5/CSS3
+>- Bootstrap
+>- Node.js
+>- Express
+>- Materialize
 
 **Crystal Game:**
 >Gem-themed math game using Javascript and jQuery. Player wins if the total score matches the random number calculated at the beginning of the game.
-- JavaScript
-- HTML5/CSS3
-- Bootstrap
+>- JavaScript
+>- HTML5/CSS3
+>- Bootstrap
 
 **Train Scheduler:**
 >A scheduling app that uses Javascript, jQuery, Firebase and Moment.js to store times and monitor the next train arrival. Users can also input their destination and/or train number to discover the time until their trian, frequency is listed in minutes
 >- Firebase
 >- Moment.js
-- jQuery
-- JavaScript
-- HTML5/CSS3
-- Bootstrap
+>- jQuery
+>- JavaScript
+>- HTML5/CSS3
+>- Bootstrap
 
 - - - -
  ### Favorite Tech Events ###
