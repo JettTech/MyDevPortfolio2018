@@ -7,7 +7,7 @@ Visit my [Resume](https://docs.google.com/document/d/1RD8e9IMoYIGPVfYtu8WE7YZpzW
 ![](https://media.giphy.com/media/9dgkxA74k2WDS/giphy.gif)
 
 - - - -
- ### Getting Started: ###
+ ## Getting Started: ##
 This project is a pesonal journey through my studies and work over 24 weeks as a student at the Full Stack Bootcamp with UT Austin.  Through the review and creation of my Developer Portflio, I reazlied how much I truly appreciate compartamentlized code, and how faciniated I am with learning more about React.  I also learned that I am a big fan of NOSQL databases based in Javascript, such as MongoDB, and have a growing interest in Firebase.  
 
 These 24 weeks were my very first introduction to code and to the world of developement. I am completely faciniated and exicted by the power and agaility of the MERN stack, and I look forward to growing my skills at upcoming Hackathons and community events! It is a blessing to  live in such a lively, interctive and knowledgable community with as robust resources and events as Austin. I hope to see some of you there!:D 
@@ -91,7 +91,7 @@ These 24 weeks were my very first introduction to code and to the world of devel
 >- Bootstrap
 
 - - - -
- ### Favorite Tech Events ###
+ ## Favorite Tech Events ##
 - Women Who Code 3rd Anuual Hackathon
 - ACT-W First Annual Conference
 - Austin Dev Week 2017
@@ -99,7 +99,7 @@ These 24 weeks were my very first introduction to code and to the world of devel
 - Austin Startup Week 2017
 
 - - - -
- ### Awards Won ###
+ ## Awards Won ##
  - Zoe Quinn Award: Presentd at the Women Who Code 3rd Anuual Hackathon
 - - - -
 
