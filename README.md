@@ -18,7 +18,7 @@ These 24 weeks were my very first introduction to code and to the world of devel
 
 **Mavens and Mavericks:** 
 >Full Stack social media app that pairs mentors and mentees together to foster growth and help individuals discern how their personal abilities can improve a company or impact an industry throughout their career. Matching is completed through sorting logic based on a user’s career level, industry experience, and coding languages of choice.
-- Mongoose
+>- Mongoose
 - Express
 - React
 - Node.js
@@ -83,8 +83,8 @@ These 24 weeks were my very first introduction to code and to the world of devel
 
 **Train Scheduler:**
 >A scheduling app that uses Javascript, jQuery, Firebase and Moment.js to store times and monitor the next train arrival. Users can also input their destination and/or train number to discover the time until their trian, frequency is listed in minutes
-- Firebase
-- Moment.js
+>- Firebase
+>- Moment.js
 - jQuery
 - JavaScript
 - HTML5/CSS3
