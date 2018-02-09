@@ -48,10 +48,12 @@
 
 #emailBtn{
   margin-right: 2%;
+  width: 182px;
 }
 
 #resumeBtn{
    margin-left: 2%;
+   width: 182px;
 }
 
 .contact{
