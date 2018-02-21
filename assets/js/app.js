@@ -154,7 +154,7 @@ var playerInstance = jwplayer('player');
 // configure jwplayer instance
 playerInstance.setup({
   autostart: true,
-  file: '//content.jwplatform.com/manifests/vM7nH0Kl.m3u8',
+  file: "./assets/img/movieIntro_V1.mp4",
   primary: 'html5',
   setFullscreen: true,
   width: '100%'

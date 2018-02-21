@@ -68,7 +68,8 @@
         </video> 
     </div> -->
     <div class="player-container">
-        <div id="player">This text will be replaced with a player.</div>    
+        <div id="player">This text will be replaced with a player.</div>
+        <a href="javascript:jwplayer('player').play();">Toggle playback</a>    
     </div>   
 <!--End Movie Intro-->
 
@@ -126,16 +127,18 @@
                             <div class="card sticky-action">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="img-fluid card-pic" src="./assets/img/m-2d_Pic.jpeg">
-                                    <!-- <video class="activator projectvid" autoplay="autoplay" loop preload="metadata">
-                                      <source src="./assets/img/MavensandMavericksVideoTrim.mp4" type="video/mp4">
-                                    </video> -->
                                 </div>
                                 <div class="card-action">
-                                    <span class="card-title activator grey-text text-darken-4"><strong>Mavens and Mavericks</strong><i class="material-icons right">more_vert</i></span>
-                                    <!-- <p><a target="_blank" href="https://mavens-and-mavericks.herokuapp.com/">Visit app</a></p> -->
+                                    <span class="card-title activator grey-text text-darken-4"><strong>Mavens & Mavericks</strong>
+                                        <i id="viewCard" onclick="viewCard()" class="material-icons right">arrow_upward</i>
+
+                                        <a data-fancybox="portfolio-group" data-animation fancybox-slide  duration="700" data-src="#animatedModal1" href="javascript:;"><img class="info" src="./assets/img/info.png" alt="info" /></a>
+
+                                        <a target="_blank" href="https://mavens-and-mavericks.herokuapp.com/"><span><img class="link" src="./assets/img/link.png" alt="link" /></span></a>
+                                    </span>
                                 </div>
                                 <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4"><strong>Mavens and Mavericks</strong><i class="material-icons right">close</i></span>
+                                    <span class="card-title grey-text text-darken-4"><strong>Mavens and Mavericks</strong><i id="closeCard" onclick="closeCard()" class="material-icons right">close</i></span>
                                     <p>Full Stack social media app that pairs mentors and mentees together to foster growth and help individuals discern how their personal abilities can improve a company or impact an industry throughout their career. Matching is completed through sorting logic based on a user’s career level, industry experience, and coding languages of choice.  This web app is built with React, Node.js, Express, Axios, ES6 JavasScript, CSS3, Bootstrap, Materialize and Mongoose.</p>
                                 </div>
                                 <div class="overlay">
@@ -145,16 +148,23 @@
                                         <a target="_blank" href="https://github.com/MavensAndMavericks/Mavens_and_Mavericks">See Code</a>
                                     </p>
                                 </div>
+                                <!-- FancyBox/Modal Structure -->
+                                <div style="display: none;" id="animatedModal1" class="animated-modal">
+                                    <h2>Bonjour</h2>
+                                    <p>Cool content, right?</p>
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <video class="activator projectvid" autoplay="autoplay" loop preload="metadata">
+                                            <source src="./assets/img/MavensandMavericksVideoTrim.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- 2 -->
                         <div class="col offset-s1 s10 offset-s1 offset-m2 m8 offset-m2 l4 staggered-animation  shadow-container">
                             <div class="card sticky-action">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <img class="activator img-fluid card-pic" src="./assets/img/SoundHoundPic.jpeg">
-                                    <!-- <video class="activator projectvid" autoplay="autoplay" loop preload="metadata">
-                                      <source src="./assets/img/SoundHoundVidTrim.mp4" type="video/mp4">
-                                    </video> -->
+                                    <img class="img-fluid card-pic" src="./assets/img/SoundHoundPic.jpeg">
                                 </div>
 
                                 <div class="card-action">
@@ -166,10 +176,9 @@
 
                                         <a target="_blank" href="https://icebreakr2.herokuapp.com/"><span><img class="link" src="./assets/img/link.png" alt="link" /></span></a>
                                     </span>
-                                    <!-- <p><a target="_blank" href="https://sound-hound.github.io/Sound-Hound-App/">Visit app</a></p> -->
                                 </div>
                                 <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4"><strong>Sound Hound</strong><i class="material-icons right">close</i></span>
+                                    <span class="card-title grey-text text-darken-4"><strong>Sound Hound</strong><i id="closeCard" onclick="closeCard()" class="material-icons right">close</i></span>
                                     <p>An interactive website that provides the user a means to search for both venue locations as well as favorite artists to learn when and where they are playing locally. This web app incorporates Google Maps and Eventbrite API to provide listing of ticket prices and locations of venues for navigation purposes. This app was developed in JavaScript, jQuery, HTML5, CSS3, and Bootstrap.</p>
                                 </div>
                                 <div class="overlay">
@@ -196,18 +205,16 @@
                             <div class="card sticky-action">
                                 <div class="card-image waves-effect waves-block waves-light">
                                     <img class="img-fluid card-pic" src="./assets/img/iceBreakrPic4.jpg">
-                                    <!-- <video class="activator projectvid" autoplay="autoplay" loop preload="metadata">
-                                      <source src="./assets/img/iceBreakrVidTrim.mp4" type="video/mp4">
-                                    </video> -->
                                 </div>
                                 <div class="card-action">
                                     <span class="card-title activator grey-text text-darken-4">
                                         <strong>iceBreakr </strong>
                                         <i id="viewCard" onclick="viewCard()" class="material-icons right">arrow_upward</i>
 
-                                        <a data-fancybox="portfolio-group" data-animation fancybox-slide  duration="700" data-src="#animatedModal3" href="javascript:;"><span><i class="material-icons right info">info_outline</i></span></a>
+                                        <a data-fancybox="portfolio-group" data-animation fancybox-slide  duration="700" data-src="#animatedModal2" href="javascript:;"><img class="info" src="./assets/img/info.png" alt="info" /></a>
 
-                                        <a target="_blank" href="https://icebreakr2.herokuapp.com/"><span><i class="material-icons right">attach_file</i></span></a>
+                                        <a target="_blank" href="https://icebreakr2.herokuapp.com/"><span><img class="link" src="./assets/img/link.png" alt="link" /></span></a>
+                                    </span>
                                     </span>
                                 </div>
                                 <div class="card-reveal">
@@ -226,6 +233,11 @@
                             <div style="display: none;" id="animatedModal3" class="animated-modal">
                                 <h2>Hello!</h2>
                                 <p>This is animated content! Cool, right?</p>
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <video class="activator projectvid" autoplay="autoplay" loop preload="metadata">
+                                        <source src="./assets/img/iceBreakrVidTrim.mp4" type="video/mp4">
+                                    </video>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -246,8 +258,8 @@
                         </div>
                         <div class="overlay">
                             <p class="text">
-                                <a target="_blank" href="">Backend Only</a>
-                                |
+<!--                                 <a target="_blank" href="">Node App</a>
+                                | -->
                                 <a target="_blank" href="https://github.com/JettTech/BamazonStore/">See Code</a>
                             </p>
                         </div>
@@ -481,7 +493,7 @@
         <div class="footer-copyright">
             <div class="container">
                 <!-- <div style="font-family:'Satisfy'; font-weight:bold; color:#888; text-align:center;margin-top:20px">made with <span style="color:rgb(199, 59, 84)">&#9829;</span> by <a style="color:#999;text-decoration:none;border-bottom:1px dashed #555" title="Full Stack Developer" target="_blank">Lisa Jetton</a></div> -->
-                <p style="text-align: center">Copyright © 2018 | Lisa Jetton</p>
+                <p style="text-align: center; color: #e09c0a">Copyright © 2018 | Lisa Jetton</p>
             </div>
         </div>
     </footer>
