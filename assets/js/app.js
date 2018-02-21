@@ -12,7 +12,7 @@ $(document).ready( function() {
 
     function autoplay() {
         $('.carousel').carousel('next');
-        setTimeout(autoplay, 4500);
+        setTimeout(autoplay, 3500);
     }
 
   let scrollTop = 0;
@@ -151,6 +151,15 @@ function videoMode() {
 // initialize jwplayer
 var playerInstance = jwplayer('player');
 
+// configure jwplayer instance
+playerInstance.setup({
+  autostart: true,
+  file: '//content.jwplatform.com/manifests/vM7nH0Kl.m3u8',
+  primary: 'html5',
+  setFullscreen: true,
+  width: '100%'
+});
+
 // player dom elements
 var playerContainerEl = document.querySelector('.player-container');
 
@@ -170,14 +179,7 @@ function getScrollTop() {
   return (window.pageYOffset || docEl.scrollTop) - (docEl.clientTop || 0);
 }
 
-// configure jwplayer instance
-playerInstance.setup({
-  autostart: true,
-  file: '//content.jwplatform.com/manifests/vM7nH0Kl.m3u8',
-  primary: 'html5',
-  setFullscreen: true,
-  width: '100%'
-});
+
 
 // when jwplayer instance is ready
 playerInstance.on('ready', function() {
@@ -236,6 +238,38 @@ playerInstance.on('ready', function() {
 // End Video Control Logic
 //////////////////////////////////////////////////////////////////////////
 
+//////////////////////////////////////////////////////////////////////////
+// Start Card Materialize Icon
+function viewCard() {
+  console.log("clicked the viewcard");
+  $("#viewCard").hide();
+  $("#closeCard").show();
+};
+
+function closeCard() {
+  $("#viewCard").show();
+  $("#closeCard").hide();
+};
+
+
+// $("#info").on("click", function() {
+//   $('#modal').modal({
+//       dismissible: true, // Modal can be dismissed by clicking outside of the modal
+//       opacity: .5, // Opacity of modal background
+//       inDuration: 300, // Transition in duration
+//       outDuration: 200, // Transition out duration
+//       startingTop: '4%', // Starting top style attribute
+//       endingTop: '10%', // Ending top style attribute
+//       ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
+//         alert("Ready");
+//         console.log(modal, trigger);
+//       },
+//       complete: function() { alert('Closed'); } // Callback for Modal close
+//   });
+// })
+
+// End Card Materialize Icon
+//////////////////////////////////////////////////////////////////////////
 
 //////////////////////////////////////////////////////////////////////////
 // Start ScrollFire Animation

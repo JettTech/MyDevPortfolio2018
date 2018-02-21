@@ -7,17 +7,45 @@
 }
 
 .carouselSize {
-  height: 500px !important;
-  width: 500px !important;
+  height: 400px !important;
+/*  width: 400px !important;*/
 }
 
 #mobile-nav li a {
   color: white;
 }
 
+.navOption {
+  height: 38px;
+  position: relative;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.navOption::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
 .navOption:hover {
-  color: #383630;
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+  color: #458ad6;
   filter:invert(100%);
+}
+
+.brand-logo img {
+  margin-left: 5%;
+  margin-top: 5%
 }
 
 .image {
@@ -32,6 +60,11 @@
 .parallax-container {
   height: 600px;
   z-index: 1;
+}
+
+span.wrap {
+  color: #e09c0a;
+  font-weight: bold;
 }
 
 #intro-header {
@@ -87,15 +120,6 @@
     border: 2px solid #fff;
 }
 
-.card-action a{
-  filter: grayscale(100%);
-}
-
-.activator {
-  height: 300px;
-  margin: 0 auto;
-}
-
 .projectvid {
   height: 100%;
   width: 100%;
@@ -135,27 +159,10 @@ margin: 0px;
   padding-top: 3%;
 }
 
-
 h3{
 text-align: center;
 font-family: 'Satisfy', cursive;
 color: black;
-}
-
-
-.card{
-  border-style: solid;
-  border-color: grey;
-  border-width: 1px;
-}
-
-.card-image{
-  opacity: .5;
-}
-
-.card-image:hover {
-  opacity: 1;
-  filter: alpha(opacity=1); 
 }
 
 h5 {
@@ -189,12 +196,7 @@ h5 {
   margin-left: 1%;
   position: relative;
   display: inline-block;
-  width: 100px;
-  height: 100px;
-  background-color: #fff;
-  border-radius: 5px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
   -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
@@ -217,6 +219,10 @@ h5 {
 .contactIcon:hover {
   -webkit-transform: scale(1.25, 1.25);
   transform: scale(1.25, 1.25);
+  /*background-color: #458ad6;*/
+  /*filter:invert(100%);*/
+  background-color: #b87521;
+  border-radius: 15px;
 }
 
 .contactIcon:hover::after {
@@ -248,6 +254,7 @@ h5 {
 
 .scrolled-nav #main-logo  {
   font-size: 16px;
+  height: 60%;
 }
 
 .main-navigation {
@@ -309,4 +316,121 @@ h5 {
    #featured-video.is-sticky {
       transform: translateX(-115%);
    }
+}
+
+/*//////////////////////////////////////////////////////////////////////////*/
+/*Card + Overlay Anmation:*/
+/*//////////////////////////////////////////////////////////////////////////*/
+.activator {
+  height: 300px;
+  margin: 0 auto;
+}
+
+.card-action a{
+  filter: grayscale(100%);
+}
+
+.card{
+  border-style: solid;
+  border-color: grey;
+  border-width: 1px;
+}
+
+/*.card-image{
+  opacity: 1;
+}
+
+.card-image:hover {
+  opacity: .2;
+  filter: alpha(opacity=1); 
+}*/
+
+
+.card-pic{
+  opacity: 1;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.card-pic:hover {
+  opacity: .2;
+  filter: alpha(opacity=1); 
+}
+
+.shadow-container {
+  position: relative;
+  width: 500px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #394b52;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.shadow-container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+  opacity: .95;
+/*  visibility: visible;*/
+}
+
+.shadow-container:hover .overlay a {
+  color: #b87521;
+  font-weight: bold;
+/*  visibility: visible;*/
+}
+
+.shadow-container:hover .overlay::after {
+  /*position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #394b52;
+  overflow: hidden;
+  width: 100%;
+  height:0;*/
+  transition: .5s ease;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  visibility: visible;
+}
+
+i.material-icons.right {
+  font-size: 2rem;
+  color: black;
+}
+
+img.info {
+  height: 2rem;
+  color: black;
+  float: right;
+  margin-left: 17px;
+}
+
+img.link {
+  height: 2rem;
+  color: black;
+  float: right;
 }

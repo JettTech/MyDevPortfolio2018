@@ -4,25 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Lisa Jetton </title>
-    
+    <title> Lisa Jetton </title> 
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="50x50" href="./assets/img/faviconLogo1.png">
-   <!--  <link rel="icon" type="image/png" sizes="20x20" href="./assets/img/LJ_logoImg2.png"> -->
 
     <!-- CSS Stylesheet -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
     <!-- Materalize CSS Stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <!--Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
 
     <!--jQuery-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    
+    <!--fancyBox-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>>
+
     <!--Materialize JS-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
    
     <!--Snap.SVG-->
@@ -34,7 +39,7 @@
     <nav id="global-nav" class="black lighten-2 main-navigation" role="navigation">        
         <div class="nav-wrapper">
 
-            <a href="#!" class="brand-logo"><img id="main-logo" src="./assets/img/brace_Logo.png" height="6%" width="10%" style="position: fixed; left: 2%; top:1%" alt="Logo"/></a>
+            <a href="#!" class="brand-logo"><img id="main-logo" src="./assets/img/brace_Logo.png" alt="Logo" style="height: 50%" /></a> <!-- style="position: fixed; left: 2%; top:1%"  -->
             <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>                    
 
                 <ul class="main-navigation right hide-on-med-and-down">
@@ -62,7 +67,9 @@
    <!--          <source id="featured-video" src="./assets/img/movieIntro_V1.mp4" type="video/mp4" class="content-media__object">
         </video> 
     </div> -->
-    <div id="myDiv">This text will be replaced with a player.</div>    
+    <div class="player-container">
+        <div id="player">This text will be replaced with a player.</div>    
+    </div>   
 <!--End Movie Intro-->
 
 
@@ -77,15 +84,15 @@
                     <h5>I am a 
                       <span
                          class="txt-rotate"
-                         data-period="2000"
-                         data-rotate='[ "Full Stack", "Javascript", "MySQL", "NoSQL", "Express.js", "Node.js", "React" ]'></span>             
+                         data-period=300"
+                         data-rotate='[ "Full Stack  ", "JavaScript  ", "MySQL  ", "MongoDB  ", "Express.js  ", "HTML5  ", "CSS3  ", "Node.js  ", "Handlebars  ", "React  " ]'>
+                             
+                     </span>  
+                     developer in Austin, TX.            
                     </h5>                       
-                    <h5 class="welcome white-text text-darken-4"> developer in Austin, TX. </h5>
                     <br>
-                    <br>
-                    <br>
-                    <a id="emailBtn" href="mailto:ldjetton21@gmail.com" class="btn btn-large waves-effect waves-light transparent darken-4 white-text">Send An Email</a>
-                    <a id="resumeBtn" href="./assets/img/Lisa_Jetton_Developer_PDFhackathonUpdate.pdf" download="Lisa_Jetton_Developer" class="btn btn-large waves-effect waves-light transparent darken-4 white-text">View My Resume</a>            
+                    <a id="emailBtn" href="mailto:ldjetton21@gmail.com" class="btn btn-large waves-effect waves-light transparent darken-4 white-text">Send Email</a>
+                    <a id="resumeBtn" href="./assets/img/Lisa_Jetton_Developer_PDFhackathonUpdate.pdf" download="Lisa_Jetton_Developer" class="btn btn-large waves-effect waves-light transparent darken-4 white-text">View Resume</a>            
                     <br>
                     <br>
                     <br>
@@ -105,7 +112,7 @@
         <div class="row">
             <div id="portfolio" class="section intro ">
                 <h3 class="header center grey-text text-lighten-4">Curious about my projects?  Take a look at some of my ideas.</h3>
-                <h5 class="header center grey-text text-lighten-2">Click on project card to see a synopsis, and select the "Visit App" button to see a live demo or view the raw code.</h5>
+<!--                 <h5 class="header center grey-text text-lighten-2">Click on project card to see a synopsis, and select the "Visit App" button to see a live demo or view the raw code.</h5> -->
                 <br>
                 <hr/>
 
@@ -115,108 +122,180 @@
                 <div class="row">
                     <div id="portfolio" class="section intro ">
                         <!-- 1 -->
-                        <div class="col offset-s1 s10 offset-s1 offset-m2 m8 offset-m2 l4 staggered-animation">
+                        <div class="col offset-s1 s10 offset-s1 offset-m2 m8 offset-m2 l4 staggered-animation  shadow-container">
                             <div class="card sticky-action">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <video class="activator projectvid" autoplay="autoplay" loop preload="metadata">
+                                    <img class="img-fluid card-pic" src="./assets/img/m-2d_Pic.jpeg">
+                                    <!-- <video class="activator projectvid" autoplay="autoplay" loop preload="metadata">
                                       <source src="./assets/img/MavensandMavericksVideoTrim.mp4" type="video/mp4">
-                                    </video>
+                                    </video> -->
                                 </div>
                                 <div class="card-action">
                                     <span class="card-title activator grey-text text-darken-4"><strong>Mavens and Mavericks</strong><i class="material-icons right">more_vert</i></span>
-                                    <p><a target="_blank" href="https://mavens-and-mavericks.herokuapp.com/">Visit app</a></p>
+                                    <!-- <p><a target="_blank" href="https://mavens-and-mavericks.herokuapp.com/">Visit app</a></p> -->
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4"><strong>Mavens and Mavericks</strong><i class="material-icons right">close</i></span>
                                     <p>Full Stack social media app that pairs mentors and mentees together to foster growth and help individuals discern how their personal abilities can improve a company or impact an industry throughout their career. Matching is completed through sorting logic based on a user’s career level, industry experience, and coding languages of choice.  This web app is built with React, Node.js, Express, Axios, ES6 JavasScript, CSS3, Bootstrap, Materialize and Mongoose.</p>
                                 </div>
+                                <div class="overlay">
+                                    <p class="text">
+                                        <a target="_blank" href="https://mavens-and-mavericks.herokuapp.com/">Visit App</a>
+                                        |
+                                        <a target="_blank" href="https://github.com/MavensAndMavericks/Mavens_and_Mavericks">See Code</a>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                         <!-- 2 -->
-                        <div class="col offset-s1 s10 offset-s1 offset-m2 m8 offset-m2 l4 staggered-animation">
+                        <div class="col offset-s1 s10 offset-s1 offset-m2 m8 offset-m2 l4 staggered-animation  shadow-container">
                             <div class="card sticky-action">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <video class="activator projectvid" autoplay="autoplay" loop preload="metadata">
+                                    <img class="activator img-fluid card-pic" src="./assets/img/SoundHoundPic.jpeg">
+                                    <!-- <video class="activator projectvid" autoplay="autoplay" loop preload="metadata">
                                       <source src="./assets/img/SoundHoundVidTrim.mp4" type="video/mp4">
-                                    </video>
+                                    </video> -->
                                 </div>
 
                                 <div class="card-action">
-                                    <span class="card-title activator grey-text text-darken-4"><strong>Sound Hound</strong><i class="material-icons right">more_vert</i></span>
-                                    <p><a target="_blank" href="https://sound-hound.github.io/Sound-Hound-App/">Visit app</a></p>
+                                    <span class="card-title activator grey-text text-darken-4">
+                                        <strong>Sound Hound</strong>
+                                        <i id="viewCard" onclick="viewCard()" class="material-icons right">arrow_upward</i>
+
+                                        <a data-fancybox="portfolio-group" data-animation fancybox-slide  duration="700" data-src="#animatedModal2" href="javascript:;"><img class="info" src="./assets/img/info.png" alt="info" /></a>
+
+                                        <a target="_blank" href="https://icebreakr2.herokuapp.com/"><span><img class="link" src="./assets/img/link.png" alt="link" /></span></a>
+                                    </span>
+                                    <!-- <p><a target="_blank" href="https://sound-hound.github.io/Sound-Hound-App/">Visit app</a></p> -->
                                 </div>
                                 <div class="card-reveal">
                                     <span class="card-title grey-text text-darken-4"><strong>Sound Hound</strong><i class="material-icons right">close</i></span>
                                     <p>An interactive website that provides the user a means to search for both venue locations as well as favorite artists to learn when and where they are playing locally. This web app incorporates Google Maps and Eventbrite API to provide listing of ticket prices and locations of venues for navigation purposes. This app was developed in JavaScript, jQuery, HTML5, CSS3, and Bootstrap.</p>
                                 </div>
+                                <div class="overlay">
+                                    <p class="text">
+                                        <a target="_blank" href="https://sound-hound.github.io/Sound-Hound-App/">Visit App</a>
+                                        |
+                                        <a target="_blank" href="https://github.com/Sound-Hound/Sound-Hound-App">See Code</a>
+                                    </p>
+                                </div>
+                                <!-- FancyBox/Modal Structure -->
+                                <div style="display: none;" id="animatedModal2" class="animated-modal">
+                                    <h2>Hola!</h2>
+                                    <p>This is animated content! Cool, right?</p>
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <video class="activator projectvid" autoplay="autoplay" loop preload="metadata">
+                                            <source src="./assets/img/SoundHoundVidTrim.mp4" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- 3 -->
-                        <div class="col offset-s1 s10 offset-s1 offset-m2 m8 offset-m2 l4 staggered-animation">
+                        <div class="col offset-s1 s10 offset-s1 offset-m2 m8 offset-m2 l4 staggered-animation  shadow-container">
                             <div class="card sticky-action">
                                 <div class="card-image waves-effect waves-block waves-light">
-                                    <video class="activator projectvid" autoplay="autoplay" loop preload="metadata">
+                                    <img class="img-fluid card-pic" src="./assets/img/iceBreakrPic4.jpg">
+                                    <!-- <video class="activator projectvid" autoplay="autoplay" loop preload="metadata">
                                       <source src="./assets/img/iceBreakrVidTrim.mp4" type="video/mp4">
-                                    </video>
+                                    </video> -->
                                 </div>
                                 <div class="card-action">
-                                    <span class="card-title activator grey-text text-darken-4"><strong>iceBreakr</strong><i class="material-icons right">more_vert</i></span>
-                                    <p><a target="_blank" href="https://icebreakr2.herokuapp.com/">Visit app</a></p>
+                                    <span class="card-title activator grey-text text-darken-4">
+                                        <strong>iceBreakr </strong>
+                                        <i id="viewCard" onclick="viewCard()" class="material-icons right">arrow_upward</i>
+
+                                        <a data-fancybox="portfolio-group" data-animation fancybox-slide  duration="700" data-src="#animatedModal3" href="javascript:;"><span><i class="material-icons right info">info_outline</i></span></a>
+
+                                        <a target="_blank" href="https://icebreakr2.herokuapp.com/"><span><i class="material-icons right">attach_file</i></span></a>
+                                    </span>
                                 </div>
                                 <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4"><strong>iceBreakr</strong><i class="material-icons right">close</i></span>
+                                    <span class="card-title grey-text text-darken-4"><i id="closeCard" onclick="closeCard()" class="material-icons right">close</i></span>
                                     <p>A dynamic web application which allows individuals to create profiles and find matches based on predetermined interests. As this app is intended for those already out and about, we included geolocation by Google Maps to faciliate each user meeting his or her designated match.  Our stack includes Javascript, HTML5, CSS3, Bootstrap, Node.js, Express, and MySQL.</p>
                                 </div>
+                                <div class="overlay">
+                                    <p class="text">
+                                        <a target="_blank" href="https://icebreakr2.herokuapp.com/">Visit App</a>
+                                        |
+                                        <a target="_blank" href="https://github.com/iceBreakr-Project2/iceBreakr">See Code</a>
+                                    </p>
+                                </div>
+                            </div>
+                              <!-- FancyBox/Modal Structure -->
+                            <div style="display: none;" id="animatedModal3" class="animated-modal">
+                                <h2>Hello!</h2>
+                                <p>This is animated content! Cool, right?</p>
                             </div>
                         </div>
                     </div>
                 </div>
         <!-- Second Row - PORTFOLIO -->
                 <!-- 4  -->
-                <div class="col offset-s1 s10 offset-s1 offset-m2 m8 offset-m2 l4 staggered-animation">
+                <div class="col offset-s1 s10 offset-s1 offset-m2 m8 offset-m2 l4 staggered-animation shadow-container">
                     <div class="card sticky-action">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/img/bamazon_best.gif">
+                            <img class="activator img-fluid card-pic" src="./assets/img/bamazonPic.jpg"> <!-- ./assets/img/bamazon_best.gif -->
                         </div>
                         <div class="card-action">
-                            <span class="card-title activator grey-text text-darken-4"><strong>Bamazon Store</strong><i class="material-icons right">more_vert</i></span>
-                            <p><a target="_blank" href="https://github.com/JettTech/BamazonStore/">Visit app</a></p>
+                            <span class="card-title activator grey-text text-darken-4"><strong>Bamazon Store</strong><i class="material-icons right">more_vert</i></span> 
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4"><strong>Bamazon Store</strong><i class="material-icons right">close</i></span>
                             <p> A Node.js and MySQL app. This App allows shoppers to view the items for purchase, along with department, price and stock quantity, by solely using backend functionality.</p>
                         </div>
+                        <div class="overlay">
+                            <p class="text">
+                                <a target="_blank" href="">Backend Only</a>
+                                |
+                                <a target="_blank" href="https://github.com/JettTech/BamazonStore/">See Code</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <!-- 5 -->
-                <div class="col offset-s1 s10 offset-s1 offset-m2 m8 offset-m2 l4 staggered-animation">
+                <div class="col offset-s1 s10 offset-s1 offset-m2 m8 offset-m2 l4 staggered-animation  shadow-container">
                     <div class="card sticky-action">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/img/burger4.gif">
+                            <img class="activator img-fluid card-pic" src="./assets/img/burgersPic4.jpg"> <!-- ./assets/img/burger4.gif -->
                         </div>
                         <div class="card-action">
                             <span class="card-title activator grey-text text-darken-4"><strong>Burger Time</strong><i class="material-icons right">more_vert</i></span>
-                            <p><a target="_blank" href="https://morning-plains-55863.herokuapp.com/">Visit app</a></p>
-                        </div></strong>
+                            <<!-- p><a target="_blank" href="https://morning-plains-55863.herokuapp.com/">Visit app</a></p> -->
+                        </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4"><strong>Burger Time</strong><i class="material-icons right">close</i></span>
                             <p>A full stack restaurant app that lets users input the names of burgers they'd like to eat, display their burger titles, and "eat" them, all within a few clicks. This app was created with MySQL, Node.js, Express.js, Handlebars, CSS3, Bootstrap, JavaScript, jQuery and a homemade ORM.</p>
                         </div>
+                        <div class="overlay">
+                            <p class="text">
+                                <a target="_blank" href="https://morning-plains-55863.herokuapp.com/">Visit App</a>
+                                |
+                                <a target="_blank" href="https://github.com/JettTech/Burger">See Code</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <!-- 6 -->
-                <div class="col offset-s1 s10 offset-s1 offset-m2 m8 offset-m2 l4 staggered-animation">
+                <div class="col offset-s1 s10 offset-s1 offset-m2 m8 offset-m2 l4 staggered-animation  shadow-container">
                     <div class="card sticky-action">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/img/giphy.gif">
+                            <img class="activator img-fluid card-pic" src="./assets/img/superheroGiffy2.jpg"> <!-- ./assets/img/giphy.gif -->
                         </div>
                         <div class="card-action">
                             <span class="card-title activator grey-text text-darken-4"><strong>Giftastic</strong><i class="material-icons right">more_vert</i></span>
-                            <p><a target="_blank" href="https://jetttech.github.io/GifTastic/">Visit App</a></p>
+                            <!-- <p><a target="_blank" href="https://jetttech.github.io/GifTastic/">Visit App</a></p> -->
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4"><strong>Giftastic</strong><i class="material-icons right">close</i></span>
                             <p>An interative GIF-themed website that uses the Giphy API to search and dynamically display GIFs of choice. GIFs change animation state through clicking them on and off. What GIF will you find?  Stack includes Javascript, jQuery, and Bootstrap.</p>
+                        </div>
+                        <div class="overlay">
+                            <p class="text">
+                                <a target="_blank" href="https://jetttech.github.io/GifTastic/">Visit App</a>
+                                |
+                                <a target="_blank" href="https://github.com/JettTech/GifTastic">See Code</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -226,50 +305,71 @@
         <div class="row">
             <div id="portfolio" class="section intro ">
                 <!-- 7 -->
-                <div class="col offset-s1 s10 offset-s1 offset-m2 m8 offset-m2 l4 staggered-animation">
+                <div class="col offset-s1 s10 offset-s1 offset-m2 m8 offset-m2 l4 staggered-animation  shadow-container">
                     <div class="card sticky-action">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/img/friends.gif">
+                            <img class="activator img-fluid card-pic" src="./assets/img/friendFinder.jpg"> <!-- ./assets/img/friends.gif -->
                         </div>
                         <div class="card-action">
                             <span class="card-title activator grey-text text-darken-4"><strong>Friend Finder</strong><i class="material-icons right">more_vert</i></span>
-                            <p><a target="_blank" href="https://thawing-fjord-87028.herokuapp.com/">Visit app</a></p>
+                            <!-- <p><a target="_blank" href="https://thawing-fjord-87028.herokuapp.com/">Visit app</a></p> -->
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4"><strong>Friend Finder</strong><i class="material-icons right">close</i></span>
                             <p>A friend paring or date matching application. Answer a survey, find your match! Who will you befriend today? Uses Node.js, Express.js, JavaScript, jQuery, HTML5, CSS3 and Boostrap.</p>
                         </div>
+                        <div class="overlay">
+                            <p class="text">
+                                <a target="_blank" href="https://thawing-fjord-87028.herokuapp.com/">Visit App</a>
+                                |
+                                <a target="_blank" href="https://github.com/JettTech/friendfinder">See Code</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <!-- 8 -->
-                <div class="col offset-s1 s10 offset-s1 offset-m2 m8 offset-m2 l4 staggered-animation">
+                <div class="col offset-s1 s10 offset-s1 offset-m2 m8 offset-m2 l4 staggered-animation  shadow-container">
                     <div class="card sticky-action">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/img/crystals-Yes.gif">
+                            <img class="activator img-fluid card-pic" src="./assets/img/jewelsPic.jpg"> <!-- ./assets/img/crystals-Yes.gif -->
                         </div>
                         <div class="card-action">
                             <span class="card-title activator grey-text text-darken-4"><strong>Crystal Game</strong><i class="material-icons right">more_vert</i></span>
-                            <p><a target="_blank" href="https://jetttech.github.io/Crystal-Guessing-Game/">Visit app</a></p>
+                            <!-- <p><a target="_blank" href="https://jetttech.github.io/Crystal-Guessing-Game/">Visit app</a></p> -->
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4"><strong>Crystal Game</strong><i class="material-icons right">close</i></span>
                             <p>Gem-themed math game using HTML5, CSS3, Javascript and jQuery. Player wins if the total score matches the random number calculated at the beginning of the game.</p>
                         </div>
+                        <div class="overlay">
+                            <p class="text">
+                                <a target="_blank" href="https://jetttech.github.io/Crystal-Guessing-Game/">Visit App</a>
+                                |
+                                <a target="_blank" href="https://github.com/JettTech/Crystal-Guessing-Game/">See Code</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <!-- 9 -->
-                <div class="col offset-s1 s10 offset-s1 offset-m2 m8 offset-m2 l4 staggered-animation">
+                <div class="col offset-s1 s10 offset-s1 offset-m2 m8 offset-m2 l4 staggered-animation  shadow-container">
                     <div class="card sticky-action">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="./assets/img/train.gif">
+                            <img class="activator img-fluid card-pic" src="./assets/img/trainPic3.jpg"> <!-- ./assets/img/train.gif -->
                         </div>
                         <div class="card-action">
                             <span class="card-title activator grey-text text-darken-4"><strong>Train Scheduler</strong><i class="material-icons right">more_vert</i></span>
-                            <p><a target="_blank" href="https://jetttech.github.io/Train-Scheduler/">Visit app</a></p>
+                            <!-- <p><a target="_blank" href="https://jetttech.github.io/Train-Scheduler/">Visit app</a></p> -->
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4"><strong>Train Scheduler</strong><i class="material-icons right">close</i></span>
                             <p>A scheduling app that uses Javascript, jQuery, HTML5, CSS3 Firebase and Moment.js to store times and monitor the next train arrival. Users can also input their destination and/or train number to discover the time until their trian, frequency is listed in minutes.</p>
+                        </div>
+                        <div class="overlay">
+                            <p class="text">
+                                <a target="_blank" href="https://jetttech.github.io/Train-Scheduler/">Visit App</a>
+                                |
+                                <a target="_blank" href="https://github.com/JettTech/Train-Scheduler">See Code</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -294,23 +394,25 @@
             <h5 class="center grey-text text-lighten-4"">When I'm not coding you'll probably find me learning about new technologies. <br/>Austin is fabulously full of tech events that are well coordinated and often free!</h5>
             <br>
             <br/>
-
-            <div class="carousel carousel-slider"> <!-- data-indicators="true" -->  
-                <a class="carousel-item carouselSize" href="#one!"><img src="./assets/img/GroupWAlex.JPG"></a>
-                <a class="carousel-item carouselSize" href="#two!"><img src="./assets/img/winnersSmile2.jpg"></a>        
-                <a class="carousel-item carouselSize" href="#three!"><img src="./assets/img/stickers.jpg"></a>
-                <a class="carousel-item carouselSize" href="#five!"><img src="./assets/img/DWbadge.jpg"></a>    
-                <a class="carousel-item carouselSize" href="#six!"><img src="./assets/img/ACTW_MicrosoftGear.jpg"></a>
-                <a class="carousel-item carouselSize" href="#seven!"><img src="./assets/img/ChicktechGear.jpg"></a>
-                <a class="carousel-item carouselSize" href="#eight!"><img src="./assets/img/ACTW_Conf_main.jpg"></a>                
-                <a class="carousel-item carouselSize" href="#nine!"><img src="./assets/img/womenwhocodePostIt.jpg"></a>
-                <a class="carousel-item carouselSize" href="#four!"><img src="./assets/img/ASW_badge.jpg"></a>  
-                <a class="carousel-item carouselSize" href="#ten!"><img src="./assets/img/DevWeek17Presentation.jpg"></a>
-                <a class="carousel-item carouselSize" href="#eleven!"><img src="./assets/img/designweek17.jpg"></a> 
-                <a class="carousel-item carouselSize" href="#twelve!"><img src="./assets/img/GoogleWIT_roundUp.jpg"></a> 
-                <a class="carousel-item carouselSize" href="#thriteen!"><img src="./assets/img/ibmworkshop-designweek.jpg"></a>
-                <a class="carousel-item carouselSize" href="#fourteen!"><img src="./assets/img/DevWeek17_VRvevo.jpg"></a>  
-                <a class="carousel-item carouselSize" href="#fifteen!"><img src="./assets/img/DevWeek17.jpg"></a>                
+            
+            <div class="row">
+                <div class="offset-s3 col s6 offset-s3 carousel carousel-slider" data-indicators="true">
+                    <a class="carousel-item" href="#one!"><img class="carouselSize" src="./assets/img/GroupWAlex.JPG"></a>
+                    <a class="carousel-item" href="#two!"><img class="carouselSize" src="./assets/img/winnersSmile2.jpg"></a>                        
+                    <a class="carousel-item" href="#five!"><img class="carouselSize" src="./assets/img/DWbadge.jpg"></a>    
+                    <a class="carousel-item" href="#six!"><img class="carouselSize" src="./assets/img/ACTW_MicrosoftGear.jpg"></a>
+                    <a class="carousel-item" href="#seven!"><img class="carouselSize" src="./assets/img/ChicktechGear.jpg"></a>
+                    <a class="carousel-item" href="#eight!"><img class="carouselSize" src="./assets/img/ACTW_Conf_main.jpg"></a>                
+                    <a class="carousel-item" href="#nine!"><img class="carouselSize" src="./assets/img/womenwhocodePostIt.jpg"></a>
+                    <a class="carousel-item" href="#four!"><img class="carouselSize" src="./assets/img/ASW_badge.jpg"></a>  
+                    <a class="carousel-item" href="#ten!"><img class="carouselSize" src="./assets/img/DevWeek17Presentation.jpg"></a>
+                    <a class="carousel-item" href="#eleven!"><img class="carouselSize" src="./assets/img/designweek17.jpg"></a> 
+                    <a class="carousel-item" href="#twelve!"><img class="carouselSize" src="./assets/img/GoogleWIT_roundUp.jpg"></a> 
+                    <a class="carousel-item" href="#thriteen!"><img class="carouselSize" src="./assets/img/ibmworkshop-designweek.jpg"></a>
+                    <a class="carousel-item" href="#fourteen!"><img class="carouselSize" src="./assets/img/DevWeek17_VRvevo.jpg"></a>  
+                    <a class="carousel-item" href="#fifteen!"><img class="carouselSize" src="./assets/img/civicHack.png"></a> 
+                    <a class="carousel-item" href="#three!"><img class="carouselSize" src="./assets/img/stickers.jpg"></a>               
+                </div>
             </div>
 
             <br/>
@@ -360,9 +462,8 @@
                     <h5 class="white-text">Let's Visit.</h5>
                     <p class="grey-text text-lighten-4">Need help bringing great ideas to life on the web? 
                     <p>Let's visit over coffee.
-<!--                 <img src="./assets/img/coffee_img.png" alt="coffee img" height="30px"/> -->
                     </p> 
-                    <a class="white-text" href="https://calendly.com/ldjetton21" target="_blank"><img class="contactIcon" src="./assets/img/calendly_Img.png" height="30px" alt="calendly" title="Schedule a time with me on Calendly"></a>
+                    <a class="white-text" href="https://calendly.com/ldjetton21" target="_blank"><img class="contactIcon" src="./assets/img/calendly_Img.png" height="30px" style="border-radius: 5px" alt="calendly" title="Schedule a time with me on Calendly"></a>
                 </div>
 
                 <div class="col offset-s2 s3 m4 text-center">
