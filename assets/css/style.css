@@ -1,62 +1,4 @@
 /*//////////////////////////////////////////////////////////////////////////*/
-
-@media only screen and (min-width: 601px) {
-  #global-nav {
-    height: 70px;
-  }
-}
-
-.carouselSize {
-  height: 400px !important;
-/*  width: 400px !important;*/
-}
-
-#mobile-nav li a {
-  color: white;
-}
-
-.navOption {
-  height: 38px;
-  position: relative;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.navOption::after {
-  content: "";
-  border-radius: 5px;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  opacity: 0;
-  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.navOption:hover {
-  -webkit-transform: scale(1.25, 1.25);
-  transform: scale(1.25, 1.25);
-  color: #0a4ee0;
-  filter:invert(100%);
-}
-
-.brand-logo img {
-  margin-left: 5%;
-  margin-top: 5%
-}
-
-.image {
-    border-radius: 50%;
-    padding-top: 40px;
-}
-
-.portfolio {
-    padding-top: 90px;
-}
-
 .parallax-container {
   height: 600px;
   z-index: 1;
@@ -78,46 +20,90 @@ span.wrap {
   background-size: cover;
 }
 
-#index-banner {
-    background: linear-gradient(rgba(0, 0, .34, 0.10), rgba(0, 0, 0, 0.55)),
-    rgba(0, 0, 0, 0.55) no-repeat center;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 2;
-    padding: 0px;
-    margin: 0px;
-    height: 1000px;
-    color: #fff;
-    text-rendering: optimizeLegibility;
-    margin: 0;
-    padding: 15px 80px 15px;
-    text-align: right;
-    min-height: 640px;
-}
-
-.material-icons{
-  text-align: right;
-}
 
 #emailBtn{
-  margin-right: 2%;
-  width: 182px;
+  margin-top: 5%;
+  float: right;
 }
 
 #resumeBtn{
-   margin-left: 2%;
-   width: 182px;
+  float: left;
+  margin-top: 5%;
 }
 
 .contact{
+  clear: both;
+  overflow: auto;
   padding-top: 0px;
   margin-top: 0px;
 }
 
-.btn.waves-effect.waves-light { 
-    border: 2px solid #fff;
+#btn-row{
+  margin-top: 2%;
+}
+
+.btn.waves-effect.waves-light {
+  width: 200px; 
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border: 2px solid #e09c0a;
+/*    -webkit-transition all .7s ease;
+    transition all .7s ease;
+    content ''
+    position absolute
+    top 0
+    left 0px
+    width 0px
+    height 3px
+    transition all .4s ease*/
+}
+
+.btn.waves-effect.waves-light:hover { 
+  color: #e09c0a;
+  background transparent;
+  /*border: 2px solid #fff;*/
+}
+
+.btn.waves-effect.waves-light:hover::before { 
+  transition: .1s transform linear, .1s height linear .1s;
+  transform: translateX(0);
+  height: 100%;
+  border-color: #fff;
+}
+
+.btn.waves-effect.waves-light:hover::after { 
+  transition: .1s transform linear .2s, .1s height linear .3s;
+  transform: translateX(0);
+  height: 100%;
+  border-color: #fff;
+
+/*  -webkit-transition all .7s ease;
+  transition all .7s ease;
+  content ''
+  position absolute
+  top 0
+  left 0px
+  width 0px
+  height 3px
+  transition all .4s ease
+  top inherit
+  left inherit
+  bottom 0
+  right 0*/
+}
+
+@media only screen and (max-width: 640px) {
+  #emailBtn{
+    float: none;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+  #resumeBtn{
+    float: none;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
 }
 
 .projectvid {
@@ -157,6 +143,7 @@ margin: 0px;
 .portfolio{
   padding-bottom: 5%;
   padding-top: 3%;
+  /*padding-top: 90px;*/
 }
 
 h3{
@@ -219,9 +206,9 @@ h5 {
 .contactIcon:hover {
   -webkit-transform: scale(1.25, 1.25);
   transform: scale(1.25, 1.25);
-/*  background-color: #0f45cf;
-  filter:invert(90%);*/
-  background-color: #e09c0a;
+  background-color: #0a4ee0;
+  filter:invert(100%);
+/*  background-color: #e09c0a;*/
   border-radius: 15px;
 }
 
@@ -237,6 +224,54 @@ h5 {
 /*//////////////////////////////////////////////////////////////////////////*/
 /*Nav Animation:*/
 /*//////////////////////////////////////////////////////////////////////////*/
+@media only screen and (min-width: 601px) {
+  #global-nav {
+    height: 70px;
+  }
+}
+
+.carouselSize {
+  height: 400px !important;
+/*  width: 400px !important;*/
+}
+
+#mobile-nav li a {
+  color: white;
+}
+
+.navOption {
+  height: 38px;
+  position: relative;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.navOption::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.navOption:hover {
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+  color: #0a4ee0;
+  filter:invert(100%);
+}
+
+.brand-logo img {
+  margin-left: 5%;
+  margin-top: 9%
+}
+
 #global-nav {
   position: fixed;
   top: 0;
@@ -323,6 +358,10 @@ h5 {
 /*//////////////////////////////////////////////////////////////////////////*/
 /*Card + Overlay Anmation:*/
 /*//////////////////////////////////////////////////////////////////////////*/
+.material-icons{
+  text-align: right;
+}
+
 div.card-action.strong {
   margin-left: -15px;
 }
@@ -443,3 +482,4 @@ img.link {
   color: black;
   float: right;
 }
+

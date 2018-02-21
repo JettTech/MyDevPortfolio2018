@@ -39,7 +39,7 @@
     <nav id="global-nav" class="black lighten-2 main-navigation" role="navigation">        
         <div class="nav-wrapper">
 
-            <a href="#!" class="brand-logo"><img id="main-logo" src="./assets/img/brace_Logo.png" alt="Logo" style="height: 50%" /></a> <!-- style="position: fixed; left: 2%; top:1%"  -->
+            <a href="#!" class="brand-logo"><img id="main-logo" src="./assets/img/brace_Logo.png" alt="Logo" style="height: 50px" /></a> <!-- style="position: fixed; left: 2%; top:1%"  -->
             <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>                    
 
                 <ul class="main-navigation right hide-on-med-and-down">
@@ -52,7 +52,7 @@
                 
                 <ul id="mobile-nav" class="side-nav grey darken-4">
                     <li><a class="navOption" href="#intro">Introduction</a></li>
-                    <li><a class="navOption" href="./assets/img/Lisa_Jetton_Developer_PDFhackathonUpdate.pdf" download="Lisa_Jetton_Developer">Resume</a></li>
+                    <li><a class="navOption" href="./assets/img/Lisa_Jetton_Developer_PDF2018_updated.pdf" download="Lisa_Jetton_Developer">Resume</a></li>
                     <li><a class="navOption" href="#portfolio">Portfolio</a></li>
                     <li><a class="navOption" href="#hobbies">Hobbies</a></li>                        
                     <li><a class="navOption" href="#connect">Let's Connect</a></li>
@@ -81,7 +81,7 @@
                 <br>
                 <div class="header center col s12">
                     <!-- <svg id="myname" viewBox="0 0 1252 600" width="250px" class="welcome black-text text-darken-4"></svg>     -->    
-                   <h3 class="welcome white-text text-darken-4">Hey there! <br/> My name is Lisa Jetton.</h5>                  
+                   <h3 class="welcome white-text text-darken-4">Hey there! <br/> My name is <span style="color:#e09c0a">Lisa Jetton</span>.</h3>                  
                     <h5>I am a 
                       <span
                          class="txt-rotate"
@@ -91,11 +91,14 @@
                      </span>  
                      developer in Austin, TX.            
                     </h5>                       
-                    <br>
-                    <a id="emailBtn" href="mailto:ldjetton21@gmail.com" class="btn btn-large waves-effect waves-light transparent darken-4 white-text">Send Email</a>
-                    <a id="resumeBtn" href="./assets/img/Lisa_Jetton_Developer_PDFhackathonUpdate.pdf" download="Lisa_Jetton_Developer" class="btn btn-large waves-effect waves-light transparent darken-4 white-text">View Resume</a>            
-                    <br>
-                    <br>
+                    <div id="btn-row" class="row">
+                        <div id="email-col" class="col s12 m6">
+                            <a id="emailBtn" href="mailto:ldjetton21@gmail.com" class="btn btn-large waves-effect waves-light transparent darken-4 white-text">Send Email</a>
+                        </div>
+                        <div id="resume-col" class="col s12 m6">
+                            <a id="resumeBtn" href="./assets/img/Lisa_Jetton_Developer_PDF2018_updated.pdf" download="Lisa_Jetton_Developer" class="btn btn-large waves-effect waves-light transparent darken-4 white-text">View Resume</a>  
+                        </div> 
+                    </div>      
                     <br>
                     <br>
                 </div>
@@ -112,7 +115,7 @@
     <div class="portfolio" style="background-color: #070927"> 
         <div class="row">
             <div id="portfolio" class="section intro ">
-                <h3 class="header center grey-text text-lighten-4">Curious about my projects?  Take a look at some of my ideas.</h3>
+                <h3 class="header center grey-text text-lighten-4">Curious about my projects?  Take a look at some of my <span style="color:#e09c0a">ideas</span>.</h3>
 <!--                 <h5 class="header center grey-text text-lighten-2">Click on project card to see a synopsis, and select the "Visit App" button to see a live demo or view the raw code.</h5> -->
                 <br>
                 <hr/>
@@ -121,7 +124,7 @@
                 <br>
                 <!-- First Row - PORTFOLIO -->
                 <div class="row">
-                    <div id="portfolio" class="section intro ">
+                    <div class="section intro "><!--  id="portfolio" -->
                         <!-- 1 -->
                         <div class="col offset-s1 s10 offset-s1 offset-m2 m8 offset-m2 l4 staggered-animation  shadow-container">
                             <div class="card sticky-action">
@@ -315,7 +318,7 @@
         </div>
         <!-- Third Row - PORTFOLIO -->
         <div class="row">
-            <div id="portfolio" class="section intro ">
+            <div class="section intro ">
                 <!-- 7 -->
                 <div class="col offset-s1 s10 offset-s1 offset-m2 m8 offset-m2 l4 staggered-animation  shadow-container">
                     <div class="card sticky-action">
@@ -399,7 +402,7 @@
     <!--Start Activity Carousel-->
     <div class="hobbies" style="background-color: #070927"> <!-- The Green Color: #063122 -->
         <div id="hobbies" class="section intro col s12">
-            <h3 class="header center grey-text text-lighten-4"">Want to know what I've been doing in my spare time?</h3>
+            <h3 class="header center grey-text text-lighten-4""><span style="color:#e09c0a">Want to know</span> what I've been doing in my spare time ?</h3>
             <br/>
             <hr/>
             <br/>
@@ -443,7 +446,7 @@
             <div class="row" style="margin-bottom: 0px">
                 <div class="col m12 l6 left">
                     <div class="aboutme">
-                        <h3 class="grey-text text-lighten-4"> < Who is Lisa ? > </h3>
+                        <h3 class="grey-text text-lighten-4"> < Who is <span style="color:#e09c0a">Lisa</span> ? > </h3>
                         <p class="bio grey-text text-lighten-4">I am a thinker, an investigator, a developer, a lover of knowledge, a student of life, a polyglot, a communicator, a friend, and a teammate!  I seek to create innovative and organized solutions to business models and social matters alike. </p>
                         <p class="bio grey-text text-lighten-4">I firmly agree with LBJ when he said, "There is no problem that we can't solve together, and few that we can solve on our own."</p>  
                         <p class="bio grey-text text-lighten-4">Life is full of mysteries to be unfolded and the world is ours to mold; let's impact tomorrow together.</p>
@@ -471,15 +474,15 @@
         <div class="footer container">
             <div class="row">
                 <div class="col s6 m8 text-center">
-                    <h5 class="white-text">Let's Visit.</h5>
+                    <h5 class="white-text">Let's <span style="color:#e09c0a">Visit</span>.</h5>
                     <p class="grey-text text-lighten-4">Need help bringing great ideas to life on the web? 
-                    <p>Let's visit over coffee.
+                    <p>Schedule a time to meet.
                     </p> 
                     <a class="white-text" href="https://calendly.com/ldjetton21" target="_blank"><img class="contactIcon" src="./assets/img/calendly_Img.png" height="30px" style="border-radius: 5px" alt="calendly" title="Schedule a time with me on Calendly"></a>
                 </div>
 
                 <div class="col offset-s2 s3 m4 text-center">
-                    <h5 class="white-text connectBlock">Let's Connect.</h5>
+                    <h5 class="white-text connectBlock">Let's <span style="color:#e09c0a">Connect</span>.</h5>
                     <ul>
                         <a class="white-text" href="https://www.linkedin.com/in/lisa-jetton/" target="_blank"><img class="contactIcon" src="./assets/img/linkedin.png" height="30px" alt="linkedin"></a>
                         <a class="white-text" href="https://github.com/JettTech" target="_blank"><img class="contactIcon" src="./assets/img/github.png" height="30px" alt="github"></a>
