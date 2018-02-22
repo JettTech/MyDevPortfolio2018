@@ -91,7 +91,7 @@ These 24 weeks were my very first introduction to code and to the world of devel
 >- Bootstrap
 
 - - - -
- ## Favorite Tech Events ##
+ ## Favorite Tech Events Attended ##
 - Women Who Code 3rd Anuual Hackathon
 - ACT-W First Annual Conference
 - Austin Dev Week 2017
