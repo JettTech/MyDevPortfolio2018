@@ -11,17 +11,18 @@ $(document).ready( function() { // makes sure the whole site is loaded
 //////////////////////////////////////////////////////////////////////////
   // START of Materialize JS 
 //////////////////////////////////////////////////////////////////////////
-    $(".button-collapse").sideNav();
-    $('.parallax').parallax();
-    $('#download-button').click(function() {
-    });
+  $(".button-collapse").sideNav();
+  $('.parallax').parallax();
+  $('#download-button').click(function() {
+  });
 
-    $('.carousel').carousel({ dist: -75, shift: 20 }); //{ dist: "-75", duration: "100", fullWidth: true  }
-    autoplay();
-    function autoplay() {
-        $('.carousel').carousel('next');
-        setTimeout(autoplay, 3500);
-    }
+  $('.carousel').carousel({ dist: -75, shift: 20 }); //{ dist: "-75", duration: "100", fullWidth: true  }
+  autoplay();
+
+  function autoplay() {
+      $('.carousel').carousel('next');
+      setTimeout(autoplay, 3500);
+  }
 //end of Materialize js animations
 
 //////////////////////////////////////////////////////////////////////////
