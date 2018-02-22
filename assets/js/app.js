@@ -1,7 +1,17 @@
-//////////////////////////////////////////////////////////////////////////
-// START of document ready:
+//START OF DOCUMENT:
 
-$(document).ready( function() {
+//////////////////////////////////////////////////////////////////////////
+// START of Preloader:
+//////////////////////////////////////////////////////////////////////////
+$(document).ready( function() { // makes sure the whole site is loaded 
+  $(".sk-folding-cube").delay(3300).fadeOut(); // will first fade out the loading animation 
+  $("#preload-container").delay(3800).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+  $("body").delay(3800).css({"overflow":"visible"});
+//end of Preloader
+
+//////////////////////////////////////////////////////////////////////////
+  // START of Materialize JS 
+//////////////////////////////////////////////////////////////////////////
     $(".button-collapse").sideNav();
     $('.parallax').parallax();
     $('#download-button').click(function() {
@@ -9,100 +19,116 @@ $(document).ready( function() {
 
     $('.carousel').carousel({ dist: -75, shift: 20 }); //{ dist: "-75", duration: "100", fullWidth: true  }
     autoplay();
-
     function autoplay() {
         $('.carousel').carousel('next');
         setTimeout(autoplay, 3500);
     }
+//end of Materialize js animations
 
-  let scrollTop = 0;
-  $(window).scroll(function(){
-    scrollTop = $(window).scrollTop();
-     $('.counter').html(scrollTop);
-    
-    if (scrollTop >= 100) {
-      $("#global-nav").addClass("scrolled-nav");
-    } else if (scrollTop < 100) {
-      $("#global-nav").removeClass("scrolled-nav");
-    }   
-  }); 
-});
-// end of document ready
 //////////////////////////////////////////////////////////////////////////
+  // START of nav scroll animation
+//////////////////////////////////////////////////////////////////////////
+    var scrollTop = 0;
+    $(window).scroll(function(){
+      scrollTop = $(window).scrollTop();
+       $('.counter').html(scrollTop);
+      
+      if (scrollTop >= 100) {
+        $("#global-nav").addClass("scrolled-nav");
+      } else if (scrollTop < 100) {
+        $("#global-nav").removeClass("scrolled-nav");
+      }   
+    }); 
+//end of nav scroll animation
 
-// Start Word Carousel Animation
-window.onload = function() {
-  const elements = document.getElementsByClassName('txt-rotate');
-  for (let i=0; i<elements.length; i++) {
-    let toRotate = elements[i].getAttribute('data-rotate');
-    let period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+//////////////////////////////////////////////////////////////////////////
+  // START of nav tracker animation
+//////////////////////////////////////////////////////////////////////////
+    var nav = $("#global-nav");
+
+    function activeSection(current) {
+      nav.find("a").removeClass("active");
+      nav.find("a[href='#" + $(current).attr("id") + "']").addClass("active");
     }
-  }
-};
 
-const TxtRotate = function(element, toRotate, period) {
-  this.toRotate = toRotate;
-  this.element = element;
-  this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
-  this.txt = '';
-  this.tick();
-  this.isDeleting = false;
-};
+  //end of nav tracker animation
 
-TxtRotate.prototype.tick = function() {
-  let i = this.loopNum % this.toRotate.length;
-  let fullTxt = this.toRotate[i];
+//////////////////////////////////////////////////////////////////////////
+  // Start Word Carousel Animation
+//////////////////////////////////////////////////////////////////////////
+  window.onload = function() {
+    const elements = document.getElementsByClassName('txt-rotate');
+    for (let i=0; i<elements.length; i++) {
+      let toRotate = elements[i].getAttribute('data-rotate');
+      let period = elements[i].getAttribute('data-period');
+      if (toRotate) {
+        new TxtRotate(elements[i], JSON.parse(toRotate), period);
+      }
+    }
+  };
 
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
-
-  this.element.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-  let that = this;
-  let delta = 300 - Math.random() * 100;
-
-  if (this.isDeleting) { delta /= 2; }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
+  const TxtRotate = function(element, toRotate, period) {
+    this.toRotate = toRotate;
+    this.element = element;
+    this.loopNum = 0;
+    this.period = parseInt(period, 10) || 2000;
+    this.txt = '';
+    this.tick();
     this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-  }
+  };
 
-  setTimeout(function() {
-    that.tick();
-  }, delta);
-};
+  TxtRotate.prototype.tick = function() {
+    let i = this.loopNum % this.toRotate.length;
+    let fullTxt = this.toRotate[i];
+
+    if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    this.element.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    let that = this;
+    let delta = 300 - Math.random() * 100;
+
+    if (this.isDeleting) { delta /= 2; }
+
+    if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+    } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+    }
+
+    setTimeout(function() {
+      that.tick();
+    }, delta);
+  };
 // End Word Carousel Animation
 
-//////////////////////////////////////////////////////////////////////////
-// Start Video Control Logic
-
-const video = $("#video-player").get(0);
-var playMode = true; // switch
-
-function videoMode() {
-    if (playMode === true) {
-    playMode = false; // turn switch off
-    video.pause();
-  }
-  else {
-    playMode = true; // turn swtich on
-    video.play();
-  }
-};
 
 //////////////////////////////////////////////////////////////////////////
+  // Start Video Control Logic
+//////////////////////////////////////////////////////////////////////////
+  const video = $("#video-player").get(0);
+  var playMode = true; // switch
+
+  function videoMode() {
+      if (playMode === true) {
+      playMode = false; // turn switch off
+      video.pause();
+    }
+    else {
+      playMode = true; // turn swtich on
+      video.play();
+    }
+  };
+// End Vidoe Control Logic
+
 //HTML5 Video Scroll Logic
-//////////////////////////////////////////////////////////////////////////
+////////////////////////////////
 // const currentWindow = $( window ); // The CURRNT window Object.
 // const featuredMedia = $( "#video-player" ); // The Video Container.
 // const featuredVideo = $( "#featured-video" ); // The Video Source.
@@ -146,45 +172,43 @@ function videoMode() {
 //   }
 // }
 
+  // initialize jwplayer
+  var playerInstance = jwplayer("player");
+
+  // configure jwplayer instance
+  playerInstance.setup({
+    autostart: true,
+    file: "./assets/img/movieIntro_V1.mp4",
+    primary: 'html5',
+    setFullscreen: true,
+    width: '100%'
+  });
 
 
-// initialize jwplayer
-var playerInstance = jwplayer('player');
+  // player dom elements
+  var playerContainerEl = document.querySelector('.player-container');
 
-// configure jwplayer instance
-playerInstance.setup({
-  autostart: true,
-  file: "./assets/img/movieIntro_V1.mp4",
-  primary: 'html5',
-  setFullscreen: true,
-  width: '100%'
-});
+  // returns video player position from top of document
+  function getElementOffsetTop(element) {
+    var boundingClientRect = element.getBoundingClientRect();
+    var bodyEl = document.body;
+    var docEl = document.documentElement;
+    var scrollTop = window.pageYOffset || docEl.scrollTop || bodyEl.scrollTop;
+    var clientTop = docEl.clientTop || bodyEl.clientTop || 0;
+    return Math.round(boundingClientRect.top + scrollTop - clientTop);
+  }
 
-// player dom elements
-var playerContainerEl = document.querySelector('.player-container');
+  // returns the current y scroll position
+  function getScrollTop() {
+    var docEl = document.documentElement;
+    return (window.pageYOffset || docEl.scrollTop) - (docEl.clientTop || 0);
+  }
 
-// returns video player position from top of document
-function getElementOffsetTop(el) {
-  var boundingClientRect = el.getBoundingClientRect();
-  var bodyEl = document.body;
-  var docEl = document.documentElement;
-  var scrollTop = window.pageYOffset || docEl.scrollTop || bodyEl.scrollTop;
-  var clientTop = docEl.clientTop || bodyEl.clientTop || 0;
-  return Math.round(boundingClientRect.top + scrollTop - clientTop);
-}
-
-// returns the current y scroll position
-function getScrollTop() {
-  var docEl = document.documentElement;
-  return (window.pageYOffset || docEl.scrollTop) - (docEl.clientTop || 0);
-}
-
-
-
-// when jwplayer instance is ready
-playerInstance.on('ready', function() {
+  // when jwplayer instance is ready
+  playerInstance.on("ready", function() {
         var config = playerInstance.getConfig();
         var utils = playerInstance.utils;
+
         // get height of player element
         var playerHeight = config.containerHeight;
 
@@ -195,9 +219,11 @@ playerInstance.on('ready', function() {
         // this prevents container from disappearing and changing element positions
         // on page when player becomes minimized. this also leaves a nice visual
         // placeholder space for minimized player to return to when appropriate
-        playerContainerEl.style.height = playerHeight + 'px';
+        playerContainerEl.style.height = playerHeight + "px";
+        play();
 
-        // below we handle window scroll event without killing performance
+      ////////////////////////////////////////////////////////
+        // HANDLE SCROLL EVENT (without killing performance)
         // this is a minimal approach. please consider implementing something more extensive:
         // i.e. http://joji.me/en-us/blog/how-to-develop-high-performance-onscroll-event
 
@@ -208,7 +234,7 @@ playerInstance.on('ready', function() {
         function onScrollViewHandler() {
             var minimize = getScrollTop() >= playerOffsetTop;
 
-            utils.toggleClass(playerContainerEl, 'player-minimize', minimize);
+            utils.toggleClass(playerContainerEl, "player-minimize", minimize);
             // update the player's size so the controls are adjusted
             playerInstance.resize();
         }
@@ -232,25 +258,22 @@ playerInstance.on('ready', function() {
 
         };
 
-    });
-
-     
+    });     
 // End Video Control Logic
-//////////////////////////////////////////////////////////////////////////
 
 //////////////////////////////////////////////////////////////////////////
-// Start Card Materialize Icon
-function viewCard() {
-  console.log("clicked the viewcard");
-  $("#viewCard").hide();
-  $("#closeCard").show();
-};
+  // Start Card Materialize Icon
+//////////////////////////////////////////////////////////////////////////
+  function viewCard() {
+    console.log("clicked the viewcard");
+    $("#viewCard").hide();
+    $("#closeCard").show();
+  };
 
-function closeCard() {
-  $("#viewCard").show();
-  $("#closeCard").hide();
-};
-
+  function closeCard() {
+    $("#viewCard").show();
+    $("#closeCard").hide();
+  };
 
 // $("#info").on("click", function() {
 //   $('#modal').modal({
@@ -269,10 +292,11 @@ function closeCard() {
 // })
 
 // End Card Materialize Icon
-//////////////////////////////////////////////////////////////////////////
 
 //////////////////////////////////////////////////////////////////////////
 // Start ScrollFire Animation
+//////////////////////////////////////////////////////////////////////////
+
     // var options = [
     //   {selector: '#toast-stagger', offset: 50, callback: function(element) { //.toast-stagger >> make it a class instead?
     //     Materialize.toast("It's a pleasure to meet you!", 1500, rounded );
@@ -292,8 +316,25 @@ function closeCard() {
     // ];
     // Materialize.scrollFire(options);
     // End ScrollFire Animation
+
+});
+// end of document ready
+
+//END OF DOCUMENT:
+//////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
 
+
+
+
+
+
+
+
+
+
+
+//SVG animation:
 //////////////////////////////////////////////////////////////////////////
 //NEED TO IMPORT SVG-SNAP INTO HTML FOR THIS ANIMATION TO FUNCTION :
 //////////////////////////////////////////////////////////////////////////
