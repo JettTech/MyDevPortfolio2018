@@ -155,6 +155,7 @@ span.wrap {
 }
 
 .btn.waves-effect.waves-light {
+  color: white;
   width: 200px; 
   position: relative;
   display: block;
@@ -165,6 +166,7 @@ span.wrap {
 
 .btn.waves-effect.waves-light:hover { 
   color: #e09c0a;
+  font-size: 20px;
   background transparent;
   border: 2px solid #fff;
 }

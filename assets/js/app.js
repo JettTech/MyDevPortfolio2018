@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-//START OF DOCUMENT:
+
 //////////////////////////////////////////////////////////////////////////
 // START of Preloader:
 //////////////////////////////////////////////////////////////////////////
@@ -196,117 +195,6 @@ currentWindow
 // Start ScrollFire Animation
 //////////////////////////////////////////////////////////////////////////
 
-=======
-//////////////////////////////////////////////////////////////////////////
-// START of document ready:
-
-$(document).ready( function() {
-    $(".button-collapse").sideNav();
-    $('.parallax').parallax();
-    $('#download-button').click(function() {
-    });
-
-    $('.carousel').carousel({ dist: -75, shift: 20 }); //{ dist: "-75", duration: "100", fullWidth: true  }
-    autoplay();
-
-    function autoplay() {
-        $('.carousel').carousel('next');
-        setTimeout(autoplay, 4500);
-    }
-
-  var scrollTop = 0;
-  $(window).scroll(function(){
-    scrollTop = $(window).scrollTop();
-     $('.counter').html(scrollTop);
-    
-    if (scrollTop >= 100) {
-      $("#global-nav").addClass("scrolled-nav");
-    } else if (scrollTop < 100) {
-      $("#global-nav").removeClass("scrolled-nav");
-    }   
-  }); 
-});
-// end of document ready
-//////////////////////////////////////////////////////////////////////////
-
-// Start Word Carousel Animation
-window.onload = function() {
-  const elements = document.getElementsByClassName('txt-rotate');
-  for (let i=0; i<elements.length; i++) {
-    let toRotate = elements[i].getAttribute('data-rotate');
-    let period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
-    }
-  }
-};
-
-const TxtRotate = function(element, toRotate, period) {
-  this.toRotate = toRotate;
-  this.element = element;
-  this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
-  this.txt = '';
-  this.tick();
-  this.isDeleting = false;
-};
-
-TxtRotate.prototype.tick = function() {
-  let i = this.loopNum % this.toRotate.length;
-  let fullTxt = this.toRotate[i];
-
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
-  }
-
-  this.element.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-  let that = this;
-  let delta = 300 - Math.random() * 100;
-
-  if (this.isDeleting) { delta /= 2; }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
-  }
-
-  setTimeout(function() {
-    that.tick();
-  }, delta);
-};
-// End Word Carousel Animation
-
-//////////////////////////////////////////////////////////////////////////
-// Start Video Control Logic
-
-const video = $("#video-player").get(0);
-var playMode = true; // switch
-
-function videoMode() {
-    if (playMode === true) {
-    playMode = false; // turn switch off
-    video.pause();
-  }
-  else {
-    playMode = true; // turn swtich on
-    video.play();
-  }
-};
-
-     
-// End Video Control Logic
-//////////////////////////////////////////////////////////////////////////
-
-
-//////////////////////////////////////////////////////////////////////////
-// Start ScrollFire Animation
->>>>>>> e5b2916c1e775d216992f6c89ea9e315a543b992
     // var options = [
     //   {selector: '#toast-stagger', offset: 50, callback: function(element) { //.toast-stagger >> make it a class instead?
     //     Materialize.toast("It's a pleasure to meet you!", 1500, rounded );
@@ -326,7 +214,6 @@ function videoMode() {
     // ];
     // Materialize.scrollFire(options);
     // End ScrollFire Animation
-<<<<<<< HEAD
 
 //END OF DOCUMENT:
 //////////////////////////////////////////////////////////////////////////
@@ -343,10 +230,6 @@ function videoMode() {
 
 
 //SVG animation:
-=======
-//////////////////////////////////////////////////////////////////////////
-
->>>>>>> e5b2916c1e775d216992f6c89ea9e315a543b992
 //////////////////////////////////////////////////////////////////////////
 //NEED TO IMPORT SVG-SNAP INTO HTML FOR THIS ANIMATION TO FUNCTION :
 //////////////////////////////////////////////////////////////////////////
