@@ -633,7 +633,7 @@ img.link {
   float: right;
 }
 
-.text a.z-link {
+a.z-link {
   position: absolute;
   z-index: 9999;
 }
