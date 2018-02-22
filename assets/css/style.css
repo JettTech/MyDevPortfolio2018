@@ -21,8 +21,8 @@ body {
 .sk-folding-cube {
   margin: 0 auto;
   margin-top: 300px; 
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
   position: relative;
   -webkit-transform: rotateZ(45deg);
   transform: rotateZ(45deg);
@@ -359,6 +359,7 @@ a.navOption.active {
 }
 
 .scrolled-nav #main-logo  {
+  margin-top: 3%;
   font-size: 16px;
   height: 60%;
 }
@@ -447,7 +448,7 @@ a.resume-nav.btn:hover  {
   top: 0;
   height: 40px;
   line-height: 38px;
-  z-index: 9999; /*/always at top of page.*/
+  z-index: 9999; /*/always at top/front of page.*/
   font-size: 20px;
 }
 
@@ -475,12 +476,14 @@ a.resume-nav.btn:hover  {
 /*Video Animation:*/
 /*//////////////////////////////////////////////////////////////////////////*/
 .content-media--video {
+   z-index: 999999;
    background-color: #ddd;
    display: block;
    position: relative;
    padding: 0 0 56.25% 0;
 }
 .content-media--video source {
+    z-index: 999999;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -488,19 +491,21 @@ a.resume-nav.btn:hover  {
     height: 100%;
 }
 
-#featured-video {
+#video-player {
   transition: width .2s ease-in-out, height .2s ease-in-out, transform .38s ease-in-out;
 }
 
 /** Use .sticky */
-#featured-video.is-sticky {
+#video-player.is-sticky {
+  transition: width .2s ease-in-out, height .2s ease-in-out, transform .38s ease-in-out;
+  z-index: 999999;
   position: fixed;
-  top: 15px;
-  left: auto;
-  max-width: 280px;
-  max-height: 158px;
-  width: 280px;
-  height: 158px;
+  bottom: 0;
+  right: 0;
+  max-width: 380px;
+  max-height: 258px;
+  width: 380px;
+  height: 258px;
 }
 
 @media screen and (min-width: 1120px) {
@@ -642,3 +647,7 @@ img.link {
   float: right;
 }
 
+.text a.z-link {
+  position: absolute;
+  z-index: 9999;
+}

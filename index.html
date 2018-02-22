@@ -33,10 +33,6 @@
     <!--Snap.SVG-->
     <!-- <script src="./snap.svg.js"></script> -->
 
-    <!--jsPlayer.js-->
-    <script src='jwplayer.js'></script>>
-    <script src='requirejs.js'></script>>
-    
 </head>
 <body>
     <!--Preload Start -->
@@ -56,7 +52,7 @@
         <nav id="global-nav" class="black lighten-2 main-navigation" role="navigation">        
             <div class="nav-wrapper">
 
-                <a href="https://www.linkedin.com/in/lisa-jetton/" target="_blank" class="brand-logo"><img id="main-logo" src="./assets/img/brace_Logo.png" alt="Logo" style="height: 53px" /></a> <!-- style="position: fixed; left: 2%; top:1%"  -->
+                <a href="https://www.linkedin.com/in/lisa-jetton/" target="_blank" class="brand-logo"><img id="main-logo" src="./assets/img/brace_Logo.png" alt="Logo" style="height: 60px; margin-left: 20px;" /></a> <!-- style="position: fixed; left: 2%; top:1%"  -->
                 <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>                    
 
                     <ul class="main-navigation right hide-on-med-and-down">
@@ -78,30 +74,14 @@
         </nav>
         <!--NavBar End-->
 
-    <!--Start Movie Intro-->
-        <!-- <div id="intro-header" class="row"> --> <!-- class="canvas" -->
-            <!-- <video id="video-player" onClick="videoMode();" class="col s12" autoplay="autoplay" preload="metadata" fullWidth="true" class="content-media content-media- -video"> -->
-       <!--          <source id="featured-video" src="./assets/img/movieIntro_V1.mp4" type="video/mp4" class="content-media__object">
-            </video> 
-
-        </div> -->
-        </br>
-        </br>
-
-        <div class="player-container">
-            <div id="player">This text will be replaced with a player.</div>
-            <a href="javascript:jwplayer('player').play();">Toggle playback</a>    
-        </div>   
-    <!--End Movie Intro-->
-
-
-
         <!--Start Introduction-->
             <div id="intro" onmouseover="activeSection(this);" class="row" style="background-color: #070927; margin-bottom: 0px">
                     <br>
                     <br>
                     <div class="header center col s12">
                         <!-- <svg id="myname" viewBox="0 0 1252 600" width="250px" class="welcome black-text text-darken-4"></svg>     -->    
+                       <br/>
+                       <br/>
                        <h3 class="welcome white-text text-darken-4">Hey there! <br/> My name is <span style="color:#e09c0a">Lisa Jetton</span>.</h3>                  
                         <h5>I am a 
                           <span
@@ -126,10 +106,18 @@
             </div>    
         <!--End Introduction-->
 
-        <!--Start Parallax-->
-        <div class="parallax-container">
-            <div class="parallax"><img src="./assets/img/lightbulb-Pair.jpeg" height="900" alt="Background Pic 1"></div>
+    <!--Start Movie Intro-->
+        <div class="row intro-header"> <!-- class="canvas" -->
+            <video id="video-player" onclick="videoMode()" class="col s12" autoplay="autoplay" preload="metadata" fullWidth="true" class="content-media content-media--video">
+                <source id="featured-video" src="./assets/img/movieIntro_V1.mp4" type="video/mp4" class="content-media__object">
+            </video> 
         </div>
+    <!--End Movie Intro-->
+
+        <!--Start Parallax-->
+<!--         <div class="parallax-container">
+            <div class="parallax"><img src="./assets/img/lightbulb-Pair.jpeg" height="900" alt="Background Pic 1"></div>
+        </div> -->
         <!--End Parallax-->
      
         <!--Start Portfolio-->
@@ -167,9 +155,9 @@
                                     </div>
                                     <div class="overlay">
                                         <p class="text">
-                                            <a target="_blank" href="https://mavens-and-mavericks.herokuapp.com/">Visit App</a>
+                                            <a class="z-link" target="_blank" href="https://mavens-and-mavericks.herokuapp.com/">Visit App</a>
                                             |
-                                            <a target="_blank" href="https://github.com/MavensAndMavericks/Mavens_and_Mavericks">See Code</a>
+                                            <a class="z-link" target="_blank" href="https://github.com/MavensAndMavericks/Mavens_and_Mavericks">See Code</a>
                                         </p>
                                     </div>
                                     <!-- FancyBox/Modal Structure -->
@@ -531,8 +519,8 @@
         var nav = $("#global-nav");
 
         function activeSection(current) {
-          nav.find("a").removeClass("active");
-          nav.find("a[href='#" + $(current).attr("id") + "']").addClass("active");
+            nav.find("a").removeClass("active");
+            nav.find("a[href='#" + $(current).attr("id") + "']").addClass("active"); 
         }
 
         function activeClick(current) {
@@ -545,8 +533,64 @@
           }   
         }
 
-      //end of nav tracker animation
-      //////////////////////////////////////////////////////////////////////////
+        //end of nav tracker animation
+    //////////////////////////////////////////////////////////////////////////
+
+      // Start Video Control Logic
+    //////////////////////////////////////////////////////////////////////////
+        const video = $("#video-player").get(0);
+        var playMode = true; // switch
+
+        window.onload = startVideo();
+        function startVideo() {
+            console.log("inside the video function...")
+            video.pause();
+            setTimeout( function() {
+              video.play();
+            }, 5000 );
+
+            // if(video.pause) {
+            //     playMode = false;
+            // }
+        };  
+
+        function videoMode() {
+            if (playMode === true) {
+              playMode = false; // turn switch off
+              video.pause();
+            }
+            else {
+              playMode = true; // turn swtich on
+              video.play();
+            }
+        };
+        // End Video Control Logic
+
+        ////////////////////////////////
+        //HTML5 Video Scroll Logic
+        ////////////////////////////////
+        var featuredMedia = $( "#video-player" ); // The Video Container.
+        var featuredVideo = $( "#featured-video" ); // The Video Source.
+         
+        var topPosition = featuredMedia.offset().top; // Define the video position from the top of the document;
+        var offset = Math.floor( topPosition + ( featuredMedia.outerHeight() / 2 ) ); // Create offset.
+
+        var scrollTop = 0;
+        $(window).scroll(function() {
+          scrollTop = $(window).scrollTop();
+
+          if (scrollTop >= 450 && playMode === true ) {
+            console.log("in the on scroll function!");
+            featuredMedia.addClass("is-sticky");
+          } 
+          else {
+            featuredMedia.removeClass("is-sticky");
+          }
+          console.log("The featuredMedia has the 'is-sticky' class = " + featuredMedia.hasClass("is-sticky"));    
+        }); 
+
+       // End Video Control Logic
+    //////////////////////////////////////////////////////////////////////////
     </script>
 
   </body>
