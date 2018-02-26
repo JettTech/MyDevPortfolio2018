@@ -16,14 +16,55 @@ $(document).ready( function() { // makes sure the whole site is loaded
   $('#download-button').click(function() {
   });
 
-  $('.carousel').carousel({ dist: -75, shift: 20 }); //{ dist: "-75", duration: "100", fullWidth: true  }
+  $('.carousel').carousel({ dist: -75, shift: 50 }); //{ dist: "-75", duration: "100", fullWidth: true  }
   autoplay();
 
   function autoplay() {
       $('.carousel').carousel('next');
       setTimeout(autoplay, 3500);
   }
-//end of Materialize js animations
+
+  $("#carousel-container").mouseover(function(){
+     // $('.carousel').carousel('pause');
+  });
+
+  $("#carousel-container").mouseout(function(){
+     // autoplay();
+  });
+  //end of Materialize js animations
+//////////////////////////////////////////////////////////////////////////
+  // START of Owl Carousel JS 
+//////////////////////////////////////////////////////////////////////////
+ $(".owl-carousel").owlCarousel({
+      items:13,
+      loop:true,
+      autoplay:true,
+      autoplayTimeout:2000,
+      autoplayHoverPause:true,
+      margin: 70,
+      stagePadding:30,
+      nav: false,
+      dots: false,
+      // autoplayHoverPause:true,
+      responsive:{
+          0:{
+              items:2,
+          },
+          450:{
+              items:3,
+          },
+          767:{
+              items:4,
+          },
+          991:{
+              items:5,
+          },
+          1199:{
+              items:5,
+          }
+      }
+  });
+//end of Owl Carousel js animations
 
 //////////////////////////////////////////////////////////////////////////
   // START of nav scroll animation
@@ -194,6 +235,37 @@ currentWindow
 //////////////////////////////////////////////////////////////////////////
 // Start ScrollFire Animation
 //////////////////////////////////////////////////////////////////////////
+  (function timeline () {
+    // define variables
+    var items = document.querySelectorAll(".timeline li");
+
+    // check if an element is in viewport
+    // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+    function isElementInViewport(el) {
+      var rect = el.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+
+    function callbackFunc() {
+      for (var i = 0; i < items.length; i++) {
+        if (isElementInViewport(items[i])) {
+          items[i].classList.add("in-view");
+        }
+      }
+    }
+
+    // listen for events
+    window.addEventListener("load", callbackFunc);
+    window.addEventListener("resize", callbackFunc);
+    window.addEventListener("scroll", callbackFunc);
+
+  })();
+
 
     // var options = [
     //   {selector: '#toast-stagger', offset: 50, callback: function(element) { //.toast-stagger >> make it a class instead?
