@@ -31,6 +31,11 @@ $(document).ready( function() { // makes sure the whole site is loaded
   $("#carousel-container").mouseout(function(){
      // autoplay();
   });
+
+  $(".service-card").scroll(function(){
+    $("p").fadeIn();
+});
+
   //end of Materialize js animations
 //////////////////////////////////////////////////////////////////////////
   // START of Owl Carousel JS 

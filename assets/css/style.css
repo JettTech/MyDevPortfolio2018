@@ -255,14 +255,13 @@ margin: 0px;
     padding-top: 20%;
   }
 
-
   #professional-pic {
     margin-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 2%;
   }
 
   #professional-pic img {
-    width: 72%;
+    width: 50%;
   }
 }
 
@@ -275,7 +274,7 @@ margin: 0px;
 
   #professional-pic {
     margin-top: 8%;
-    margin-bottom: 10%;
+    margin-bottom: 2%;
   }
 
   #professional-pic img {
@@ -286,28 +285,28 @@ margin: 0px;
 @media only screen and (max-width: 1244px) and (min-width: 1103px) {
   #professional-pic {
     margin-top: 15%;
-    margin-bottom: 10%;
+    margin-bottom: 2%;
   }
 }
 
 @media only screen and (max-width: 1102px) and (min-width: 1038px){
   #professional-pic {
     margin-top: 20%;
-    margin-bottom: 20%;
+    margin-bottom: 2%;
   }
 }
 
 @media only screen and (max-width: 1037px) and (min-width: 991px){
   #professional-pic {
     margin-top: 30%;
-    margin-bottom: 30%;
+    margin-bottom: 2%;
   }
 }
 
 @media only screen and (max-width: 894px){
   #professional-pic {
     margin-top: 5%;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
   }
 }
 
@@ -456,18 +455,19 @@ a.navOption.active {
   margin: 30px 50px;
 }
 
-/*.owl-carousel .item img:hover {
-  -webkit-transform: scale(2);
-  -moz-transform: scale(2);
-  -o-transform: scale(2);
-  -ms-transform: scale(2);
-  transform: scale(2);
-  z-index: 9999999;
-  -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
-  -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
-  box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+@media only screen and (min-width: 1255px) {
+  .owl-carousel .item img:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index: 9999999;
+    -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+  }
 }
-*/
 
 div.owl-dot.active {
   color: #e09c0a;
@@ -755,6 +755,13 @@ a.z-link {
     height: 200px;
     margin: 0 auto;
   }
+}
+
+/*AboutMe Section Styles:*/
+/*//////////////////////////////////////////////////////////////////////////*/
+
+#services {
+  padding-bottom: 50px;
 }
 
 /*//////////////////////////////////////////////////////////////////////////*/
