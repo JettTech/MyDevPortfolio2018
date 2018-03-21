@@ -1027,13 +1027,13 @@ a.z-link {
   }
 }
 
-@media only screen and (max-width: 1252px) and (min-width: 1146px){
+@media only screen and (max-width: 1260px) and (min-width: 1146px){
   #service-row2 .card.services {
     height: 500px;
   }
 }
 
-@media only screen and (max-width: 1430px) and (min-width: 1253px){
+@media only screen and (max-width: 1430px) and (min-width: 1261px){
   #service-row2 .card.services {
     height: 425px;
   }
