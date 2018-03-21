@@ -12,7 +12,30 @@ $(document).ready( function() { // makes sure the whole site is loaded
   // START of Materialize JS 
 //////////////////////////////////////////////////////////////////////////
   $(".button-collapse").sideNav();
-  $('.parallax').parallax();
+  $(".parallax").parallax();
+
+//Logic for nav "smooth scrolling":
+  $("a").on('click', function(event) {
+      // Fail Safe -> ensuring "this.hash" has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // If passes test (has a string value -> will store hash.
+        var hash = this.hash;
+
+        // Use jQuery's animate() method to add smooth page scroll
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top // Number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        }, 800, function(){
+     
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+        });
+      }
+    });
+  //end of logic for smooth scrolling (nav)
+
   $('#download-button').click(function() {
   });
 
@@ -35,7 +58,6 @@ $(document).ready( function() { // makes sure the whole site is loaded
   $(".service-card").scroll(function(){
     $("p").fadeIn();
 });
-
   //end of Materialize js animations
 //////////////////////////////////////////////////////////////////////////
   // START of Owl Carousel JS 
@@ -70,6 +92,53 @@ $(document).ready( function() { // makes sure the whole site is loaded
       }
   });
 //end of Owl Carousel js animations
+ 
+// =====================
+// SKILLS PHOTO SCROLLER
+// =====================
+$(function(){
+        var scroller = $('#scroller div.innerScrollArea');
+        var scrollerContent = scroller.children('ul');
+        scrollerContent.children().clone().appendTo(scrollerContent);
+        var curX = 0;
+        scrollerContent.children().each(function(){
+            var $this = $(this);
+            $this.css('left', curX);
+            curX += $this.outerWidth(true);
+        });
+        var fullW = curX / 2;
+        var viewportW = scroller.width();
+
+        // Scrolling speed management
+        var controller = {curSpeed:0, fullSpeed:2};
+        var $controller = $(controller);
+        var tweenToNewSpeed = function(newSpeed, duration)
+        {
+            if (duration === undefined)
+                duration = 600;
+            $controller.stop(true).animate({curSpeed:newSpeed}, duration);
+        };
+
+        // Pause on hover
+        scroller.hover(function(){
+            tweenToNewSpeed(0);
+        }, function(){
+            tweenToNewSpeed(controller.fullSpeed);
+        });
+
+        // Scrolling management; start the automatical scrolling
+        var doScroll = function()
+        {
+            var curX = scroller.scrollLeft();
+            var newX = curX + controller.curSpeed;
+            if (newX > fullW*2 - viewportW)
+                newX -= fullW;
+            scroller.scrollLeft(newX);
+        };
+        setInterval(doScroll, 20);
+        tweenToNewSpeed(controller.fullSpeed);
+    });
+
 
 //////////////////////////////////////////////////////////////////////////
   // START of nav scroll animation
