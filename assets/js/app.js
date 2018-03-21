@@ -60,85 +60,51 @@ $(document).ready( function() { // makes sure the whole site is loaded
 });
   //end of Materialize js animations
 //////////////////////////////////////////////////////////////////////////
-  // START of Owl Carousel JS 
+  // START of Hobbies Carousel logic
 //////////////////////////////////////////////////////////////////////////
- $(".owl-carousel").owlCarousel({
-      items:13,
-      loop:true,
-      autoplay:true,
-      autoplayTimeout:2000,
-      autoplayHoverPause:true,
-      margin: 70,
-      stagePadding:30,
-      nav: false,
-      dots: false,
-      // autoplayHoverPause:true,
-      responsive:{
-          0:{
-              items:2,
-          },
-          450:{
-              items:3,
-          },
-          767:{
-              items:4,
-          },
-          991:{
-              items:5,
-          },
-          1199:{
-              items:5,
-          }
-      }
-  });
-//end of Owl Carousel js animations
- 
-// =====================
-// SKILLS PHOTO SCROLLER
-// =====================
 $(function(){
         var scroller = $('#scroller div.innerScrollArea');
         var scrollerContent = scroller.children('ul');
         scrollerContent.children().clone().appendTo(scrollerContent);
-        var curX = 0;
+        var currentX = 0;
         scrollerContent.children().each(function(){
             var $this = $(this);
-            $this.css('left', curX);
-            curX += $this.outerWidth(true);
+            $this.css('left', currentX);
+            currentX += $this.outerWidth(true);
         });
-        var fullW = curX / 2;
+        var fullW = currentX / 2;
         var viewportW = scroller.width();
 
         // Scrolling speed management
-        var controller = {curSpeed:0, fullSpeed:2};
+        var controller = {currentSpeed:0, fullSpeed:1.5};
         var $controller = $(controller);
-        var tweenToNewSpeed = function(newSpeed, duration)
+        var newSpeed = function(newSpeedX, duration)
         {
             if (duration === undefined)
                 duration = 600;
-            $controller.stop(true).animate({curSpeed:newSpeed}, duration);
+            $controller.stop(true).animate({currentSpeed:newSpeedX}, duration);
         };
 
         // Pause on hover
         scroller.hover(function(){
-            tweenToNewSpeed(0);
+            newSpeed(0);
         }, function(){
-            tweenToNewSpeed(controller.fullSpeed);
+            newSpeed(controller.fullSpeed);
         });
 
         // Scrolling management; start the automatical scrolling
         var doScroll = function()
         {
-            var curX = scroller.scrollLeft();
-            var newX = curX + controller.curSpeed;
+            var currentX = scroller.scrollLeft();
+            var newX = currentX + controller.currentSpeed;
             if (newX > fullW*2 - viewportW)
                 newX -= fullW;
             scroller.scrollLeft(newX);
         };
         setInterval(doScroll, 20);
-        tweenToNewSpeed(controller.fullSpeed);
+        newSpeed(controller.fullSpeed);
     });
-
+  //end of Hobbies Carousel logic
 
 //////////////////////////////////////////////////////////////////////////
   // START of nav scroll animation
@@ -441,7 +407,7 @@ currentWindow
 //         // Scrolling speed management
 //         var controller = {curSpeed:0, fullSpeed:2};
 //         var $controller = $(controller);
-//         var tweenToNewSpeed = function(newSpeed, duration)
+//         var newSpeed = function(newSpeed, duration)
 //         {
 //             if (duration === undefined)
 //                 duration = 600;
@@ -450,9 +416,9 @@ currentWindow
 
 //         // Pause on hover
 //         scroller.hover(function(){
-//             tweenToNewSpeed(0);
+//             newSpeed(0);
 //         }, function(){
-//             tweenToNewSpeed(controller.fullSpeed);
+//             newSpeed(controller.fullSpeed);
 //         });
 
 //         // Scrolling management; start the automatical scrolling

@@ -14,7 +14,7 @@ body {
   right: 0;
   bottom: 0;
   background-color: #fff;  
-  z-index: 99999; /* makes sure it stays on top */
+  z-index: 999999999999; /* makes sure it stays on top */
   border: 20px solid  black; 
 }
 
@@ -261,7 +261,7 @@ h5 {
   padding-bottom: 175px;
 }
 
-@media only screen and (max-width: 989px){
+@media only screen and (max-width: 992px){
   #index-banner-pic-container {
     padding-bottom: 175px;
     width: 60%;
@@ -276,7 +276,7 @@ h5 {
   }
 }
 
-@media only screen and (max-width: 1080px) and (min-width: 990px){
+@media only screen and (max-width: 1080px) and (min-width: 993px){
   #professional-pic {
     margin-top: 80%;
   }
@@ -416,45 +416,6 @@ a.navOption.active {
   }
 }
 
-.carouselSize {
-  height: 185px !important;
-  width: 240px !important;
-  margin-bottom: 50px;
-}
-
-.owl-carousel .item {
-  margin: 10px;
-}
-.owl-carousel .item img {
-  display: inline;
-  margin: 30px 50px;
-}
-
-@media only screen and (min-width: 1255px) {
-  .owl-carousel .item img:hover {
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
-    z-index: 9999999;
-    -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
-    box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
-  }
-}
-
-div.owl-dot.active {
-  color: #e09c0a;
-}
-
-@media only screen and (max-width: 601px) {
-  .carouselSize {
-    height: 200px !important;
-    width: 250px !important;
-  }
-}
-
 #mobile-nav li a {
   color: white;
 }
@@ -545,6 +506,76 @@ a.resume-nav.btn:hover  {
   right: 0;
 }
 
+
+/*//////////////////////////////////////////////////////////////////////////*/
+/*Hobbies Carousel Style && Animation:*/
+/*//////////////////////////////////////////////////////////////////////////*/
+#scroller {
+  position: relative;
+  margin: 0 auto;
+  height: 250px;
+}
+
+#scroller .innerScrollArea {
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#scroller ul {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+#scroller li {
+  padding: 0;
+  margin-top: 40px;
+  margin-left: 140px;
+  list-style-type: none;
+  position: absolute;
+}
+
+.hobbiesCarousel {
+  width: 70px;
+  height: 70px;
+}
+
+.innerScrollArea img {
+  height: 200px !important;
+  width: 200px !important;
+  z-index: 99;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.innerScrollArea img:hover {
+  overflow: visible;
+/*  height: 400px !important;
+  width: 400px !important;
+  z-index: 9999999999;*/
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+  -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+/*.caption {
+  margin-top: 10px;
+  text-align: center;
+}*/
+
+
 /*//////////////////////////////////////////////////////////////////////////*/
 /*Video Animation:*/
 /*//////////////////////////////////////////////////////////////////////////*/
@@ -568,10 +599,10 @@ a.resume-nav.btn:hover  {
   transition: width .2s ease-in-out, height .2s ease-in-out, transform .38s ease-in-out;
 }
 
-/** Use .sticky */
+/**.sticky class -> dynamic controller */
 #video-player.is-sticky {
   transition: width .2s ease-in-out, height .2s ease-in-out, transform .38s ease-in-out;
-  z-index: 999999;
+  z-index: 99999;
   position: fixed;
   bottom: 0;
   right: 0;
@@ -579,30 +610,83 @@ a.resume-nav.btn:hover  {
   max-height: 258px;
   width: 380px;
   height: 258px;
-}
-
-#video-player:hover {
-
+  margin-right: -11px;
+  margin-bottom: -28px;
 }
 
 #vidOverlay:hover .overlay {
-  height: 10%;
+  height: 12%;
+}
+
+#controlPlay {
+  font-size:3em;
+}
+
+#controlPause {
+  font-size:3em;
+}
+
+#closeBtn {
+  position: fixed;
+  bottom: 5px;
+  right: 10px;
+  color: white;
+  font-size: 25px;
+  z-index: 9999999;
+}
+
+@media screen and (max-width: 400px) {
+    #vidOverlay:hover .overlay {
+    height: 23%;
+  }
+
+  #controlPlay {
+    font-size:1.3em;
+  }
+
+  #controlPause {
+    font-size:1.9em;
+  }
+}
+
+@media screen and (max-width: 500px) and (min-width: 401px)  {
+    #vidOverlay:hover .overlay {
+    height: 19%;
+  }
+
+  #controlPlay {
+    font-size:2.3em;
+  }
+
+  #controlPause {
+    font-size:2.3em;
+  }
+}
+
+@media screen and (max-width: 600px) and (min-width: 501px)  {
+  #controlPlay {
+    font-size:2.3em;
+  }
+
+  #controlPause {
+    font-size:2.3em;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  #featured-video.is-sticky {
+      transform: translateX(-80%);
+  }
+
+  #vidOverlay:hover .overlay {
+    height: 8%;
+  }
 }
 
 @media screen and (min-width: 1300px) {
    #featured-video.is-sticky {
       transform: translateX(-115%);
    }
-}
-
-@media screen and (min-width: 1120px) {
-   #featured-video.is-sticky {
-      transform: translateX(-80%);
-   }
-
-   #vidOverlay:hover .overlay {
-    height: 12%;
-  }
 }
 
 /*//////////////////////////////////////////////////////////////////////////*/
@@ -755,10 +839,6 @@ a.z-link {
   border: 20px solid #e09c0a;
 }
 
-/*div.service {
-  background-color: #e6a32e;
-}*/
-
 #services-header {
   color: #e6a32e;
   text-align: center;
@@ -766,13 +846,24 @@ a.z-link {
 
 .card.services {
   background-color: #070927;
-  border: 10px solid #e6a32e; /*//white*/
+  border: 10px solid #e6a32e;
+  /*height: 100%;*/
 }
 
 #service-row2 .card.services {
+  color: white;
   height: 450px;
   width: 100%;
   margin: 5px;
+}
+
+#service-row2 .card.services:hover {
+  color: #e6a32e;
+  -webkit-transform: scale(1.25, 1.25);
+  transform: scale(1.25, 1.25);
+  transition: .1s transform linear, .1s height linear .1s;
+  transform: translateX(0);
+  border-color: #fff; 
 }
 
 #service-row1 {
@@ -790,16 +881,16 @@ a.z-link {
 }*/
 
 
-@media only screen and (max-width: 330px) and (min-width: 301px){
+@media only screen and (max-width: 340px) and (min-width: 301px){
   #service-row2 .card.services {
-    height: 650px;
+    height: 685px;
   }
   #services-header h1 {
     font-size: 2.8em;
   }
 }
 
-@media only screen and (max-width: 390px) and (min-width: 331px){
+@media only screen and (max-width: 370px) and (min-width: 341px){
   #service-row2 .card.services {
     height: 650px;
   }
@@ -808,13 +899,39 @@ a.z-link {
   }
 } 
 
-@media only screen and (max-width: 424px) and (min-width: 391px){
+@media only screen and (max-width: 424px) and (min-width: 371px){
   #service-row2 .card.services {
-    height: 650px;
+    height: 550px;
   }
 } 
 
-@media only screen and (max-width: 700px) and (min-width: 600px){
+@media only screen and (max-width: 600px) and (min-width: 425px){
+  #service-row2 .card.services {
+    height: 450px;
+  }
+} 
+
+@media only screen and (max-width: 685px) and (min-width: 601px){
+  #services h6 {
+    margin-top: 10%;
+  }
+
+  #service-row2 .card.services {
+    height: 700px;
+  }
+
+  #service-row2 #thirdRow {
+    height: 550px;
+  }
+}
+
+@media only screen and (max-width: 685px) and (min-width: 601px){
+  #service-row2 #thirdRow {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 710px) and (min-width: 686px){
   #services h6 {
     margin-top: 10%;
   }
@@ -828,7 +945,21 @@ a.z-link {
   }
 }
 
-@media only screen and (max-width: 1000px) and (min-width: 701px){
+@media only screen and (max-width: 774px) and (min-width: 711px){
+  #services h6 {
+    margin-top: 10%;
+  }
+
+  #service-row2 .card.services {
+    height: 550px;
+  }
+
+  #service-row2 #thirdRow {
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 848px) and (min-width: 775px){
   #services h6 {
     margin-top: 10%;
   }
@@ -842,11 +973,78 @@ a.z-link {
   }
 }
 
-@media only screen and (max-width: 1150px) and (min-width: 1000px){
+@media only screen and (max-width: 934px) and (min-width: 849px){
+  #services h6 {
+    margin-top: 10%;
+  }
+
+  #service-row2 .card.services {
+    height: 450px;
+  }
+
+  #service-row2 #thirdRow {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 992px) and (min-width: 935px){
+  #service-row2 .card.services {
+    height: 400px;
+  }
+
+  #service-row2 #thirdRow {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 1020px) and (min-width: 993px){
+  #service-row2 .card.services {
+    height: 650px;
+  }
+}
+
+@media only screen and (max-width: 1070px) and (min-width: 1021px){
   #service-row2 .card.services {
     height: 600px;
   }
 }
+
+@media only screen and (max-width: 1101px) and (min-width: 1071px){
+  #service-row2 .card.services {
+    height: 575px;
+  }
+}
+
+@media only screen and (max-width: 1116px) and (min-width: 1102px){
+  #service-row2 .card.services {
+    height: 575px;
+  }
+}
+
+@media only screen and (max-width: 1145px) and (min-width: 1117px){
+  #service-row2 .card.services {
+    height: 525px;
+  }
+}
+
+@media only screen and (max-width: 1252px) and (min-width: 1146px){
+  #service-row2 .card.services {
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 1430px) and (min-width: 1253px){
+  #service-row2 .card.services {
+    height: 425px;
+  }
+}
+
+@media only screen and (max-width: 1463px) and (min-width: 1431px){
+  #service-row2 .card.services {
+    height: 405px;
+  }
+}
+
 
 /*//////////////////////////////////////////////////////////////////////////*/
 /*Activity Timeline Animation:*/

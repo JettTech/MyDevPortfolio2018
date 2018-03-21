@@ -125,9 +125,9 @@
                 <source id="featured-video" src="./assets/img/movieIntro_V1.mp4" type="video/mp4" class="content-media__object" />
             </video>
             <div id="controlsOverlay" class="overlay" style="position:absolute; opacity:.25; bottom:0;">
-                <span style="position:absolute; bottom:2%; left:50%"><i id="controlPause" onclick="videoMode()" class="material-icons" style="color:white; font-weight:bold; font-size:3em; margin:0px; padding:0px;">pause_circle_outline</i>
+                <span style="position:absolute; bottom:1%; left:50%"><i id="controlPause" onclick="videoMode()" class="material-icons" style="color:white; font-weight:bold; margin:0px; padding:0px;">pause_circle_outline</i>
                 </span>
-                <span style="position:absolute; bottom:2%; left:50%"><i id="controlPlay" onclick="videoMode()" class="material-icons" style="color:white; font-weight:bold; font-size:3em; margin:0px; padding:0px;">play_circle_outline</i>
+                <span style="position:absolute; bottom:1%; left:50%"><i id="controlPlay" onclick="videoMode()" class="material-icons" style="color:white; font-weight:bold; margin:0px; padding:0px;">play_circle_outline</i>
                 </span>
             </div>
         </div>
@@ -137,7 +137,7 @@
         <div class="portfolio" style="background-color: #070927"> 
             <div class="row">
                 <div id="portfolio" onmouseover="activeSection(this);"> <!-- class="intro" -->
-                    <h3 class="header center grey-text text-lighten-4">Curious about my projects? <br/> Take a look at some of my <span style="color:#e09c0a">ideas</span>.</h3>
+                    <h3 class="header center grey-text text-lighten-4">Curious about my projects? <br/> Take a look at some of my <span style="color:#e09c0a">ideas</span></h3>
 
                     <br>
                     <hr/>
@@ -439,44 +439,66 @@
         
                 <div id="scroller">
                     <div class="innerScrollArea">
-                        <div class="item carousel-item" ><img class="carouselSize" src="./assets/img/GroupWAlex.JPG"></div>
-                        <div class="item carousel-item" ><img class="carouselSize" src="./assets/img/winnersSmile2.jpg"></div> 
-                        <div class="item carousel-item" ><img class="carouselSize" src="./assets/img/DWbadge.jpg"></div>
-                        <div class="item carousel-item" ><img class="carouselSize" src="./assets/img/ChicktechGear.jpg"></div>
-                        <div class="item carousel-item" ><img class="carouselSize" src="./assets/img/ACTW_Conf_main.jpg"></div>
-                        <div class="item carousel-item" ><img class="carouselSize" src="./assets/img/womenwhocodePostIt.jpg"></div>
-                        <div class="item carousel-item" ><img class="carouselSize" src="./assets/img/DevWeek17Presentation.jpg"></div>
-                        <div class="item carousel-item" ><img class="carouselSize" src="./assets/img/GoogleWIT_roundUp.jpg"></div> 
-                        <div class="item carousel-item" ><img class="carouselSize" src="./assets/img/designweek17.jpg"></div> 
-                        <div class="item carousel-item" ><img class="carouselSize" src="./assets/img/ibmworkshop-designweek.jpg"></div>
-                        <div class="item carousel-item" ><img class="carouselSize" src="./assets/img/DevWeek17_VRvevo.jpg"></div>  
-                        <div class="item carousel-item" ><img class="carouselSize" src="./assets/img/civicHack.png"></div> 
-                        <div class="item carousel-item" ><img class="carouselSize" src="./assets/img/stickers.jpg"></div>
+                        <ul>
+                            <li><div class="hobbiesCarousel">
+                                <img src="./assets/img/GroupWAlex.jpg" alt="WWC Hackathon">
+                                <!-- <div class="caption"><p>Women Who Code (WWC) Diversity Hackathon Team</p></div></div> -->
+                            </li>
+                            <li><div class="hobbiesCarousel">
+                                <img src="./assets/img/winnersSmile2.jpg" alt="WWC Winners">
+                                <!-- <div class="caption"><p>Winners of the Zoe Quinn Award</p></div></div> -->
+                            </li>
+                            <li><div class="hobbiesCarousel">
+                                <img src="./assets/img/DWbadge.jpg" alt="Developer Week Badge">
+                                <!-- <div class="caption"><p>Austin Developer Week 2017 Badge</p></div></div> -->
+                            </li>
+                            <li><div class="hobbiesCarousel">
+                                <img src="./assets/img/ChicktechGear.jpg" alt="Chicktech Swag">
+                                <!-- <div class="caption"><p>Chicktech Swag</p></div></div> -->
+                            </li>
+                            <li><div class="hobbiesCarousel">
+                                <img src="./assets/img/ACTW_Conf_main.jpg" alt="ACT-W Conf">
+                                <!-- <div class="caption"><p>Austin Council for Technology, Women's (ACT-W) Conference</p></div></div> -->
+                            </li>
+                            <li><div class="hobbiesCarousel">
+                                <img src="./assets/img/womenwhocodePostIt.jpg" alt="WWC Post-it Board">
+                                <!-- <div class="caption"><p>Women Who Code (WWC) Thought Board</p></div></div> -->
+                            </li>
+                            <li><div class="hobbiesCarousel">
+                                <img src="./assets/img/DevWeek17Presentation.jpg" alt="Developer Week Keynote">
+                                <!-- <div class="caption"><p>Austin Developer Week Keynote</p></div></div> -->
+                            </li>
+                            <li><div class="hobbiesCarousel">
+                                <img src="./assets/img/GoogleWIT_roundUp.jpg" alt="Women-In-Tech Roundup Badge">
+                                <!-- <div class="caption"><p>Google's Women-In-Tech Roundup Badge</p></div></div> -->
+                            </li>
+                            <li><div class="hobbiesCarousel">
+                                <img src="./assets/img/designweek17.jpg" alt="Design Week 2017">
+                                <!-- <div class="caption"><p>Austin Design Week 2017 Welcoming Committee</p></div></div> -->
+                            </li>
+                            <li><div class="hobbiesCarousel">
+                                <img src="./assets/img/ibmworkshop-designweek.jpg" alt="Design Week IBM Workshop">
+                                <!-- <div class="caption"><p>IBM Design Workshop</p></div></div> -->
+                            </li>
+                            <li><div class="hobbiesCarousel">
+                                <img src="./assets/img/DevWeek17_VRvevo.jpg" alt="Developer Week 2017 VR">
+                                <!-- <div class="caption"><p>Austin Developer Week VR Demonstration</p></div></div> -->
+                            </li>
+                            <li><div class="hobbiesCarousel">
+                                <img src="./assets/img/civicHack.png" alt="McCombs 3P Civic Hackathon">
+                                <!-- <div class="caption"><p>McCombs School of Business' 3P Civic Hackathon</p></div></div> -->
+                            </li>
+                            <li><div class="hobbiesCarousel">
+                                <img src="./assets/img/stickers.jpg" alt="ACT + Chicktech Swag">
+                                <!-- <div class="caption"><p>Austin Council for Technology-Women Swag</p></div></div> -->
+                            </li>
+                        </ul>
                     </div> 
                 </div>
-                          
-
-                <!-- <div id="carousel-container" class="row" style="margin-bottom: 0px; padding-bottom: 60px; position: relative; right: 5%;">
-                    <div class="col s11 carousel"> --> <!--  data-indicators="true" -->
-                        <!-- <a class="carousel-item" href="#one!"><img class="carouselSize" src="./assets/img/GroupWAlex.JPG"></a>
-                        <a class="carousel-item" href="#two!"><img class="carouselSize" src="./assets/img/winnersSmile2.jpg"></a> 
-                        <a class="carousel-item" href="#five!"><img class="carouselSize" src="./assets/img/DWbadge.jpg"></a>
-                        <a class="carousel-item" href="#seven!"><img class="carouselSize" src="./assets/img/ChicktechGear.jpg"></a>
-                        <a class="carousel-item" href="#eight!"><img class="carouselSize" src="./assets/img/ACTW_Conf_main.jpg"></a>
-                        <a class="carousel-item" href="#nine!"><img class="carouselSize" src="./assets/img/womenwhocodePostIt.jpg"></a>
-                        <a class="carousel-item" href="#ten!"><img class="carouselSize" src="./assets/img/DevWeek17Presentation.jpg"></a>
-                        <a class="carousel-item" href="#eleven!"><img class="carouselSize" src="./assets/img/designweek17.jpg"></a> 
-                        <a class="carousel-item" href="#twelve!"><img class="carouselSize" src="./assets/img/GoogleWIT_roundUp.jpg"></a> 
-                        <a class="carousel-item" href="#thriteen!"><img class="carouselSize" src="./assets/img/ibmworkshop-designweek.jpg"></a>
-                        <a class="carousel-item" href="#fourteen!"><img class="carouselSize" src="./assets/img/DevWeek17_VRvevo.jpg"></a>  
-                        <a class="carousel-item" href="#fifteen!"><img class="carouselSize" src="./assets/img/civicHack.png"></a> 
-                        <a class="carousel-item" href="#three!"><img class="carouselSize" src="./assets/img/stickers.jpg"></a>   -->             
-<!--                     </div>
-                </div> -->
-
              <!--End Activity/Hobby Carousel-->
-
-                <container class="timeline white-text">
+            
+            <!--Start Activity Timeline-->
+                <container class="timeline white-text clearfix">
                   <ul style="margin-bottom: 0px; padding-bottom: 80px;">
                     <li>
                       <div>
@@ -537,7 +559,7 @@
         <!--End Parallax-->
 
 
-      <!--   <article> -->
+      <!-- Start About-Me Section -->
             <article id="index-banner2" style="background-color: #070927" onmouseover="activeSection(this);"> <!-- //id="image-animation" -->
                 <div class="row" style="margin-bottom: 0px">
                     <div class="col s12 l8 left">
@@ -568,12 +590,12 @@
             </article>
 
 
-                <!-- Start Experience / Service -->
+                <!-- Start Experience -->
                 <section id="services" class="section">
                     <div class="container service" style="width: 90%">
                         <div id="service-row1" class="row">
                             <div class="col s12">
-                                <!-- Single Service -->
+                                <!-- Start Experience -->
                                 <div class="card services" style="background-color: #070927">
                                     <div id="services-header" class="card-content">
                                       <span class="card-title">
@@ -585,60 +607,60 @@
                                       <h5>While enrolled in the UT Austin Full Stack Bootcamp this past year, I paired with partners as well as lead teams as project manager to accomplish our project goals. I am always learning and seeking out channels to develop test-driven applications and interactive User Interface (UI) web designs. Discovering the needs and methods to create a dynamic user experience (UX) in a secure way, has made me a more knowledgeable programmer. Below, are insights into the three main roles I've held while building my recent web applications. </h5>
                                     </div>
                                 </div>
-                                <!-- End Single Service -->
+                                <!-- End Experience -->
                             </div>
                         </div>
 
 
                         <div id="service-row2" class="row">
                             <div class="col s12 m6 l4">
-                                <!-- Single Service -->
+                                <!-- Start Experience -->
                                     <div class="card services">
-                                        <div class="card-content white-text ">        
+                                        <div class="card-content ">        
                                           <span class="card-title">
                                             <h4>Web Designer</h2>
                                           </span>
                                           <hr style="border:1px solid #e09c0a" />
-                                          <h6 style="font-size: 20px">Focusing on an animated, interactive, and responsive UI is key.  Learning how to create eye-catching designs with an intuitive application flow is a very nuanced art, which I have discovered requres much research, feild study, and mock user trials. During this process, my teams and I have made use of paper prototyping and image mirroring tools, like Figma. </h6>
+                                          <h6 style="font-size: 20px; color:white;">Focusing on an animated, interactive, and responsive UI is key.  Learning how to create eye-catching designs with an intuitive application flow is a very nuanced art, which I have discovered requres much research, feild study, and mock user trials. During this process, my teams and I have made use of paper prototyping and image mirroring tools, like Figma. </h6>
                                         </div>
                                     </div>
-                                <!-- End Single Service -->
+                                <!-- End Experience -->
                             </div>
 
                             <div class="col s12 m6 l4">
-                                <!-- Single Service -->
+                                <!-- Start Experience -->
                                 <div class="card services">
-                                  <div class="card-content white-text">
+                                  <div class="card-content">
                                       <span class="card-title">
                                         <h4>Web Developer</h2>
                                       </span>                               
                                       <hr style="border:1px solid #e09c0a" />
-                                      <h6 style="font-size: 20px">Function, performance, and efficiency are key components when developing new products. Strong security is also a tenant of modern development, as it protects application data and user identity, and encourages customer loyalty. While learning to develop apps with each of these facets in mind, I became familiar with wireframing tools, prototyping styles, and CoffeeScript test suites.</h6>
+                                      <h6 style="font-size: 20px; color:white;">Function, performance, and efficiency are key components when developing new products. Strong security is also a tenant of modern development, as it protects application data and user identity, and encourages customer loyalty. While learning to develop apps with each of these facets in mind, I became familiar with wireframing tools, prototyping styles, and CoffeeScript test suites.</h6>
                                   </div>
                                 </div>
-                                <!-- End Single Service -->
+                                <!-- End Experience -->
                             </div>
 
                             <div class="col s12 offset-m2 m8 offset-m2 l4">
-                                <!-- Single Service -->
+                                <!-- Start Experience -->
                               <div id="thirdRow" class="card services">
-                                <div class="card-content white-text">
+                                <div class="card-content">
                                   <span class="card-title">
                                     <h4>Project Manager</h2>
                                   </span>                            
                                   <hr style="border:1px solid #e09c0a" />
-                                  <h6 style="font-size: 20px">Nimbleness is key when creating innovative projects within strict deadlines. I strive to work alongside teammates with the Agile approch in mind. In past projects, my team and I sought out tools to streamline and clarify communciation; we made use of task organizers and admin communication tools such as Github Project or Trello, and always made sure to sort our backlog by priority. </h6>
+                                  <h6 style="font-size: 20px; color:white;">Nimbleness is key when creating innovative projects within strict deadlines. I strive to work alongside teammates with the Agile approch in mind. In past projects, my team and I sought out tools to streamline and clarify communciation; we made use of task organizers and admin communication tools such as Github Project or Trello, and always made sure to sort our backlog by priority. </h6>
                                 </div>
                               </div>
-                                <!-- End Single Service -->
+                                <!-- End Experience -->
                             </div>
                         </div>
                     </div>
                 </section>
-                <!--/ End Experience/ Service -->
+                <!--/ End Experience -->
 
             </div>
-    <!--     </article> -->
+    <!-- End About-Me Section -->
 
 
         <!--Start Parallax-->
@@ -732,26 +754,18 @@
               $("#controlPause").show();
             }, 5000 );
 
-            ////////////////////*************************************************************************************///////////////
+            function endVideo() {
+                if( video.ended === true ) {
+                    console.log("video.ended is recognized === true")
+                    video.pause();
+                    $("#controlPause").hide();
+                    $("#controlPlay").show();
+                }
+                console.log("InSIDE the endVideo Function: video.ended === " + video.ended);
+            }
 
-            function callback() {
-              console.log("Inside the callback fn >> video.ended === " + video.ended);
-              endVideo();
-            };
-
-            ////////////////////*************************************************************************************///////////////
-
-            console.log("video.ended === " + video.ended);
+            console.log("Outside endVideo Fn: video.ended === " + video.ended);
         };
-
-        function endVideo() {
-            if( video.ended === true ) {
-                console.log("video.ended is recognized === true")
-                video.pause();
-                $("#controlPause").hide();
-                $("#controlPlay").show();
-            } 
-        }
 
         function videoMode() {
             if (playMode === true) {
@@ -785,25 +799,32 @@
           var video = document.getElementById("video-player");
           // console.log("video.ended === " + video.ended);
           if (scrollTop >= 450 && playMode === true && video.ended === false ) {
-            // console.log("in the on scroll function!");
             featuredVideo.addClass("is-sticky");
-            featuredVideo.addClass("shadow-container");
-            featuredVideo.append("<div class='shadow-container'><span><i class='material-icons'>close</i></span></div>");
-            console.log("should have appended the pause div...");   
+            
+            var closeBtn = $("<i>close</i>");
+            closeBtn.attr({
+                id: 'closeBtn',
+                class: 'material-icons'
+            });    
+            var closeSection = $("<div></div>");
+            closeSection.attr("id", "closeSection");
+            $("#closeSection").append(closeBtn);
 
-            $("#video-player")
-                .on("mouseover", function() {
-                    videoMode();
-                })
-                .on("mouseout", function() {
-                    videoMode();
-                })   
-            } 
-            else {
+            $("#closeSection").click(function() {
+               console.log("inside the closebtn click eventhandler fn...")
+               video.pause();
+               playMode = false; // turn switch off
+               $("#controlPause").hide();
+               $("#controlPlay").show();
+               featuredVideo.removeClass("is-sticky");
+            });
+
+            $("body").append(closeSection);
+          } 
+          else {
                 featuredVideo.removeClass("is-sticky");
-                featuredVideo.removeClass("shadow-container");            
-            }
-          // console.log("The featuredVideo has the 'is-sticky' class = " + featuredVideo.hasClass("is-sticky"));    
+                $("#closeSection").empty();
+          }  
         }); 
 
        // End Video Control Logic
