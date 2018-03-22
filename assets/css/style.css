@@ -696,6 +696,12 @@ a.resume-nav.btn:hover  {
   text-align: right;
 }
 
+i.material-icons.right {
+ padding-top: 2px; 
+  font-size: 1.5rem;
+  color: black;
+}
+
 div.card-action.strong {
   margin-left: -15px;
 }
@@ -766,6 +772,12 @@ div.card-action.strong {
   visibility: visible;
 }
 
+.shadow-container:hover .overlay h5 {
+  color: #f7bf10;
+  font-weight: bold;
+  visibility: visible;
+}
+
 .shadow-container:hover .overlay::after {
   /*position: absolute;
   bottom: 100%;
@@ -794,12 +806,6 @@ div.card-action.strong {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
   visibility: visible;
-}
-
-i.material-icons.right {
- padding-top: 2px; 
-  font-size: 1.5rem;
-  color: black;
 }
 
 img.info {

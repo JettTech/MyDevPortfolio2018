@@ -120,7 +120,7 @@
         <!--End Introduction-->
 
     <!--Start Movie Intro-->
-        <div id="vidOverlay" class="row intro-header shadow-container" style="width:100%; margin-bottom:0px;"> <!-- class="canvas" -->
+        <div id="vidOverlay" class="row intro-header shadow-container" style="width:100%; margin-bottom:0px;">
             <video id="video-player" onclick="videoMode()" class="col s12" autoplay="autoplay" preload="metadata" fullWidth="true" class="content-media content-media--video">
                 <source id="featured-video" src="./assets/img/movieIntro_V1.mp4" type="video/mp4" class="content-media__object" />
             </video>
@@ -137,45 +137,42 @@
         <div class="portfolio" style="background-color: #070927"> 
             <div class="row">
                 <div id="portfolio" onmouseover="activeSection(this);"> <!-- class="intro" -->
-                    <h3 class="header center grey-text text-lighten-4">Curious about my projects? <br/> Take a look at some of my <span style="color:#e09c0a">ideas</span></h3>
+                    <h3 class="header center grey-text text-lighten-4">Curious about my projects? 
+                        <br/> 
+                        Take a look at some of my <span style="color:#e09c0a">ideas</span></h3>
 
-                    <br>
                     <hr/>
-
-                    <br>
-                    <br>
-
-                    <!-- First Row - PORTFOLIO -->
-                    <div class="row">
-                        <div class="article">
+                    <br/>
+                    <br/>
+       <!-- First Row - PORTFOLIO -->
+<!--                     <div class="row">
+                        <div class="article"> -->
                             <!-- 1 -->
-                            <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
+<!--                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
                                         <img class="img-fluid card-pic" src="./assets/img/m-2d_Pic.jpeg">
                                     </div>
                                     <div class="card-action current-card">
-                                        <span class="card-title activator grey-text text-darken-4"><strong class="cardTitle" >Mavens &#x26; Mavericks</strong>
+                                        <span id="cardComments" class="card-title activator grey-text text-darken-4">
+                                            <strong class="cardTitle" >Mavens &#x26; Mavericks</strong>
                                             <i onclick="viewCard(this)" class="material-icons right">arrow_upward</i>
-
-                                            <a data-fancybox="portfolio-group" data-animation fancybox-slide  duration="700" data-src="#animatedModal1" href="javascript:;"><img class="info" src="./assets/img/info.png" alt="info" /></a>
-
-                                            <a target="_blank" href="https://mavens-and-mavericks.herokuapp.com/"><span><img class="link" src="./assets/img/link.png" alt="link" /></span></a>
                                         </span>
                                     </div>
                                     <div class="card-reveal">
-                                        <span class="card-title grey-text text-darken-4"><strong>Mavens and Mavericks</strong><i onclick="closeCard(this)" class="material-icons right">close</i></span>
+                                        <span class="card-title grey-text text-darken-4">
+                                            <strong>Mavens and Mavericks</strong>
+                                            <i onclick="closeCard(this)" class="material-icons right">close</i>
+                                        </span>
                                         <p>Full Stack social media app that pairs mentors and mentees together to foster growth and help individuals discern how their personal abilities can improve a company or impact an industry throughout their career. Matching is completed through sorting logic based on a user’s career level, industry experience, and coding languages of choice.  This web app is built with React, Node.js, Express, Axios, ES6 JavasScript, CSS3, Bootstrap, Materialize and Mongoose.</p>
                                     </div>
                                     <div class="overlay">
                                         <p class="text">
-                                            <a class="z-link" target="_blank" href="https://mavens-and-mavericks.herokuapp.com/">Visit App</a>
-                                            |
-                                            <a class="z-link" target="_blank" href="https://github.com/MavensAndMavericks/Mavens_and_Mavericks">See Code</a>
+                                            <h5 class="text-center">Welcome to personalized mentorship.</h5>
                                         </p>
-                                    </div>
+                                    </div> -->
                                     <!-- FancyBox/Modal Structure -->
-                                    <div style="display: none;" id="animatedModal1" class="animated-modal">
+<!--                                     <div style="display: none;" id="animatedModal1" class="animated-modal">
                                         <h2>Bonjour</h2>
                                         <p>Cool content, right?</p>
                                         <div class="card-image waves-effect waves-block waves-light">
@@ -185,48 +182,141 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div> -->
+
+<!--                                     <a data-fancybox="portfolio-group" data-animation fancybox-slide  duration="700" data-src="#animatedModal1" href="javascript:;"><img class="info" src="./assets/img/info.png" alt="info" /></a>
+
+                                    <a target="_blank" href="https://mavens-and-mavericks.herokuapp.com/"><span><img class="link" src="./assets/img/link.png" alt="link" /></span></a> -->
+
+     <!-- First Row - PORTFOLIO -->
+                    <div class="row">
+                        <div class="article">
+                            <!-- 1 -->
+                            <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
+                                <div class="card sticky-action">
+                                    <div class="card-image waves-effect waves-block waves-light">
+                                        <img class="activator img-fluid card-pic" src="./assets/img/m-2d_Pic.jpeg">
+                                    </div>
+                                    <div class="card-action current-card">
+                                        <span class="card-title activator grey-text text-darken-4">
+                                            <strong class="cardTitle" >Mavens &#x26; Mavericks</strong>
+                                            <i onclick="viewCard(this)" class="material-icons right">arrow_upward</i>
+                                        </span>
+                                    </div>
+                                    <div class="card-reveal">
+                                        <span class="card-title grey-text text-darken-4">
+                                            <strong>Mavens and Mavericks</strong>
+                                            <i onclick="closeCard(this)" class="material-icons right">close</i>
+                                        </span>
+                                        <br/>
+                                        <a class="text-center" data-fancybox="portfolio-group" data-animation fancybox-slide  duration="700" data-src="#animatedModal1" href="javascript:;"><img class="info" src="./assets/img/info.png" alt="info" /></a>
+                                        <a class="text-center" target="_blank" href="https://mavens-and-mavericks.herokuapp.com/"><span><img class="link" src="./assets/img/link.png" alt="link" /></span></a>
+                                        <br/>
+
+                                        <p class="text-center">Full Stack social media app that pairs mentors and mentees together to foster growth and help individuals discern how their personal abilities can improve a company or impact an industry throughout their career. Matching is completed through sorting logic based on a user’s career level, industry experience, and coding languages of choice.  This web app is built with React, Node.js, Express, Axios, ES6 JavasScript, CSS3, Bootstrap, Materialize and Mongoose.</p>
+                                    </div>
+                                    <div class="overlay">
+                                        <p class="text">
+                                            <a>Welcome to Personalized Mentorship.</a>
+                                        </p>
+                                    </div>
+                                    <!-- FancyBox/Modal Structure -->
+                                    <div style="display: none;" id="animatedModal1" class="animated-modal">
+                                        <div class="row">
+                                            <div class="col s12">
+                                                <h2 style="text-align:center;"><strong>Mavens &#x26; Mavericks</strong></h2>
+                                                <hr style="border:1px solid #e09c0a"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col s6">
+                                                <video class="projectvid" controls muted loop preload="metadata" onload="pause()">
+                                                    <source src="./assets/img/MavensandMavericksVideoTrim.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+
+                                            <div class="col s6">
+                                                <p><strong>Goal:</strong> To pair mentors and mentees together to disciple motivated talent, update seasoned leaders' industry knowledge, and culitvate lasting relationships within the feild of computer science.</p>
+                                                <p><strong>Role:</strong> Full Stack Developer, UX Designer</p>
+                                                <p><strong>Technoglogies Used:</strong> React, Node.js, Express, Axios, ES6 JavasScript, CSS3, Bootstrap, Materialize and Mongoose.</p>
+                                                <p><strong>Greatest Difficulty Overcome:</strong> Navigating team dynamics, outside dependancies, ...etc.</p>
+                                                
+                                                <div class="row">
+                                                    <div class="col offset-s4 s4 offset-s4" style="margin-top:1%">
+                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://github.com/MavensAndMavericks/Mavens_and_Mavericks" style="background-color:#e09c0a"><i class="material-icons">info_outline</i></a>
+                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://mavens-and-mavericks.herokuapp.com/" style="background-color:#070927"><i class="material-icons">insert_link</i></a>
+                                                    </div>
+                                                </div>   
+                                            </div>
+                                        </div>                                            
+                                    </div>
+                                </div>
                             </div>
 
                             <!-- 2 -->
-<!--                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
+                            <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="img-fluid card-pic" src="./assets/img/SoundHoundPic.jpeg">
+                                        <img class="activator img-fluid card-pic" src="./assets/img/SoundHoundPic.jpeg">
                                     </div>
 
                                     <div class="card-action">
                                         <span class="card-title activator grey-text text-darken-4">
                                             <strong>Sound Hound</strong>
-                                            <i class="viewCard" onclick="viewCard()" class="material-icons right">arrow_upward</i>
-
-                                            <a data-fancybox="portfolio-group" data-animation fancybox-slide  duration="700" data-src="#animatedModal2" href="javascript:;"><img class="info" src="./assets/img/info.png" alt="info" /></a>
-
-                                            <a target="_blank" href="https://icebreakr2.herokuapp.com/"><span><img class="link" src="./assets/img/link.png" alt="link" /></span></a>
+                                            <i onclick="viewCard(this)" class="material-icons right">arrow_upward</i>
                                         </span>
                                     </div>
                                     <div class="card-reveal">
-                                        <span class="card-title grey-text text-darken-4"><strong>Sound Hound</strong><i class="closeCard" onclick="closeCard()" class="material-icons right">close</i></span>
+                                        <span class="card-title grey-text text-darken-4">
+                                            <strong>Sound Hound</strong>
+                                            <i onclick="closeCard()" class="material-icons right">close</i>
+                                        </span>
+                                        <a data-fancybox="portfolio-group" data-animation fancybox-slide  duration="700" data-src="#animatedModal2" href="javascript:;"><img class="info" src="./assets/img/info.png" alt="info" /></a>
+
+                                        <a target="_blank" href="https://icebreakr2.herokuapp.com/"><span><img class="link" src="./assets/img/link.png" alt="link" /></span></a>
+                                        <br/>
+
                                         <p>An interactive website that provides the user a means to search for both venue locations as well as favorite artists to learn when and where they are playing locally. This web app incorporates Google Maps and Eventbrite APIs to provide listing of ticket prices and locations of venues for navigation purposes. This app was developed in JavaScript, jQuery, HTML5, CSS3, and Bootstrap.</p>
                                     </div>
                                     <div class="overlay">
                                         <p class="text">
-                                            <a target="_blank" href="https://sound-hound.github.io/Sound-Hound-App/">Visit App</a>
-                                            |
-                                            <a target="_blank" href="https://github.com/Sound-Hound/Sound-Hound-App">See Code</a>
+                                            <a>Hunt down the music that makes you howl.</a>
                                         </p>
-                                    </div> -->
+                                    </div>
                                     <!-- FancyBox/Modal Structure -->
-        <!--                             <div style="display: none;" id="animatedModal2" class="animated-modal">
-                                        <h2>Hola!</h2>
-                                        <p>This is animated content! Cool, right?</p>
-                                        <div class="card-image waves-effect waves-block waves-light">
-                                            <video class="activator projectvid" autoplay="autoplay" loop preload="metadata">
-                                                <source src="./assets/img/SoundHoundVidTrim.mp4" type="video/mp4">
-                                            </video>
+                                    <div style="display: none;" id="animatedModal2" class="animated-modal">
+                                        <div class="row">
+                                            <div class="col s12">
+                                                <h2 style="text-align:center;"><strong>Sound Hound</strong></h2>
+                                                <hr style="border:1px solid #e09c0a"/>
+                                            </div>
                                         </div>
-                                    </div> -->
-<!--                                 </div>
-                            </div> -->
+
+                                        <div class="row">
+                                            <div class="col s6">
+                                                <video class="projectvid" controls muted loop preload="metadata" onload="pause()">
+                                                    <source src="./assets/img/SoundHoundVidTrim.mp4" type="video/mp4">
+                                                </video>
+                                            </div>
+
+                                            <div class="col s6">
+                                                <p><strong>Goal:</strong> ...</p>
+                                                <p><strong>Role:</strong> Project Manager, Frontend Developer</p>
+                                                <p><strong>Technoglogies Used:</strong> JavaScript, jQuery, HTML5, CSS3, and Bootstrap.</p>
+                                                <p><strong>Greatest Difficulty Overcome:</strong> Google, Yahoo/Eventbrite APIs, Team # change-up</p>
+                                                
+                                                <div class="row">
+                                                    <div class="col offset-s4 s4 offset-s4" style="margin-top:1%">
+                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://github.com/Sound-Hound/Sound-Hound-App" style="background-color:#e09c0a"><i class="material-icons">info_outline</i></a>
+                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://sound-hound.github.io/Sound-Hound-App/" style="background-color:#070927"><i class="material-icons">insert_link</i></a>
+                                                    </div>
+                                                </div>   
+                                            </div>
+                                        </div>                                            
+                                    </div>
+                                </div>
+                            </div>
 
                             <!-- 3 -->
                             <!-- <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container"> -->
@@ -278,18 +368,54 @@
                                         <img class="activator img-fluid card-pic" src="./assets/img/bamazonPic.jpg"> <!-- ./assets/img/bamazon_best.gif -->
                                     </div>
                                     <div class="card-action">
-                                        <span class="card-title activator grey-text text-darken-4"><strong>Bamazon Store</strong><i class="material-icons right">more_vert</i></span> 
+                                        <span class="card-title activator grey-text text-darken-4">
+                                            <strong>Bamazon Store</strong>
+                                            <i class="material-icons right">arrow_upward</i>
+                                        </span> 
                                     </div>
                                     <div class="card-reveal">
-                                        <span class="card-title grey-text text-darken-4"><strong>Bamazon Store</strong><i class="material-icons right">close</i></span>
+                                        <span class="card-title grey-text text-darken-4">
+                                            <strong>Bamazon Store</strong>
+                                            <i class="material-icons right">close</i>
+                                        </span>
+                                        <a class="text-center" data-fancybox="portfolio-group" data-animation fancybox-slide  duration="700" data-src="#animatedModal3" href="javascript:;"><img class="info" src="./assets/img/info.png" alt="info" /></a>
+                                        <br/>
+
                                         <p> A Node.js and MySQL app. This App allows shoppers to view the items for purchase, along with department, price and stock quantity, by solely using backend functionality.</p>
                                     </div>
                                     <div class="overlay">
                                         <p class="text">
-            <!--                                 <a target="_blank" href="">Node App</a>
-                                            | -->
-                                            <a target="_blank" href="https://github.com/JettTech/BamazonStore/">See Code</a>
+                                            <a>Databases and store inventories, like two peas in a pod.</a>
                                         </p>
+                                    </div>
+                                    <!-- FancyBox/Modal Structure -->
+                                    <div style="display: none;" id="animatedModal3" class="animated-modal">
+                                        <div class="row">
+                                            <div class="col s12">
+                                                <h2 style="text-align:center;"><strong>Bamazon Store</strong></h2>
+                                                <hr style="border:1px solid #e09c0a"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col s6">
+                                                <img width="100%" src="./assets/img/BamazonShot.png" alt="Bamazon Application Screenshot">
+                                            </div>
+
+                                            <div class="col s6">
+                                                <p><strong>Goal:</strong> ....</p>
+                                                <p><strong>Role:</strong> Sole Developer</p>
+                                                <p><strong>Technoglogies Used:</strong> Node.js, Express.js// and MySQL</p>
+                                                <p><strong>Greatest Difficulty Overcome:</strong> Learing how to research, correctly dissect, and efficently implement documentation for technogologies new to me at the time, including Express.js and MySQL.</p>
+                                                
+                                                <div class="row">
+                                                    <div class="col offset-s4 s4 offset-s4" style="margin-top:1%; margin-left:43%">
+                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://github.com/JettTech/BamazonStore/" style="background-color:#e09c0a"><i class="material-icons">info_outline</i></a>
+                                                    </div>
+                                                </div>
+                                                <p><em><strong>*Note: </strong>As this is purely a Node.js and MySQL Application, this application has backend functionality only.  Please checkout the Source Code and ReadMe on Github through the link above for pictures and descriptions.</em></p>  
+                                            </div>
+                                        </div>                                            
                                     </div>
                                 </div>
                             </div>
@@ -298,23 +424,57 @@
                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator img-fluid card-pic" src="./assets/img/burgersPic4.jpg"> <!-- ./assets/img/burger4.gif -->
+                                        <img class="activator img-fluid card-pic" src="./assets/img/burgersPic4.jpg">
                                     </div>
                                     <div class="card-action">
-                                        <span class="card-title activator grey-text text-darken-4"><strong>Burger Time</strong><i class="material-icons right">more_vert</i></span>
+                                        <span class="card-title activator grey-text text-darken-4"><strong>Burger Time</strong><i class="material-icons right">arrow_upward</i></span>
                                     </div>
                                     <div class="card-reveal">
-                                        <span class="card-title grey-text text-darken-4"><strong>Burger Time</strong><i class="material-icons right">close</i></span>
+                                        <span class="card-title grey-text text-darken-4">
+                                            <strong>Burger Time</strong>
+                                            <i class="material-icons right">close</i>
+                                        </span>
+                                        <a data-fancybox="portfolio-group" data-animation fancybox-slide  duration="700" data-src="#animatedModal4" href="javascript:;"><img class="info" src="./assets/img/info.png" alt="info" /></a>
+
+                                        <a target="_blank" href="https://morning-plains-55863.herokuapp.com/"><span><img class="link" src="./assets/img/link.png" alt="link" /></span></a>
+                                        <br/>
+
                                         <p>A full stack restaurant app that lets users input the names of burgers they'd like to eat, display their burger titles, and "eat" them, all within a few clicks. This app was created with MySQL, Node.js, Express.js, Handlebars, CSS3, Bootstrap, JavaScript, jQuery and a homemade ORM.</p>
                                     </div>
                                     <div class="overlay">
                                         <p class="text">
-                                            <a target="_blank" href="https://morning-plains-55863.herokuapp.com/">Visit App</a>
-                                            |
-                                            <a target="_blank" href="https://github.com/JettTech/Burger">See Code</a>
+                                            <a>Test out your tastebuds at this local cookout.</a>
                                         </p>
                                     </div>
-                                    <!-- p><a target="_blank" href="https://morning-plains-55863.herokuapp.com/">Visit app</a></p> -->
+                                    <!-- FancyBox/Modal Structure -->
+                                    <div style="display: none;" id="animatedModal4" class="animated-modal">
+                                        <div class="row">
+                                            <div class="col s12">
+                                                <h2 style="text-align:center;"><strong>Burger Time</strong></h2>
+                                                <hr style="border:1px solid #e09c0a"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col s6">
+                                                <img width="100%" src="./assets/img/MySQLburgerShot.png" alt="Burger Time Screenshot">
+                                            </div>
+
+                                            <div class="col s6">
+                                                <p><strong>Goal:</strong> ....</p>
+                                                <p><strong>Role:</strong> Sole Developer</p>
+                                                <p><strong>Technoglogies Used:</strong> MySQL, Node.js, Express.js, Handlebars, CSS3, Bootstrap, JavaScript, jQuery and a homemade ORM.</p>
+                                                <p><strong>Greatest Difficulty Overcome:</strong> As this was my first full stack application, navigating between the UI, routes, controllers, and DB was equally educational as it was facinating.  </p>
+                                                
+                                                <div class="row">
+                                                    <div class="col offset-s4 s4 offset-s4" style="margin-top:1%">
+                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://github.com/JettTech/Burger" style="background-color:#e09c0a"><i class="material-icons">info_outline</i></a>
+                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://morning-plains-55863.herokuapp.com/" style="background-color:#070927"><i class="material-icons">insert_link</i></a>
+                                                    </div>
+                                                </div>   
+                                            </div>
+                                        </div>                                            
+                                    </div>
                                 </div>
                             </div>
 
@@ -322,22 +482,59 @@
                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator img-fluid card-pic" src="./assets/img/superheroGiffy2.jpg"> <!-- ./assets/img/giphy.gif -->
+                                        <img class="activator img-fluid card-pic" src="./assets/img/superheroGiffy2.jpg">
                                     </div>
                                     <div class="card-action">
-                                        <span class="card-title activator grey-text text-darken-4"><strong>Giftastic</strong><i class="material-icons right">more_vert</i></span>
-                                        <!-- <p><a target="_blank" href="https://jetttech.github.io/GifTastic/">Visit App</a></p> -->
+                                        <span class="card-title activator grey-text text-darken-4">
+                                            <strong>Giftastic</strong>
+                                            <i class="material-icons right">arrow_upward</i>
+                                        </span>
                                     </div>
                                     <div class="card-reveal">
-                                        <span class="card-title grey-text text-darken-4"><strong>Giftastic</strong><i class="material-icons right">close</i></span>
+                                        <span class="card-title grey-text text-darken-4">
+                                            <strong>Giftastic</strong>
+                                            <i class="material-icons right">close</i>
+                                        </span>
+                                        <a data-fancybox="portfolio-group" data-animation fancybox-slide  duration="700" data-src="#animatedModal5" href="javascript:;"><img class="info" src="./assets/img/info.png" alt="info" /></a>
+
+                                        <a target="_blank" href="https://jetttech.github.io/GifTastic/"><span><img class="link" src="./assets/img/link.png" alt="link" /></span></a>
+                                        <br/>
+
                                         <p>An interative GIF-themed website that uses the Giphy API to search and dynamically display GIFs of choice. GIFs change animation state through clicking them on and off. What GIF will you find?  Stack includes Javascript, jQuery, and Bootstrap.</p>
                                     </div>
                                     <div class="overlay">
                                         <p class="text">
-                                            <a target="_blank" href="https://jetttech.github.io/GifTastic/">Visit App</a>
-                                            |
-                                            <a target="_blank" href="https://github.com/JettTech/GifTastic">See Code</a>
+                                            <a>There's a GIF for that...</a>
                                         </p>
+                                    </div>
+                                    <!-- FancyBox/Modal Structure -->
+                                    <div style="display: none;" id="animatedModal5" class="animated-modal">
+                                        <div class="row">
+                                            <div class="col s12">
+                                                <h2 style="text-align:center;"><strong>Giftastic</strong></h2>
+                                                <hr style="border:1px solid #e09c0a"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col s6">
+                                                <img width="100%" src="./assets/img/GiffyShot.png" alt="Giftastic Screenshot">
+                                            </div>
+
+                                            <div class="col s6">
+                                                <p><strong>Goal:</strong> ....</p>
+                                                <p><strong>Role:</strong> Sole Developer</p>
+                                                <p><strong>Technoglogies Used:</strong> Javascript, jQuery, and Bootstrap.</p>
+                                                <p><strong>Greatest Difficulty Overcome:</strong> This application was my first to display dynamic data.  Learning to create a clean and creative interface that relies on API to the Giffy API to display content was both a challenging and fun exercise.</p>
+                                                
+                                                <div class="row">
+                                                    <div class="col offset-s4 s4 offset-s4" style="margin-top:1%">
+                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://github.com/JettTech/GifTastic" style="background-color:#e09c0a"><i class="material-icons">info_outline</i></a>
+                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://jetttech.github.io/GifTastic/" style="background-color:#070927"><i class="material-icons">insert_link</i></a>
+                                                    </div>
+                                                </div>   
+                                            </div>
+                                        </div>                                            
                                     </div>
                                 </div>
                             </div>
@@ -349,22 +546,60 @@
                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator img-fluid card-pic" src="./assets/img/friendFinder.jpg"> <!-- ./assets/img/friends.gif -->
+                                        <img class="activator img-fluid card-pic" src="./assets/img/friendFinder.jpg">
                                     </div>
                                     <div class="card-action">
-                                        <span class="card-title activator grey-text text-darken-4"><strong>Friend Finder</strong><i class="material-icons right">more_vert</i></span>
+                                        <span class="card-title activator grey-text text-darken-4">
+                                            <strong>Friend Finder</strong>
+                                            <i class="material-icons right">arrow_upward</i>
+                                        </span>
                                         <!-- <p><a target="_blank" href="https://thawing-fjord-87028.herokuapp.com/">Visit app</a></p> -->
                                     </div>
                                     <div class="card-reveal">
-                                        <span class="card-title grey-text text-darken-4"><strong>Friend Finder</strong><i class="material-icons right">close</i></span>
+                                        <span class="card-title grey-text text-darken-4">
+                                            <strong>Friend Finder</strong>
+                                            <i class="material-icons right">close</i>
+                                        </span>
+                                        <a data-fancybox="portfolio-group" data-animation fancybox-slide  duration="700" data-src="#animatedModal6" href="javascript:;"><img class="info" src="./assets/img/info.png" alt="info" /></a>
+
+                                        <a target="_blank" href="https://thawing-fjord-87028.herokuapp.com/"><span><img class="link" src="./assets/img/link.png" alt="link" /></span></a>
+                                        <br/>
+
                                         <p>A friend paring or date matching application. Answer a survey, find your match! Who will you befriend today? Uses Node.js, Express.js, JavaScript, jQuery, HTML5, CSS3 and Boostrap.</p>
                                     </div>
                                     <div class="overlay">
                                         <p class="text">
-                                            <a target="_blank" href="https://thawing-fjord-87028.herokuapp.com/">Visit App</a>
-                                            |
-                                            <a target="_blank" href="https://github.com/JettTech/friendfinder">See Code</a>
+                                            <a>Who will you befriend today?</a>
                                         </p>
+                                    </div>
+                                    <!-- FancyBox/Modal Structure -->
+                                    <div style="display: none;" id="animatedModal6" class="animated-modal">
+                                        <div class="row">
+                                            <div class="col s12">
+                                                <h2 style="text-align:center;"><strong>Friend Finder</strong></h2>
+                                                <hr style="border:1px solid #e09c0a"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col s6">
+                                                <img width="100%" src="./assets/img/friendFinderShot.png" alt="Friend Finder Screenshot">
+                                            </div>
+
+                                            <div class="col s6">
+                                                <p><strong>Goal:</strong> ....</p>
+                                                <p><strong>Role:</strong> Sole Developer</p>
+                                                <p><strong>Technoglogies Used:</strong> Node.js, Express.js, JavaScript, jQuery, HTML5, CSS3 and Boostrap.</p>
+                                                <p><strong>Greatest Difficulty Overcome:</strong> Learning the realtionship and interaction between the frontend, the router, and the server was new, trying at times, and entirely exciting to learn.  This was the first application to articulate data between the frontend and a server.</p>
+                                                
+                                                <div class="row">
+                                                    <div class="col offset-s4 s4 offset-s4" style="margin-top:1%">
+                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://github.com/JettTech/friendfinder" style="background-color:#e09c0a"><i class="material-icons">info_outline</i></a>
+                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://thawing-fjord-87028.herokuapp.com/" style="background-color:#070927"><i class="material-icons">insert_link</i></a>
+                                                    </div>
+                                                </div>   
+                                            </div>
+                                        </div>                                            
                                     </div>
                                 </div>
                             </div>
@@ -376,7 +611,7 @@
                                         <img class="activator img-fluid card-pic" src="./assets/img/jewelsPic.jpg">
                                     </div>
                                     <div class="card-action">
-                                        <span class="card-title activator grey-text text-darken-4"><strong>Crystal Game</strong><i class="material-icons right">more_vert</i></span>
+                                        <span class="card-title activator grey-text text-darken-4"><strong>Crystal Game</strong><i class="material-icons right">arrow_upward</i></span>
                                     </div>
                                     <div class="card-reveal">
                                         <span class="card-title grey-text text-darken-4"><strong>Crystal Game</strong><i class="material-icons right">close</i></span>
@@ -396,22 +631,59 @@
                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator img-fluid card-pic" src="./assets/img/trainPic3.jpg"> <!-- ./assets/img/train.gif -->
+                                        <img class="activator img-fluid card-pic" src="./assets/img/trainPic3.jpg">
                                     </div>
                                     <div class="card-action">
-                                        <span class="card-title activator grey-text text-darken-4"><strong>Train Scheduler</strong><i class="material-icons right">more_vert</i></span>
-                                        <!-- <p><a target="_blank" href="https://jetttech.github.io/Train-Scheduler/">Visit app</a></p> -->
+                                        <span class="card-title activator grey-text text-darken-4">
+                                            <strong>Train Scheduler</strong>
+                                            <i class="material-icons right">arrow_upward</i>
+                                        </span>
                                     </div>
                                     <div class="card-reveal">
-                                        <span class="card-title grey-text text-darken-4"><strong>Train Scheduler</strong><i class="material-icons right">close</i></span>
+                                        <span class="card-title grey-text text-darken-4">
+                                            <strong>Train Scheduler</strong>
+                                            <i class="material-icons right">close</i>
+                                        </span>
+                                        <a data-fancybox="portfolio-group" data-animation fancybox-slide  duration="700" data-src="#animatedModal7" href="javascript:;"><img class="info" src="./assets/img/info.png" alt="info" /></a>
+
+                                        <a target="_blank" href="https://jetttech.github.io/Train-Scheduler/"><span><img class="link" src="./assets/img/link.png" alt="link" /></span></a>
+                                        <br/>
+
                                         <p>A scheduling app that uses Javascript, jQuery, HTML5, CSS3 Firebase and Moment.js to store times and monitor the next train arrival. Users can also input their destination and/or train number to discover the time until their trian, frequency is listed in minutes.</p>
                                     </div>
                                     <div class="overlay">
                                         <p class="text">
-                                            <a target="_blank" href="https://jetttech.github.io/Train-Scheduler/">Visit App</a>
-                                            |
-                                            <a target="_blank" href="https://github.com/JettTech/Train-Scheduler">See Code</a>
+                                            <a>Your adventure awaits.</a>
                                         </p>
+                                    </div>
+                                    <!-- FancyBox/Modal Structure -->
+                                    <div style="display: none;" id="animatedModal7" class="animated-modal">
+                                        <div class="row">
+                                            <div class="col s12">
+                                                <h2 style="text-align:center;"><strong>Train Scheduler</strong></h2>
+                                                <hr style="border:1px solid #e09c0a"/>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col s6">
+                                                <img width="100%" src="./assets/img/TrainShot.png" alt="Train-Scheduler Screenshot">
+                                            </div>
+
+                                            <div class="col s6">
+                                                <p><strong>Goal:</strong> ....</p>
+                                                <p><strong>Role:</strong> Sole Developer</p>
+                                                <p><strong>Technoglogies Used:</strong> Javascript, jQuery, HTML5, CSS3 Firebase and Moment.js. </p>
+                                                <p><strong>Greatest Difficulty Overcome:</strong> This application boosted my knowldge in jQuery as I relied on its framework to control interactions with Firebase and Moment.js.  This was initally a challenge, yet through research, trial and error, and much perservence, I successfully created an app that uses Moment.js to calculate wait time and Google Firebase to store the train data.</p>
+                                                
+                                                <div class="row">
+                                                    <div class="col offset-s4 s4 offset-s4" style="margin-top:1%">
+                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://github.com/JettTech/Train-Scheduler" style="background-color:#e09c0a"><i class="material-icons">info_outline</i></a>
+                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://jetttech.github.io/Train-Scheduler/" style="background-color:#070927"><i class="material-icons">insert_link</i></a>
+                                                    </div>
+                                                </div>   
+                                            </div>
+                                        </div>                                            
                                     </div>
                                 </div>
                             </div>
@@ -429,7 +701,7 @@
         <!--End Parallax-->
 
         <!--Start Activity Carousel-->
-        <div class="hobbies" style="background-color: #070927; padding-top: 20px"> <!-- The Green Color: #063122 -->
+        <div class="hobbies" style="background-color: #070927; padding-top: 20px">
             <div id="hobbies" onmouseover="activeSection(this);" class="col s12">
                 <h3 class="header center grey-text text-lighten-4""><span style="color:#e09c0a">Want to know</span> what I've been doing in my spare time ?</h3>
                 <br/>
