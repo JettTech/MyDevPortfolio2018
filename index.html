@@ -34,15 +34,6 @@
 
     <!--Materialize JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-   
-    <!--Owl Carousel JS-->
-    <script src="assets/js/owl.carousel.js"></script>
-
-    <!--jquery.localscroll.js-->
-    <!-- <script src="assets/css/jquery.localscroll.js" type="text/javascript"></script> -->
-
-    <!--Snap.SVG-->
-    <!-- <script src="./snap.svg.js"></script> -->
 
 </head>
 <body>
@@ -63,7 +54,7 @@
         <nav id="global-nav" class="black lighten-2 main-navigation" role="navigation">        
             <div class="nav-wrapper">
 
-                <a href="https://www.linkedin.com/in/lisa-jetton/" target="_blank" class="brand-logo"><img id="main-logo" src="./assets/img/brace_Logo.transparent-white.png" alt="Logo" style="height: 150px; margin-left: 18px;" /></a> <!-- style="position: fixed; left: 2%; top:1%"  -->
+                <a href="https://www.linkedin.com/in/lisa-jetton/" target="_blank" class="brand-logo" style="height:111px"><img id="main-logo" src="./assets/img/brace_Logo.transparent-white.png" alt="Logo" style="height: 150px; margin-left: 18px;" /></a> <!-- style="position: fixed; left: 2%; top:1%"  -->
                 <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="material-icons">menu</i></a>                    
 
                     <ul class="main-navigation right hide-on-med-and-down">
@@ -144,51 +135,8 @@
                     <hr/>
                     <br/>
                     <br/>
-       <!-- First Row - PORTFOLIO -->
-<!--                     <div class="row">
-                        <div class="article"> -->
-                            <!-- 1 -->
-<!--                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
-                                <div class="card sticky-action">
-                                    <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="img-fluid card-pic" src="./assets/img/m-2d_Pic.jpeg">
-                                    </div>
-                                    <div class="card-action current-card">
-                                        <span id="cardComments" class="card-title activator grey-text text-darken-4">
-                                            <strong class="cardTitle" >Mavens &#x26; Mavericks</strong>
-                                            <i onclick="viewCard(this)" class="material-icons right">arrow_upward</i>
-                                        </span>
-                                    </div>
-                                    <div class="card-reveal">
-                                        <span class="card-title grey-text text-darken-4">
-                                            <strong>Mavens and Mavericks</strong>
-                                            <i onclick="closeCard(this)" class="material-icons right">close</i>
-                                        </span>
-                                        <p>Full Stack social media app that pairs mentors and mentees together to foster growth and help individuals discern how their personal abilities can improve a company or impact an industry throughout their career. Matching is completed through sorting logic based on a user’s career level, industry experience, and coding languages of choice.  This web app is built with React, Node.js, Express, Axios, ES6 JavasScript, CSS3, Bootstrap, Materialize and Mongoose.</p>
-                                    </div>
-                                    <div class="overlay">
-                                        <p class="text">
-                                            <h5 class="text-center">Welcome to personalized mentorship.</h5>
-                                        </p>
-                                    </div> -->
-                                    <!-- FancyBox/Modal Structure -->
-<!--                                     <div style="display: none;" id="animatedModal1" class="animated-modal">
-                                        <h2>Bonjour</h2>
-                                        <p>Cool content, right?</p>
-                                        <div class="card-image waves-effect waves-block waves-light">
-                                            <video class="activator projectvid" autoplay="autoplay" loop preload="metadata">
-                                                <source src="./assets/img/MavensandMavericksVideoTrim.mp4" type="video/mp4">
-                                            </video>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
 
-<!--                                     <a data-fancybox="portfolio-group" data-animation fancybox-slide  duration="700" data-src="#animatedModal1" href="javascript:;"><img class="info" src="./assets/img/info.png" alt="info" /></a>
-
-                                    <a target="_blank" href="https://mavens-and-mavericks.herokuapp.com/"><span><img class="link" src="./assets/img/link.png" alt="link" /></span></a> -->
-
-     <!-- First Row - PORTFOLIO -->
+                  <!-- First Row - PORTFOLIO -->
                     <div class="row">
                         <div class="article">
                             <!-- 1 -->
@@ -198,21 +146,21 @@
                                         <img class="activator img-fluid card-pic" src="./assets/img/m-2d_Pic.jpeg">
                                     </div>
                                     <div class="card-action current-card">
-                                        <span class="card-title activator grey-text text-darken-4">
+                                        <span id="cardComment1" class="card-title activator grey-text text-darken-4">
                                             <strong class="cardTitle" >Mavens &#x26; Mavericks</strong>
-                                            <i onclick="viewCard(this)" class="material-icons right">arrow_upward</i>
-                                        </span>
+                                            <!-- span class="learn-more" style="color:#e09c0a;">View App or Learn More</span> -->
+                                            <i onclick="viewCard(1)" id="cardArrow1" class="material-icons right">arrow_upward</i>
+                                            
+                                            <!-- <i onclick="viewCard(1)" id="cardClose1" class="card-arrowDown material-icons right">arrow_downward</i> -->
+                                            <a id="cardInfo1" class="card-info text-center" data-fancybox="portfolio-group" data-animation fancybox-slide  duration="700" data-src="#animatedModal1" href="javascript:;"><img class="info" src="./assets/img/info.png" alt="info" /></a>
+                                            <a id="cardLink1" class="card-link text-center" target="_blank" href="https://mavens-and-mavericks.herokuapp.com/"><span><img class="link" src="./assets/img/link.png" alt="link" /></span></a>
+                                            </span>
                                     </div>
                                     <div class="card-reveal">
-                                        <span class="card-title grey-text text-darken-4">
-                                            <strong>Mavens and Mavericks</strong>
-                                            <i onclick="closeCard(this)" class="material-icons right">close</i>
+                                        <span id="closeX1" class="card-title grey-text text-darken-4">
+                                            <strong>Mavens &#x26; Mavericks</strong>
+                                            <i onclick="viewCard(1)" class="material-icons right">arrow_downward</i> <!-- onclick="alert('closeX1 clicked')" -->
                                         </span>
-                                        <br/>
-                                        <a class="text-center" data-fancybox="portfolio-group" data-animation fancybox-slide  duration="700" data-src="#animatedModal1" href="javascript:;"><img class="info" src="./assets/img/info.png" alt="info" /></a>
-                                        <a class="text-center" target="_blank" href="https://mavens-and-mavericks.herokuapp.com/"><span><img class="link" src="./assets/img/link.png" alt="link" /></span></a>
-                                        <br/>
-
                                         <p class="text-center">Full Stack social media app that pairs mentors and mentees together to foster growth and help individuals discern how their personal abilities can improve a company or impact an industry throughout their career. Matching is completed through sorting logic based on a user’s career level, industry experience, and coding languages of choice.  This web app is built with React, Node.js, Express, Axios, ES6 JavasScript, CSS3, Bootstrap, Materialize and Mongoose.</p>
                                     </div>
                                     <div class="overlay">
@@ -244,7 +192,7 @@
                                                 
                                                 <div class="row">
                                                     <div class="col offset-s4 s4 offset-s4" style="margin-top:1%">
-                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://github.com/MavensAndMavericks/Mavens_and_Mavericks" style="background-color:#e09c0a"><i class="material-icons">info_outline</i></a>
+                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://github.com/MavensAndMavericks/Mavens_and_Mavericks" style="background-color:#e09c0a"><i class="material-icons">code</i></a>
                                                         <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://mavens-and-mavericks.herokuapp.com/" style="background-color:#070927"><i class="material-icons">insert_link</i></a>
                                                     </div>
                                                 </div>   
@@ -308,7 +256,7 @@
                                                 
                                                 <div class="row">
                                                     <div class="col offset-s4 s4 offset-s4" style="margin-top:1%">
-                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://github.com/Sound-Hound/Sound-Hound-App" style="background-color:#e09c0a"><i class="material-icons">info_outline</i></a>
+                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://github.com/Sound-Hound/Sound-Hound-App" style="background-color:#e09c0a"><i class="material-icons">code</i></a>
                                                         <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://sound-hound.github.io/Sound-Hound-App/" style="background-color:#070927"><i class="material-icons">insert_link</i></a>
                                                     </div>
                                                 </div>   
@@ -410,7 +358,7 @@
                                                 
                                                 <div class="row">
                                                     <div class="col offset-s4 s4 offset-s4" style="margin-top:1%; margin-left:43%">
-                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://github.com/JettTech/BamazonStore/" style="background-color:#e09c0a"><i class="material-icons">info_outline</i></a>
+                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://github.com/JettTech/BamazonStore/" style="background-color:#e09c0a"><i class="material-icons">code</i></a>
                                                     </div>
                                                 </div>
                                                 <p><em><strong>*Note: </strong>As this is purely a Node.js and MySQL Application, this application has backend functionality only.  Please checkout the Source Code and ReadMe on Github through the link above for pictures and descriptions.</em></p>  
@@ -420,8 +368,11 @@
                                 </div>
                             </div>
 
+
+<!-- /////////////////////// ENSURE TO USE BURGERS AFTER DIGANOSE HEROKU ISSUE  ///////////////////////////////// -->
+                            
                             <!-- 5 -->
-                            <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
+<!--                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
                                         <img class="activator img-fluid card-pic" src="./assets/img/burgersPic4.jpg">
@@ -445,9 +396,10 @@
                                         <p class="text">
                                             <a>Test out your tastebuds at this local cookout.</a>
                                         </p>
-                                    </div>
+                                    </div> -->
+
                                     <!-- FancyBox/Modal Structure -->
-                                    <div style="display: none;" id="animatedModal4" class="animated-modal">
+<!--                                     <div style="display: none;" id="animatedModal4" class="animated-modal">
                                         <div class="row">
                                             <div class="col s12">
                                                 <h2 style="text-align:center;"><strong>Burger Time</strong></h2>
@@ -468,7 +420,7 @@
                                                 
                                                 <div class="row">
                                                     <div class="col offset-s4 s4 offset-s4" style="margin-top:1%">
-                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://github.com/JettTech/Burger" style="background-color:#e09c0a"><i class="material-icons">info_outline</i></a>
+                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://github.com/JettTech/Burger" style="background-color:#e09c0a"><i class="material-icons">code</i></a>
                                                         <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://morning-plains-55863.herokuapp.com/" style="background-color:#070927"><i class="material-icons">insert_link</i></a>
                                                     </div>
                                                 </div>   
@@ -476,7 +428,9 @@
                                         </div>                                            
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
+<!-- /////////////////////// ENSURE TO USE BURGERS AFTER DIGANOSE HEROKU ISSUE  ///////////////////////////////// -->
+
 
                             <!-- 6 -->
                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
@@ -529,7 +483,7 @@
                                                 
                                                 <div class="row">
                                                     <div class="col offset-s4 s4 offset-s4" style="margin-top:1%">
-                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://github.com/JettTech/GifTastic" style="background-color:#e09c0a"><i class="material-icons">info_outline</i></a>
+                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://github.com/JettTech/GifTastic" style="background-color:#e09c0a"><i class="material-icons">code</i></a>
                                                         <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://jetttech.github.io/GifTastic/" style="background-color:#070927"><i class="material-icons">insert_link</i></a>
                                                     </div>
                                                 </div>   
@@ -594,7 +548,7 @@
                                                 
                                                 <div class="row">
                                                     <div class="col offset-s4 s4 offset-s4" style="margin-top:1%">
-                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://github.com/JettTech/friendfinder" style="background-color:#e09c0a"><i class="material-icons">info_outline</i></a>
+                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://github.com/JettTech/friendfinder" style="background-color:#e09c0a"><i class="material-icons">code</i></a>
                                                         <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://thawing-fjord-87028.herokuapp.com/" style="background-color:#070927"><i class="material-icons">insert_link</i></a>
                                                     </div>
                                                 </div>   
@@ -678,7 +632,7 @@
                                                 
                                                 <div class="row">
                                                     <div class="col offset-s4 s4 offset-s4" style="margin-top:1%">
-                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://github.com/JettTech/Train-Scheduler" style="background-color:#e09c0a"><i class="material-icons">info_outline</i></a>
+                                                        <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://github.com/JettTech/Train-Scheduler" style="background-color:#e09c0a"><i class="material-icons">code</i></a>
                                                         <a class="btn-floating btn-large waves-effect waves-light" target="_blank" href="https://jetttech.github.io/Train-Scheduler/" style="background-color:#070927"><i class="material-icons">insert_link</i></a>
                                                     </div>
                                                 </div>   
@@ -707,7 +661,7 @@
                 <br/>
                 <hr/>
                 <br/>
-                <h5 class="center grey-text text-lighten-4"">When I'm not coding, you'll probably find me learning about new technologies. <br/>Austin is fabulously full of tech events that are well coordinated and often free!</h5>
+                <h5 class="center grey-text text-lighten-4"><strong style="color:#e09c0a;">When I'm not coding, you'll probably find me learning about new technologies.</strong> <br/>Austin is fabulously full of tech events that are well coordinated and often free!</h5>
         
                 <div id="scroller">
                     <div class="innerScrollArea">
@@ -965,7 +919,6 @@
 
             <div class="footer-copyright">
                 <div class="container">
-                    <!-- <div style="font-family:'Satisfy'; font-weight:bold; color:#888; text-align:center;margin-top:20px">made with <span style="color:rgb(199, 59, 84)">&#9829;</span> by <a style="color:#999;text-decoration:none;border-bottom:1px dashed #555" title="Full Stack Developer" target="_blank">Lisa Jetton</a></div> -->
                     <p style="text-align: center; color: #e09c0a">Copyright © 2018 | Lisa Jetton</p>
                 </div>
             </div>
@@ -998,14 +951,56 @@
         //end of nav tracker animation
     //////////////////////////////////////////////////////////////////////////
       // START of card title handling
-        var currentcard = $(".current-card");
-        function viewCard() {
-            currentcard.find("strong[class='cardTitle']").hide(); 
+        $(".card-arrowDown").hide();
+        $(".card-info").hide();
+        $(".card-link").hide();
+        $(".learn-more").hide();
+
+        var cardIsOpen = false; //switch
+        function viewCard(number) {
+            var currentcard = $("#cardComment" + number);
+            var cardTitle = currentcard.find("strong[class='cardTitle']");
+            var cardLead = currentcard.find("span[class='learn-more']");
+            var currentArrow = $("#cardArrow" + number);
+            var currentLink = $("#cardLink" + number);
+            var currentInfo = $("#cardInfo" + number);
+            // var currentClose = $("#cardClose" + number);
+            
+            if (cardIsOpen === false) {
+                cardIsOpen = true;
+                cardTitle.hide();
+                currentArrow.hide();
+                // console.log("currentArrow = ");
+                // console.log(currentArrow);
+                
+                cardLead.show();
+                currentLink.show();
+                currentInfo.show();
+                // currentClose.show();
+            }
+            else {
+                cardIsOpen = false;
+                cardTitle.show();
+                currentArrow.show();
+
+                cardLead.hide();
+                currentLink.hide();
+                currentInfo.hide();
+                // currentClose.hide();
+                //$("#closeX1").click();
+            }
+            // console.log("at the end of the function...")
         }
 
-        function closeCard() {
-            currentcard.find("strong[class='cardTitle']").show(); 
-        }
+        // function closeCard(number) {
+        //    var currentcard = $("#cardComment" + number);
+        //     currentcard.find("strong[class='cardTitle']").show();
+        //     currentcard.find("i[id='cardArrow"+ number+"']").show();
+
+        //     currentcard.find("i[class='card-arrowDown']").hide();
+        //     currentcard.find("a[class='card-link']").hide();
+        //     currentcard.find("a[class='card-info']").hide();
+        // }
 
         //end of card title handling
     //////////////////////////////////////////////////////////////////////////
@@ -1083,7 +1078,7 @@
             $("#closeSection").append(closeBtn);
 
             $("#closeSection").click(function() {
-               console.log("inside the closebtn click eventhandler fn...")
+               // console.log("inside the closebtn click eventhandler fn...")
                video.pause();
                playMode = false; // turn switch off
                $("#controlPause").hide();
