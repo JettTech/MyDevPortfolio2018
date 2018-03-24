@@ -55,8 +55,9 @@ $(document).ready( function() { // makes sure the whole site is loaded
      // autoplay();
   });
 
-  $(".service-card").scroll(function(){
-    $("p").fadeIn();
+  $(".services").scroll(function(){
+    $("h4").fadeIn();
+    $("h6").fadeIn();
 });
   //end of Materialize js animations
 //////////////////////////////////////////////////////////////////////////
@@ -252,30 +253,12 @@ currentWindow
     $(".cardTitle").show();
     // $(".closeCard").hide();
   };
+  // End Card Materialize Icon
 
-});
-// end of document ready
-
-// $("#info").on("click", function() {
-//   $('#modal').modal({
-//       dismissible: true, // Modal can be dismissed by clicking outside of the modal
-//       opacity: .5, // Opacity of modal background
-//       inDuration: 300, // Transition in duration
-//       outDuration: 200, // Transition out duration
-//       startingTop: '4%', // Starting top style attribute
-//       endingTop: '10%', // Ending top style attribute
-//       ready: function(modal, trigger) { // Callback for Modal open. Modal and trigger parameters available.
-//         alert("Ready");
-//         console.log(modal, trigger);
-//       },
-//       complete: function() { alert('Closed'); } // Callback for Modal close
-//   });
-// })
-
-// End Card Materialize Icon
+});// end of document ready
 
 //////////////////////////////////////////////////////////////////////////
-// Start ScrollFire Animation
+// Start Timeline Animation
 //////////////////////////////////////////////////////////////////////////
   (function timeline () {
     // define variables
@@ -308,7 +291,9 @@ currentWindow
 
   })();
 
-
+//////////////////////////////////////////////////////////////////////////
+// Start ScrollFire Animation
+//////////////////////////////////////////////////////////////////////////
     // var options = [
     //   {selector: '#toast-stagger', offset: 50, callback: function(element) { //.toast-stagger >> make it a class instead?
     //     Materialize.toast("It's a pleasure to meet you!", 1500, rounded );
@@ -327,109 +312,8 @@ currentWindow
     //   } }
     // ];
     // Materialize.scrollFire(options);
-    // End ScrollFire Animation
+  // End ScrollFire Animation
 
 //END OF DOCUMENT:
 //////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////
-
-
-
-
-
-
-
-
-
-
-
-//SVG animation:
-//////////////////////////////////////////////////////////////////////////
-//NEED TO IMPORT SVG-SNAP INTO HTML FOR THIS ANIMATION TO FUNCTION :
-//////////////////////////////////////////////////////////////////////////
-// Start Word Apparence Animation
-// window.onload = function () {
-
-//   // var blue = '#2980b9';
-//   var myname = Snap("#myname");
-
-//   setTimeout( function() {
-//     // modify this one line below, and see the result !
-//     var logoTitle = "Hi! My Name is Lisa. Nice to meet you.";
-//     var logoRandom = '';
-//     var possible = "lkjhgfdsaqwertyuiiomnbvcxz";    
-//     var logoTitleContainer = myname.text(0, '98%', '');
-       
-//     logoTitleContainer.attr({
-//       fontSize: 280,
-//       fontFamily: 'Satisfy',
-//       fontWeight: '600'
-//     });
-
-//     function generateRandomTitle(i, logoRandom) {
-//       setTimeout( function() {
-//         logoTitleContainer.attr({ text: logoRandom });
-//       }, i*100 ); //the time lag between each letter change
-//     }
-
-//     for( var i=0; i < logoTitle.length+1; i++ ) {
-//       logoRandom = logoTitle.substr(0, i);
-
-//       for( var j=i; j < logoTitle.length; j++ ) { 
-//         logoRandom += possible.charAt(Math.floor(Math.random() * possible.length)); 
-//       }
-//       generateRandomTitle(i, logoRandom);
-//       logoRandom = '';
-//     }
-
-//   }, 500 ); //the timeout setting (lag) prior to starting...
-
-// }
-//////////////////////////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////
-
-//  =====================
-// // SKILLS PHOTO SCROLLER
-// // =====================
-// $(function(){
-//         var scroller = $('#scroller div.innerScrollArea');
-//         var scrollerContent = scroller.children('ul');
-//         scrollerContent.children().clone().appendTo(scrollerContent);
-//         var curX = 0;
-//         scrollerContent.children().each(function(){
-//             var $this = $(this);
-//             $this.css('left', curX);
-//             curX += $this.outerWidth(true);
-//         });
-//         var fullW = curX / 2;
-//         var viewportW = scroller.width();
-
-//         // Scrolling speed management
-//         var controller = {curSpeed:0, fullSpeed:2};
-//         var $controller = $(controller);
-//         var newSpeed = function(newSpeed, duration)
-//         {
-//             if (duration === undefined)
-//                 duration = 600;
-//             $controller.stop(true).animate({curSpeed:newSpeed}, duration);
-//         };
-
-//         // Pause on hover
-//         scroller.hover(function(){
-//             newSpeed(0);
-//         }, function(){
-//             newSpeed(controller.fullSpeed);
-//         });
-
-//         // Scrolling management; start the automatical scrolling
-//         var doScroll = function()
-//         {
-//             var curX = scroller.scrollLeft();
-//             var newX = curX + controller.curSpeed;
-//             if (newX > fullW*2 - viewportW)
-//                 newX -= fullW;
-//             scroller.scrollLeft(newX);
-//         };
-//         setInterval(doScroll, 20);
-//         tweenToNewSpeed(controller.fullSpeed);
-//     });
