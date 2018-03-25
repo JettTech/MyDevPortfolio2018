@@ -113,7 +113,7 @@
     <!--Start Movie Intro-->
         <div id="vidOverlay" class="row intro-header shadow-container" style="width:100%; margin-bottom:0px;">
             <video id="video-player" onclick="videoMode()" class="col s12" autoplay="autoplay" preload="metadata" fullWidth="true" class="content-media content-media--video">
-                <source id="featured-video" src="./assets/img/movieIntro_V1.mp4" type="video/mp4" class="content-media__object" />
+                <source id="featured-video" src="./assets/img/movieIntro_V1.mp4" type="video/mp4" class="content-media__object" /> <!-- alt src="./assets/img/LisaVideoFinalTrim2.mp4"  -->
             </video>
             <div id="controlsOverlay" class="overlay" style="position:absolute; opacity:.25; bottom:0;">
                 <span style="position:absolute; bottom:1%; left:50%"><i id="controlPause" onclick="videoMode()" class="material-icons" style="color:white; font-weight:bold; margin:0px; padding:0px;">pause_circle_outline</i>
@@ -143,7 +143,7 @@
                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator img-fluid card-pic" src="./assets/img/m-2d_Pic.jpeg">
+                                        <img class="activator img-fluid card-pic" src="./assets/img/m-2d_Pic.jpeg" onclick="viewCard(1)">
                                     </div>
                                     <div class="card-action current-card">
                                         <span id="cardComment1" class="card-title activator grey-text text-darken-4">
@@ -206,7 +206,7 @@
                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator img-fluid card-pic" src="./assets/img/soundHoundPic.jpeg">
+                                        <img class="activator img-fluid card-pic" src="./assets/img/soundHoundPic.jpeg" onclick="viewCard(2)">
                                     </div>
 
                                     <div class="card-action">
@@ -271,7 +271,7 @@
                             <!-- <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container"> -->
 <!--                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="img-fluid card-pic" src="./assets/img/iceBreakrPic4.jpg">
+                                        <img class="img-fluid card-pic" src="./assets/img/iceBreakrPic4.jpg" onclick="viewCard(1)">
                                     </div>
                                     <div class="card-action">
                                         <span class="card-title activator grey-text text-darken-4">
@@ -320,7 +320,7 @@
                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator img-fluid card-pic" src="./assets/img/bamazonPic.jpg"> <!-- ./assets/img/bamazon_best.gif -->
+                                        <img class="activator img-fluid card-pic" src="./assets/img/bamazonPic.jpg" onclick="viewCard(3)"> <!-- ./assets/img/bamazon_best.gif -->
                                     </div>
                                     <div class="card-action">
                                         <span id="cardComment3" class="card-title activator grey-text text-darken-4">
@@ -382,7 +382,7 @@
 <!--                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator img-fluid card-pic" src="./assets/img/burgersPic4.jpg">
+                                        <img class="activator img-fluid card-pic" src="./assets/img/burgersPic4.jpg" onclick="viewCard(4)">
                                     </div>
                                     <div class="card-action">
                                         <span id="cardComment3" class="card-title activator grey-text text-darken-4">
@@ -448,7 +448,7 @@
                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator img-fluid card-pic" src="./assets/img/superheroGiffy2.jpg">
+                                        <img class="activator img-fluid card-pic" src="./assets/img/superheroGiffy2.jpg" onclick="viewCard(4)">
                                     </div>
                                     <div class="card-action">
                                         <span id="cardComment4" class="card-title activator grey-text text-darken-4">
@@ -471,7 +471,7 @@
                                     </div>
                                     <div class="overlay">
                                         <p class="text">
-                                            <a>There's a GIF for that...</a>
+                                            <a>There's a GIF for that.</a>
                                         </p>
                                     </div>
                                     <!-- FancyBox/Modal Structure -->
@@ -513,7 +513,7 @@
                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator img-fluid card-pic" src="./assets/img/friendFinder.jpg">
+                                        <img class="activator img-fluid card-pic" src="./assets/img/friendFinder.jpg" onclick="viewCard(5)">
                                     </div>
                                     <div class="card-action">
                                         <span id="cardComment5" class="card-title activator grey-text text-darken-4">
@@ -574,7 +574,7 @@
 <!--                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator img-fluid card-pic" src="./assets/img/jewelsPic.jpg">
+                                        <img class="activator img-fluid card-pic" src="./assets/img/jewelsPic.jpg"onclick="viewCard(6)">
                                     </div>
                                     <div class="card-action">
                                         <span class="card-title activator grey-text text-darken-4"><strong>Crystal Game</strong><i class="material-icons right">arrow_upward</i></span>
@@ -603,7 +603,7 @@
                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator img-fluid card-pic" src="./assets/img/trainPic3.jpg">
+                                        <img class="activator img-fluid card-pic" src="./assets/img/trainPic3.jpg" onclick="viewCard(6)">
                                     </div>
                                     <div class="card-action">
                                         <span id="cardComment6" class="card-title activator grey-text text-darken-4">
@@ -685,7 +685,7 @@
                     <div class="innerScrollArea">
                         <ul>
                             <li><div class="hobbiesCarousel">
-                                <img src="./assets/img/GroupWAlex.jpg" alt="WWC Hackathon">
+                                <img src="./assets/img/GroupWAlex.JPG" alt="WWC Hackathon">
                                 <!-- <div class="caption"><p>Women Who Code (WWC) Diversity Hackathon Team</p></div></div> -->
                             </li>
                             <li><div class="hobbiesCarousel">
@@ -746,46 +746,46 @@
                   <ul style="margin-bottom: 0px; padding-bottom: 80px;">
                     <li>
                       <div>
-                        <time>July 25, 2017</time> Began the University of Austin's Full Stack Coding Bootcamp
+                        <time>July 25, 2017</time> Began the University of Austin's Full Stack Coding Bootcamp.
                       </div>
                     </li>
                     <li>
                       <div>
-                        <time>August 5, 2017</time> Attended the 1st Annual Austin Counsel for Technology Women Conference, hosted by Chick Tech
+                        <time>August 5, 2017</time> Attended the 1st Annual Austin Counsel for Technology Women Conference, hosted by Chick Tech.
                       </div>
                     </li>
                     <li>
                       <div>
-                        <time>September 7, 2017</time> Participated in the 3rd Annual Diversity Hackathon by Women Who Code
+                        <time>September 7, 2017</time> Participated in the 3rd Annual Diversity Hackathon by Women Who Code, and won the Zoe Quinn Award alongside my team of 4.
                     </li>
                     <li>
                       <div>
-                        <time>October 20, 2017 </time> Attended Austin Startup Week
+                        <time>October 20, 2017 </time> Attended Austin Startup Week.
                       </div>
                     </li>
                     <li>
                       <div>
-                        <time>November 7-12, 2017 </time> Attended Austin Developer Week
+                        <time>November 7-12, 2017 </time> Attended Austin Developer Week.
                       </div>
                     </li>
                     <li>
                       <div>
-                        <time>November 8-10, 2017 </time> Attended Austin Design Week
+                        <time>November 8-10, 2017 </time> Attended Austin Design Week.
                       </div>
                     </li>
                     <li>
                       <div>
-                        <time>January 27, 2018 </time> Received UT Austin Full Stack Coding Certificate after successful completion of the intensive 28 week program
+                        <time>January 27, 2018 </time> Received UT Austin Full Stack Coding Certificate after successful completion of the intensive 28 week program.
                       </div>
                     </li>
                     <li>
                       <div>
-                        <time>February 8, 2018</time> Presented at the University of Austin's Full Stack Coding Demonstration Day
+                        <time>February 8, 2018</time> Presented at the University of Austin's Full Stack Coding Demonstration Day.
                       </div>
                     </li>
                     <li>
                       <div>
-                        <time>February 16-17, 2018</time> Participated in the 3P Civic Hackathon by UT Austin's McCombs School of Business
+                        <time>February 16-17, 2018</time> Participated in the 3P Civic Hackathon by UT Austin's McCombs School of Business.
                       </div>
                     </li>
                   </ul>

@@ -772,6 +772,10 @@ div.card-action.strong {
   visibility: visible;
 }
 
+/*.overlay .text a {
+  margin-bottom: 30%;
+}*/
+
 .shadow-container:hover .overlay h5 {
   color: #f7bf10;
   font-weight: bold;
@@ -907,6 +911,9 @@ a.z-link {
 } 
 
 @media only screen and (max-width: 424px) and (min-width: 371px){
+  #services-header h1 {
+    font-size: 3.2em;
+  }
   #service-row2 .card.services {
     height: 550px;
   }
