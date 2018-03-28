@@ -1144,7 +1144,6 @@ time {
 
 /* Timeline Effects
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 .timeline ul li::after {
   transition: background .5s ease-in-out;
 }
@@ -1159,12 +1158,14 @@ time {
   transition: all .5s ease-in-out;
 }
 
-.timeline ul li:nth-child(odd) div {
-  transform: translate3d(200px, 0, 0);
-}
+@media only screen and (min-width: 768px){
+  .timeline ul li:nth-child(odd) div {
+    transform: translate3d(40px, 0, 0);
+  }
 
-.timeline ul li:nth-child(even) div {
-  transform: translate3d(-200px, 0, 0);
+  .timeline ul li:nth-child(even) div {
+    transform: translate3d(-40px, 0, 0);
+  }
 }
 
 .timeline ul li.in-view div {
@@ -1176,7 +1177,6 @@ time {
 
 /* Timeline Media Qs / Responsiveness
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 @media screen and (max-width: 900px) {
   .timeline ul li div {
     width: 250px;
