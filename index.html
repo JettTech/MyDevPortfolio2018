@@ -113,7 +113,7 @@
     <!--Start Movie Intro-->
         <div id="vidOverlay" class="row intro-header shadow-container" style="width:100%; margin-bottom:0px;">
             <video id="video-player" onclick="videoMode()" class="col s12" autoplay="autoplay" preload="metadata" fullWidth="true" class="content-media content-media--video">
-                <source id="featured-video" src="./assets/img/movieIntro_V1.mp4" type="video/mp4" class="content-media__object" /> <!-- alt src="./assets/img/LisaVideoFinalTrim2.mp4"  -->
+                <source id="featured-video" src="./assets/img/movieIntro_V1.mp4" type="video/mp4" class="content-media__object" /> <!-- alt src="./assets/img/LisaVideoFinalTrim2.mp4"  --> 
             </video>
             <div id="controlsOverlay" class="overlay" style="position:absolute; opacity:.25; bottom:0;">
                 <span style="position:absolute; bottom:1%; left:50%"><i id="controlPause" onclick="videoMode()" class="material-icons" style="color:white; font-weight:bold; margin:0px; padding:0px;">pause_circle_outline</i>
@@ -143,7 +143,7 @@
                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator img-fluid card-pic" src="./assets/img/m-2d_Pic.jpeg" onclick="viewCard(1)">
+                                        <img class="img-fluid card-pic" src="./assets/img/m-2d_Pic.jpeg">  <!-- class="activator" onclick="viewCard(1)" -->
                                     </div>
                                     <div class="card-action current-card">
                                         <span id="cardComment1" class="card-title activator grey-text text-darken-4">
@@ -178,10 +178,8 @@
                                         </div>
 
                                         <div class="row">
-                                            <div class="col s12 m6">
-                                                <video class="projectvid" controls muted loop preload="metadata" onload="pause()">
-                                                    <source src="./assets/img/MavensandMavericksVideoTrim.mp4" type="video/mp4">
-                                                </video>
+                                            <div class="col s12 m6">                    
+                                                <img width="100%" src="./assets/img/MavensandMavericksPic.png" alt="Mav Squared App Image">
                                             </div>
 
                                             <div class="col s12 m6">
@@ -208,13 +206,12 @@
                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator img-fluid card-pic" src="./assets/img/soundHoundPic.jpeg" onclick="viewCard(2)">
+                                        <img class="img-fluid card-pic" src="./assets/img/soundHoundPic.jpeg">
                                     </div>
 
                                     <div class="card-action">
                                         <span id="cardComment2" class="card-title activator grey-text text-darken-4">
                                             <strong class="cardTitle">Sound Hound</strong>
-                                            <!-- span class="learn-more" style="color:#e09c0a;">View App or Learn More</span> -->
                                             <i onclick="viewCard(2)" id="cardArrow2" class="material-icons right">arrow_upward</i>
 
                                             <a id="cardInfo2" class="card-info text-center" data-fancybox="portfolio-group" data-animation fancybox-slide  duration="700" data-src="#animatedModal2" href="javascript:;"><img class="info" src="./assets/img/info.png" alt="info" /></a>
@@ -246,9 +243,7 @@
 
                                         <div class="row">
                                             <div class="col s12 m6">
-                                                <video class="projectvid" controls muted loop preload="metadata" onload="pause()">
-                                                    <source src="./assets/img/SoundHoundVidTrim.mp4" type="video/mp4">
-                                                </video>
+                                                <img width="100%" src="./assets/img/SoundHoundImage.png"  alt="Sound Hound App Image">
                                             </div>
 
                                             <div class="col s12 m6">
@@ -324,7 +319,7 @@
                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator img-fluid card-pic" src="./assets/img/bamazonPic.jpg" onclick="viewCard(3)"> <!-- ./assets/img/bamazon_best.gif -->
+                                        <img class="img-fluid card-pic" src="./assets/img/bamazonPic.jpg">
                                     </div>
                                     <div class="card-action">
                                         <span id="cardComment3" class="card-title activator grey-text text-darken-4">
@@ -386,7 +381,7 @@
 <!--                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator img-fluid card-pic" src="./assets/img/burgersPic4.jpg" onclick="viewCard(4)">
+                                        <img class="img-fluid card-pic" src="./assets/img/burgersPic4.jpg" onclick="viewCard(4)">
                                     </div>
                                     <div class="card-action">
                                         <span id="cardComment3" class="card-title activator grey-text text-darken-4">
@@ -454,7 +449,7 @@
                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator img-fluid card-pic" src="./assets/img/superheroGiffy2.jpg" onclick="viewCard(4)">
+                                        <img class="img-fluid card-pic" src="./assets/img/superheroGiffy2.jpg">
                                     </div>
                                     <div class="card-action">
                                         <span id="cardComment4" class="card-title activator grey-text text-darken-4">
@@ -521,7 +516,7 @@
                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator img-fluid card-pic" src="./assets/img/friendFinder.jpg" onclick="viewCard(5)">
+                                        <img class="img-fluid card-pic" src="./assets/img/friendFinder.jpg">
                                     </div>
                                     <div class="card-action">
                                         <span id="cardComment5" class="card-title activator grey-text text-darken-4">
@@ -584,7 +579,7 @@
 <!--                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator img-fluid card-pic" src="./assets/img/jewelsPic.jpg"onclick="viewCard(6)">
+                                        <img class="img-fluid card-pic" src="./assets/img/jewelsPic.jpg"onclick="viewCard(6)">
                                     </div>
                                     <div class="card-action">
                                         <span class="card-title activator grey-text text-darken-4"><strong>Crystal Game</strong><i class="material-icons right">arrow_upward</i></span>
@@ -613,7 +608,7 @@
                             <div class="col offset-s1 s10 offset-s1 m6 l4 staggered-animation  shadow-container">
                                 <div class="card sticky-action">
                                     <div class="card-image waves-effect waves-block waves-light">
-                                        <img class="activator img-fluid card-pic" src="./assets/img/trainPic3.jpg" onclick="viewCard(6)">
+                                        <img class="img-fluid card-pic" src="./assets/img/trainPic3.jpg">
                                     </div>
                                     <div class="card-action">
                                         <span id="cardComment6" class="card-title activator grey-text text-darken-4">
@@ -698,55 +693,45 @@
                         <ul>
                             <li><div class="hobbiesCarousel">
                                 <img src="./assets/img/GroupWAlex.JPG" alt="WWC Hackathon">
-                                <!-- <div class="caption"><p>Women Who Code (WWC) Diversity Hackathon Team</p></div></div> -->
                             </li>
                             <li><div class="hobbiesCarousel">
                                 <img src="./assets/img/winnersSmile2.jpg" alt="WWC Winners">
-                                <!-- <div class="caption"><p>Winners of the Zoe Quinn Award</p></div></div> -->
                             </li>
                             <li><div class="hobbiesCarousel">
                                 <img src="./assets/img/DWbadge.jpg" alt="Developer Week Badge">
-                                <!-- <div class="caption"><p>Austin Developer Week 2017 Badge</p></div></div> -->
                             </li>
                             <li><div class="hobbiesCarousel">
                                 <img src="./assets/img/ChicktechGear.jpg" alt="Chicktech Swag">
-                                <!-- <div class="caption"><p>Chicktech Swag</p></div></div> -->
                             </li>
                             <li><div class="hobbiesCarousel">
                                 <img src="./assets/img/ACTW_Conf_main.jpg" alt="ACT-W Conf">
-                                <!-- <div class="caption"><p>Austin Council for Technology, Women's (ACT-W) Conference</p></div></div> -->
                             </li>
                             <li><div class="hobbiesCarousel">
                                 <img src="./assets/img/womenwhocodePostIt.jpg" alt="WWC Post-it Board">
-                                <!-- <div class="caption"><p>Women Who Code (WWC) Thought Board</p></div></div> -->
                             </li>
                             <li><div class="hobbiesCarousel">
                                 <img src="./assets/img/DevWeek17Presentation.jpg" alt="Developer Week Keynote">
-                                <!-- <div class="caption"><p>Austin Developer Week Keynote</p></div></div> -->
                             </li>
                             <li><div class="hobbiesCarousel">
                                 <img src="./assets/img/GoogleWIT_roundUp.jpg" alt="Women-In-Tech Roundup Badge">
-                                <!-- <div class="caption"><p>Google's Women-In-Tech Roundup Badge</p></div></div> -->
                             </li>
                             <li><div class="hobbiesCarousel">
                                 <img src="./assets/img/designweek17.jpg" alt="Design Week 2017">
-                                <!-- <div class="caption"><p>Austin Design Week 2017 Welcoming Committee</p></div></div> -->
                             </li>
                             <li><div class="hobbiesCarousel">
                                 <img src="./assets/img/ibmworkshop-designweek.jpg" alt="Design Week IBM Workshop">
-                                <!-- <div class="caption"><p>IBM Design Workshop</p></div></div> -->
                             </li>
                             <li><div class="hobbiesCarousel">
                                 <img src="./assets/img/DevWeek17_VRvevo.jpg" alt="Developer Week 2017 VR">
-                                <!-- <div class="caption"><p>Austin Developer Week VR Demonstration</p></div></div> -->
                             </li>
                             <li><div class="hobbiesCarousel">
                                 <img src="./assets/img/civicHack.png" alt="McCombs 3P Civic Hackathon">
-                                <!-- <div class="caption"><p>McCombs School of Business' 3P Civic Hackathon</p></div></div> -->
                             </li>
                             <li><div class="hobbiesCarousel">
                                 <img src="./assets/img/stickers.jpg" alt="ACT + Chicktech Swag">
-                                <!-- <div class="caption"><p>Austin Council for Technology-Women Swag</p></div></div> -->
+                            </li>
+                            <li><div class="hobbiesCarousel">
+                                <img src="./assets/img/opengovprojects-website.jpg" alt="Open-Gov Project and Presentation">
                             </li>
                         </ul>
                     </div> 
