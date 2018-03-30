@@ -294,25 +294,25 @@ currentWindow
 //////////////////////////////////////////////////////////////////////////
 // Start ScrollFire Animation
 //////////////////////////////////////////////////////////////////////////
-    // var options = [
-    //   {selector: '#toast-stagger', offset: 50, callback: function(element) { //.toast-stagger >> make it a class instead?
-    //     Materialize.toast("It's a pleasure to meet you!", 1500, rounded );
-    //   } },
-    //   {selector: '#toast-stagger', offset: 205, callback: function(element) {
-    //     Materialize.toast("Thanks for listening to my story.", 1500, rounded );
-    //   } },
-    //   {selector: '#toast-stagger', offset: 350, callback: function(element) {
-    //     Materialize.toast("I hope to hear your story over coffee quite soon!", 1500, rounded );
-    //   } },
-    //   {selector: '.staggered-animation', offset: 400, callback: function(gif) {
-    //     Materialize.showStaggeredList($(gif));
-    //   } },
-    //   {selector: '#image-animation', offset: 500, callback: function(picture) {
-    //     Materialize.fadeInImage($(picture));
-    //   } }
-    // ];
-    // Materialize.scrollFire(options);
-  // End ScrollFire Animation
+    var options = [
+      {selector: '#toast-stagger', offset: 50, callback: function(el) { //.toast-stagger >> make it a class instead?
+        Materialize.toast("It's a pleasure to meet you!", 1500, rounded );
+      } },
+      {selector: '#toast-stagger', offset: 205, callback: function(el) {
+        Materialize.toast("Thanks for listening to my story.", 1500, rounded );
+      } },
+      {selector: '#toast-stagger', offset: 350, callback: function(el) {
+        Materialize.toast("I hope to hear your story over coffee quite soon!", 1500, rounded );
+      } },
+      {selector: '.staggered-animation', offset: 400, callback: function(el) {
+        Materialize.showStaggeredList($(el));
+      } },
+      {selector: '.fadein', offset: 500, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } }
+    ];
+    Materialize.scrollFire(options);
+  //End ScrollFire Animation
 
 //END OF DOCUMENT:
 //////////////////////////////////////////////////////////////////////////
