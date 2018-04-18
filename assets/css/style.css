@@ -276,33 +276,49 @@ h5 {
   }
 }
 
-@media only screen and (max-width: 1080px) and (min-width: 993px){
+@media only screen and (max-width: 1022px) and (min-width: 993px){
   #professional-pic {
-    margin-top: 80%;
+    margin-top: 65px;
   }
 }
 
-@media only screen and (max-width: 1250px) and (min-width: 1081px){
+@media only screen and (max-width: 1080px) and (min-width: 1023px){
   #professional-pic {
-    margin-top: 70%;
+    margin-top: 50px;
   }
 }
 
-@media only screen and (max-width: 1250px) and (min-width: 1125px){
+@media only screen and (max-width: 1144px) and (min-width: 1081px){
   #professional-pic {
-    margin-top: 55%;
+    margin-top: 48px;
+  }
+}
+
+@media only screen and (max-width: 1250px) and (min-width: 1145px){
+  #professional-pic {
+    margin-top: 18px;
   }
 }
 
 @media only screen and (max-width: 1413px) and (min-width: 1251px){
   #professional-pic {
-    margin-top: 45%;
+    margin-top: 18px;
+    margin-left: 2%;
+    width: 403px;
+    height: 486px;
   }
 }
 
-@media only screen and (max-width: 1501px) and (min-width: 1414px){
+@media only screen and (min-width: 1414px){
   #professional-pic {
-    margin-top: 35%;
+    margin-top: 18px;
+    margin-left: 10%;
+    width: 403px;
+    height: 486px;
+  }
+
+  .aboutme{
+    margin-left: 10%;
   }
 }
 
@@ -711,27 +727,17 @@ div.card-action.strong {
   margin: 0 auto;
 }
 
-.card-action a{
+.card-action a {
   filter: grayscale(100%);
 }
 
-.card{
+.card {
   border-style: solid;
   border-color: grey;
   border-width: 1px;
 }
 
-/*.card-image{
-  opacity: 1;
-}
-
-.card-image:hover {
-  opacity: .2;
-  filter: alpha(opacity=1); 
-}*/
-
-
-.card-pic{
+.card-pic {
   opacity: 1;
   height: 300px;
   margin: 0 auto;
@@ -840,6 +846,16 @@ a.z-link {
   }
 }
 
+/*Modal Buttons*/
+/*FYI:Alternative button colors for code button: #c98c0b || b4831c || #a78847.*/
+.modalCode {
+  margin-top: 9px;
+}
+
+.modalLink {
+  margin-top: 11px;
+  margin-left: 4px;
+}
 
 /*//////////////////////////////////////////////////////////////////////////*/
 /*Experience / Service Section Styles:*/
@@ -886,11 +902,6 @@ a.z-link {
   position: relative;
   top: -100px;
 }
-
-/*#services h6 {
-  margin-top: 10%;
-}*/
-
 
 @media only screen and (max-width: 340px) and (min-width: 301px){
   #service-row2 .card.services {
@@ -1056,6 +1067,21 @@ a.z-link {
 @media only screen and (max-width: 1463px) and (min-width: 1431px){
   #service-row2 .card.services {
     height: 405px;
+  }
+}
+
+
+@media only screen and (max-width: 2000px) and (min-width: 1406px){
+     #service-row1 {
+      position: relative;
+      top: -125px;
+  }
+}
+
+@media only screen and (min-width: 2001px){
+     #service-row1 {
+      position: relative;
+      top: -90px;
   }
 }
 
