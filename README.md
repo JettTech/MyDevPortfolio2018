@@ -1,8 +1,8 @@
 # MyPortfolio2018
-Here is a look at my personal portfolio for Janurary 2018.  This page offers insight into my personal interests and showcases some favorite projects I created while studying the MERN Stack through the Full-Stack Coding Bootcamp at University of Texas, at Austin.
+Here is a look at my personal portfolio for 2018.  This page offers insight into my personal interests and showcases some favorite projects I created while studying the MERN Stack through the Full-Stack Coding Bootcamp at University of Texas, at Austin.
 
 View the application [here](http://lisajetton.com)!
-Visit my [Resume](https://docs.google.com/document/d/1RD8e9IMoYIGPVfYtu8WE7YZpzWTc36l717qQ_-YqmW8/edit?usp=sharing).
+Visit my [Resume](https://drive.google.com/file/d/1mXtpceVOQoXLdzVZAFKxrpo0gvfFzeHP/view?usp=sharing).
 
 ![](https://media.giphy.com/media/9dgkxA74k2WDS/giphy.gif)
 
