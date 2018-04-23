@@ -656,7 +656,7 @@ a.resume-nav.btn:hover  {
 }
 
 @media screen and (max-width: 400px) {
-    #vidOverlay:hover .overlay {
+  #vidOverlay:hover .overlay {
     height: 23%;
   }
 

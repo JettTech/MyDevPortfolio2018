@@ -99,7 +99,7 @@
                     <h5>I am a 
                       <span
                          class="txt-rotate"
-                         data-period=50"
+                         data-period="50"
                          data-rotate='[ "Full Stack  ", "JavaScript  ", "MySQL  ", "MongoDB  ", "Express.js  ", "HTML5  ", "CSS3  ", "Node.js  ", "Handlebars  ", "React  " ]'>
                              
                      </span>  
@@ -124,12 +124,12 @@
             <video id="video-player" onclick="videoMode()" autoplay="autoplay" preload="none" fullWidth="true" class="col s12 content-media content-media--video" poster="./assets/img/posterPic3.png">
                 <source id="featured-video" src="./assets/img/movieIntro_V1.mp4" type="video/mp4" class="content-media__object" /> <!-- alt src="./assets/img/LisaVideoFinalTrim2.mp4"  --> 
             </video>
-            <div id="controlsOverlay" class="overlay" style="position:absolute; opacity:.25; bottom:0;">
-                <div  id="controlOpen" class="white-text" style="position:absolute; bottom:10%; left:50%">Video will start soon...
-                </div>
+            <div id="controlsOverlay" class="overlay" style="position:absolute; opacity:.25; bottom:0">
                 <span style="position:absolute; bottom:1%; left:50%"><i id="controlPause" onclick="videoMode()" class="material-icons" style="color:white; font-weight:bold; margin:0px; padding:0px;">pause_circle_outline</i>
                 </span>
                 <span style="position:absolute; bottom:1%; left:50%"><i id="controlPlay" onclick="videoMode()" class="material-icons" style="color:white; font-weight:bold; margin:0px; padding:0px;">play_circle_outline</i>
+                </span>
+                <span style="position:absolute; bottom:1%; left:50%"><span id="controlMsg" style="color:white; font-weight:bold; margin:0px; padding:0px;">Video Will Start Soon...</span>
                 </span>
             </div>
         </div>
@@ -757,7 +757,7 @@
         <!--Start Activity Carousel-->
         <div class="hobbies" style="background-color: #070927; padding-top: 20px">
             <div id="hobbies" onmouseover="activeSection(this);" class="col s12">
-                <h3 class="header center grey-text text-lighten-4""><span style="color:#e09c0a">Want to know</span> what I've been doing in my spare time ?</h3>
+                <h3 class="header center grey-text text-lighten-4"><span style="color:#e09c0a">Want to know</span> what I've been doing in my spare time ?</h3>
                 <br/>
                 <hr/>
                 <br/>
@@ -766,40 +766,40 @@
                 <div id="scroller">
                     <div class="innerScrollArea">
                         <ul>
-                            <li><div class="hobbiesCarousel">
+                            <li class="hobbiesCarousel">
                                 <img src="./assets/img/GroupWAlex.jpg" alt="WWC Hackathon">
                             </li>
-                            <li><div class="hobbiesCarousel">
+                            <li class="hobbiesCarousel">
                                 <img src="./assets/img/winnersSmile2.jpg" alt="WWC Winners">
                             </li>
-                            <li><div class="hobbiesCarousel">
+                            <li class="hobbiesCarousel">
                                 <img src="./assets/img/DWbadge.jpg" alt="Developer Week Badge">
                             </li>
-                            <li><div class="hobbiesCarousel">
+                            <li class="hobbiesCarousel">
                                 <img src="./assets/img/ChicktechGear.jpg" alt="Chicktech Swag">
                             </li>
-                            <li><div class="hobbiesCarousel">
+                            <li class="hobbiesCarousel">
                                 <img src="./assets/img/ACTW_Conf_main.jpg" alt="ACT-W Conf">
                             </li>
-                            <li><div class="hobbiesCarousel">
+                            <li class="hobbiesCarousel">
                                 <img src="./assets/img/womenwhocodePostIt.jpg" alt="WWC Post-it Board">
                             </li>
-                            <li><div class="hobbiesCarousel">
+                            <li class="hobbiesCarousel">
                                 <img src="./assets/img/DevWeek17Presentation.jpg" alt="Developer Week Keynote">
                             </li>
-                            <li><div class="hobbiesCarousel">
+                            <li class="hobbiesCarousel">
                                 <img src="./assets/img/designweek17.jpg" alt="Design Week 2017">
                             </li>
-                            <li><div class="hobbiesCarousel">
+                            <li class="hobbiesCarousel">
                                 <img src="./assets/img/civicHack.png" alt="McCombs 3P Civic Hackathon">
                             </li>
-                            <li><div class="hobbiesCarousel">
+                            <li class="hobbiesCarousel">
                                 <img src="./assets/img/stickers.jpg" alt="ACT + Chicktech Swag">
                             </li>
-                            <li><div class="hobbiesCarousel">
+                            <li class="hobbiesCarousel">
                                 <img src="./assets/img/GoogleWIT_roundUp.jpg" alt="Women-In-Tech Roundup Badge">
                             </li>
-                            <li><div class="hobbiesCarousel">
+                            <li class="hobbiesCarousel">
                                 <img src="./assets/img/opengovprojects-website.jpg" alt="Open-Gov Project and Presentation">
                             </li>
                         </ul>
@@ -833,6 +833,7 @@
                     <li>
                       <div>
                         <time>September 7, 2017</time> Participated in the 3rd Annual Diversity Hackathon by Women Who Code, and won the Zoe Quinn Award alongside my team of 4.
+                      </div>
                     </li>
                     <li>
                       <div>
@@ -943,7 +944,7 @@
                                     <div class="card services">
                                         <div class="card-content ">        
                                           <span class="card-title">
-                                            <h4>Web Designer</h2>
+                                            <h4>Web Designer</h4>
                                           </span>
                                           <hr style="border:1px solid #e09c0a" />
                                           <h6 style="font-size: 20px; color:white;">Focusing on an animated, interactive, and responsive UI is key.  Learning how to create eye-catching designs with an intuitive application flow is a very nuanced art, which I have discovered requires much research, field study, and mock user trials. During this process, my teams and I have made use of paper prototyping and image mirroring tools, like Figma.</h6>
@@ -957,7 +958,7 @@
                                 <div class="card services">
                                   <div class="card-content">
                                       <span class="card-title">
-                                        <h4>Web Developer</h2>
+                                        <h4>Web Developer</h4>
                                       </span>                               
                                       <hr style="border:1px solid #e09c0a" />
                                       <h6 style="font-size: 20px; color:white;">Function, performance, and efficiency are key components when developing new products. Strong security is also a tenant of modern development as it protects application data and user identity and encourages customer loyalty. While learning to develop apps with each of these facets in mind, I became familiar with wireframing tools, prototyping styles and CoffeeScript test suites.</h6>
@@ -971,7 +972,7 @@
                               <div id="thirdRow" class="card services">
                                 <div class="card-content">
                                   <span class="card-title">
-                                    <h4>Project Manager</h2>
+                                    <h4>Project Manager</h4>
                                   </span>                            
                                   <hr style="border:1px solid #e09c0a" />
                                   <h6 style="font-size: 20px; color:white;">Nimbleness is key when creating innovative projects within strict deadlines. I strive to work alongside teammates with the Agile approach in mind. In past projects, my team and I sought out tools to streamline and clarify communication; we made use of task organizers and admin communication tools such as Github Project or Trello and always made sure to sort our backlog by priority. </h6>
@@ -1030,8 +1031,6 @@
 
 
     // window.onload = function() {
-    //     $(".sticky-action").fadeIn(5000);
-
     //     video.addEventListener('loadedmetadata', function() {
     //         if (video.buffered.length === 0) {
     //             return console.log("buffered seconds === 0")
@@ -1044,7 +1043,8 @@
     //     });
             
     //     // setTimeout (function() {
-    //     //     startVideo();
+    //      // $("#controlMsg").show();
+    //      //     startVideo();
     //     // }, 5000);
     // }
 
@@ -1057,15 +1057,16 @@
         window.onload = startVideo();
         function startVideo() {
             video.pause();
-            $("#controlOpen").show();
             $("#controlPause").hide();
+            $("#controlPlay").hide();
+            $("#controlMsg").show();
 
             setTimeout( function() {
               video.play();
-              $("#controlOpen").hide();
+              $("#controlMsg").hide();
               $("#controlPlay").hide();
               $("#controlPause").show();
-            }, 0 );
+            }, 1000 );
 
             function endVideo() {
                 if( video.ended === true ) {
