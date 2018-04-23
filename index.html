@@ -116,7 +116,7 @@
 
     <!--Start Movie Intro-->
         <div id="vidOverlay" class="row intro-header shadow-container" style="width:100%; margin-bottom:0px;">
-            <video id="video-player" onclick="videoMode()" class="col s12" autoplay="autoplay" preload="metadata" fullWidth="true" class="content-media content-media--video">
+            <video id="video-player" onclick="videoMode()" autoplay="autoplay" preload="none" fullWidth="true" class="col s12 content-media content-media--video" poster="./assets/img/posterPic2.png">
                 <source id="featured-video" src="./assets/img/movieIntro_V1.mp4" type="video/mp4" class="content-media__object" /> <!-- alt src="./assets/img/LisaVideoFinalTrim2.mp4"  --> 
             </video>
             <div id="controlsOverlay" class="overlay" style="position:absolute; opacity:.25; bottom:0;">
@@ -1020,101 +1020,30 @@
 
     <script src="./assets/js/app.js"></script>
     <script type="text/javascript">
-    //////////////////////////////////////////////////////////////////////////
-      // START of nav tracker animation
-    
-        var nav = $("#global-nav");
 
-        function activeSection(current) {
-            nav.find("a").removeClass("active");
-            nav.find("a[href='#" + $(current).attr("id") + "']").addClass("active"); 
-        }
 
-        function activeClick(current) {
-          if(current.value === "Resume") {
-            return console.log("Hey there! Thanks for selecting the Resume Button. I look forward to hearing from you.");
-          }
-          else {
-            nav.find("a").removeClass("active");
-            nav.find("a[href='" + $(current).attr("href") + "']").addClass("active");
-          }   
-        }
+    // window.onload = function() {
+    //     $(".sticky-action").fadeIn(5000);
 
-        //end of nav tracker animation
-    //////////////////////////////////////////////////////////////////////////
-      // START of card title handling
-        $(".card-arrowDown").hide();
-        $(".card-info").hide();
-        $(".card-link").hide();
-        $(".learn-more").hide();
-
-        function viewCard(number) {
-            var currentcard = $("#cardComment" + number);
-            var cardTitle = currentcard.find("strong[class='cardTitle']");
-            var cardLead = currentcard.find("span[class='learn-more']");
-            var currentArrow = $("#cardArrow" + number);
-            var currentLink = $("#cardLink" + number);
-            var currentInfo = $("#cardInfo" + number);
-            // var currentClose = $("#cardClose" + number);
-
-            cardIsOpen = true;
-            cardTitle.hide();
-            currentArrow.hide();
-            // console.log("currentArrow = ");
-            // console.log(currentArrow);
+    //     video.addEventListener('loadedmetadata', function() {
+    //         if (video.buffered.length === 0) {
+    //             return console.log("buffered seconds === 0")
+    //         }
+    //         else {
+    //             startVideo();
+    //             var bufferedSeconds = video.buffered.end(0) - video.buffered.start(0);
+    //             console.log(bufferedSeconds + ' seconds of video are ready to play!');
+    //         };
+    //     });
             
-            cardLead.show();
-            currentLink.show();
-            currentInfo.show();
-            // currentClose.show();
-        }
+    //     // setTimeout (function() {
+    //     //     startVideo();
+    //     // }, 5000);
+    // }
 
-        function closeCard(number) {
-            var currentcard = $("#cardComment" + number);
-            var cardTitle = currentcard.find("strong[class='cardTitle']");
-            var cardLead = currentcard.find("span[class='learn-more']");
-            var currentArrow = $("#cardArrow" + number);
-            var currentLink = $("#cardLink" + number);
-            var currentInfo = $("#cardInfo" + number);
-            // var currentClose = $("#cardClose" + number);
-            
-            cardIsOpen = false;
-            cardTitle.show();
-            currentArrow.show();
-
-            cardLead.hide();
-            currentLink.hide();
-            currentInfo.hide();
-            // currentClose.hide();
-            //$("#closeX1").click();
-        }
-
-        // function closeCard(number) {
-        //    var currentcard = $("#cardComment" + number);
-        //     currentcard.find("strong[class='cardTitle']").show();
-        //     currentcard.find("i[id='cardArrow"+ number+"']").show();
-
-        //     currentcard.find("i[class='card-arrowDown']").hide();
-        //     currentcard.find("a[class='card-link']").hide();
-        //     currentcard.find("a[class='card-info']").hide();
-        // }
-
-        //end of card title handling
     //////////////////////////////////////////////////////////////////////////
-    
-    // Start of Fancybox Loop
-    //////////////////////////////////////////////////////////////////////////
-        // Init Fancy box
-        $().fancybox({
-          selector : '[data-fancybox="portfolio-group"]',
-          loop : true
-        });
+    // Start Video Control Logic
 
-        // End of Fancybox Loop
-    //////////////////////////////////////////////////////////////////////////
-
-      // Start Video Control Logic
-    //////////////////////////////////////////////////////////////////////////
         const video = $("#video-player").get(0);
         var playMode = true; // switch
 
@@ -1203,7 +1132,90 @@
         }); 
 
        // End Video Control Logic
+
     //////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////////////////////////////////
+      // START of nav tracker animation  
+        var nav = $("#global-nav");
+
+        function activeSection(current) {
+            nav.find("a").removeClass("active");
+            nav.find("a[href='#" + $(current).attr("id") + "']").addClass("active"); 
+        }
+
+        function activeClick(current) {
+          if(current.value === "Resume") {
+            return console.log("Hey there! Thanks for selecting the Resume Button. I look forward to hearing from you.");
+          }
+          else {
+            nav.find("a").removeClass("active");
+            nav.find("a[href='" + $(current).attr("href") + "']").addClass("active");
+          }   
+        }
+
+        //end of nav tracker animation
+    //////////////////////////////////////////////////////////////////////////
+      // START of card title handling
+        $(".card-arrowDown").hide();
+        $(".card-info").hide();
+        $(".card-link").hide();
+        $(".learn-more").hide();
+
+        function viewCard(number) {
+            var currentcard = $("#cardComment" + number);
+            var cardTitle = currentcard.find("strong[class='cardTitle']");
+            var cardLead = currentcard.find("span[class='learn-more']");
+            var currentArrow = $("#cardArrow" + number);
+            var currentLink = $("#cardLink" + number);
+            var currentInfo = $("#cardInfo" + number);
+            // var currentClose = $("#cardClose" + number);
+
+            cardIsOpen = true;
+            cardTitle.hide();
+            currentArrow.hide();
+            // console.log("currentArrow = ");
+            // console.log(currentArrow);
+            
+            cardLead.show();
+            currentLink.show();
+            currentInfo.show();
+            // currentClose.show();
+        }
+
+        function closeCard(number) {
+            var currentcard = $("#cardComment" + number);
+            var cardTitle = currentcard.find("strong[class='cardTitle']");
+            var cardLead = currentcard.find("span[class='learn-more']");
+            var currentArrow = $("#cardArrow" + number);
+            var currentLink = $("#cardLink" + number);
+            var currentInfo = $("#cardInfo" + number);
+            // var currentClose = $("#cardClose" + number);
+            
+            cardIsOpen = false;
+            cardTitle.show();
+            currentArrow.show();
+
+            cardLead.hide();
+            currentLink.hide();
+            currentInfo.hide();
+            // currentClose.hide();
+            //$("#closeX1").click();
+        }
+
+        //end of card title handling
+    //////////////////////////////////////////////////////////////////////////
+    
+    // Start of Fancybox Loop
+    //////////////////////////////////////////////////////////////////////////
+        // Init Fancy box
+        $().fancybox({
+          selector : '[data-fancybox="portfolio-group"]',
+          loop : true
+        });
+
+        // End of Fancybox Loop
+    //////////////////////////////////////////////////////////////////////////
+
     </script>
 
   </body>
