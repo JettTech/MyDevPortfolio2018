@@ -2,9 +2,9 @@
 // START of Preloader:
 //////////////////////////////////////////////////////////////////////////
 $(document).ready( function() { // makes sure the whole site is loaded 
-  $(".sk-folding-cube").delay(3300).fadeOut(); // will first fade out the loading animation 
-  $("#preload-container").delay(3800).fadeOut('slow'); // will fade out the white DIV that covers the website. 
-  $("body").delay(3800).css({"overflow":"visible"});
+  $(".sk-folding-cube").delay(1800).fadeOut(); // will first fade out the loading animation 
+  $("#preload-container").delay(2000).fadeOut('slow'); // will fade out the white DIV that covers the website. 
+  $("body").delay(20).css({"overflow":"visible"});
 //end of Preloader
 
 //////////////////////////////////////////////////////////////////////////

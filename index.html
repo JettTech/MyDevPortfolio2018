@@ -125,6 +125,8 @@
                 <source id="featured-video" src="./assets/img/movieIntro_V1.mp4" type="video/mp4" class="content-media__object" /> <!-- alt src="./assets/img/LisaVideoFinalTrim2.mp4"  --> 
             </video>
             <div id="controlsOverlay" class="overlay" style="position:absolute; opacity:.25; bottom:0;">
+                <div  id="controlOpen" class="white-text" style="position:absolute; bottom:10%; left:50%">Video will start soon...
+                </div>
                 <span style="position:absolute; bottom:1%; left:50%"><i id="controlPause" onclick="videoMode()" class="material-icons" style="color:white; font-weight:bold; margin:0px; padding:0px;">pause_circle_outline</i>
                 </span>
                 <span style="position:absolute; bottom:1%; left:50%"><i id="controlPlay" onclick="videoMode()" class="material-icons" style="color:white; font-weight:bold; margin:0px; padding:0px;">play_circle_outline</i>
@@ -1055,10 +1057,12 @@
         window.onload = startVideo();
         function startVideo() {
             video.pause();
+            $("#controlOpen").show();
             $("#controlPause").hide();
 
             setTimeout( function() {
               video.play();
+              $("#controlOpen").hide();
               $("#controlPlay").hide();
               $("#controlPause").show();
             }, 0 );
