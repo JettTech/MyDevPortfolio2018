@@ -293,12 +293,12 @@ currentWindow
 //////////////////////////////////////////////////////////////////////////
 // Start ScrollFire Animation
 //////////////////////////////////////////////////////////////////////////
-    // var options = [
-    //   {selector: '.fadein', offset: 150, callback: function(el) {
-    //     Materialize.fadeInImage($(el));
-    //   } }
-    // ];
-    // Materialize.scrollFire(options);
+    var options = [
+      {selector: '.fadeIn', offset: 100, callback: function(el) {
+        Materialize.fadeInImage($(el));
+      } }
+    ];
+    Materialize.scrollFire(options);
   //End ScrollFire Animation
 
 //END OF DOCUMENT:
