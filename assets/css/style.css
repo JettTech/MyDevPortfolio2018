@@ -6,6 +6,7 @@ section
 /* Center the loader */
 body {
   overflow: hidden;
+  background-color: #070927;
 }
 
 #preload-container {
@@ -14,9 +15,9 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff;  
+  background-color: #070927;  
   z-index: 999999999999; /* makes sure it stays on top */
-  border: 20px solid  black; 
+  border: 20px solid #e09c0a; 
 }
 
 .sk-folding-cube {
@@ -779,10 +780,6 @@ div.card-action.strong {
   visibility: visible;
 }
 
-/*.overlay .text a {
-  margin-bottom: 30%;
-}*/
-
 .shadow-container:hover .overlay h5 {
   color: #f7bf10;
   font-weight: bold;
@@ -844,6 +841,33 @@ a.z-link {
   .card-pic {
     height: 200px;
     margin: 0 auto;
+  }
+}
+
+.fadein {
+  opacity: 1;
+  -webkit-animation: fadeIn 15s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-delay: 0s;
+  animation: fadeIn 15s;
+  animation-delay: 0s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
