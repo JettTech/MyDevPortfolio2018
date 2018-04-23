@@ -661,7 +661,7 @@ a.resume-nav.btn:hover  {
   }
 
   #controlPlay {
-    font-size:1.3em;
+    font-size:1.9em;
   }
 
   #controlPause {
@@ -685,11 +685,11 @@ a.resume-nav.btn:hover  {
 
 @media screen and (max-width: 600px) and (min-width: 501px)  {
   #controlPlay {
-    font-size:2.3em;
+    font-size:2.35em;
   }
 
   #controlPause {
-    font-size:2.3em;
+    font-size:2.35em;
   }
 }
 
