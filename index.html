@@ -129,7 +129,7 @@
                 </span>
                 <span style="position:absolute; bottom:1%; left:50%"><i id="controlPlay" onclick="videoMode()" class="material-icons" style="color:white; font-weight:bold; margin:0px; padding:0px;">play_circle_outline</i>
                 </span>
-                <span style="position:absolute; bottom:1%; left:50%"><span id="controlMsg" style="color:white; font-weight:bold; margin:0px; padding:0px;">Video Will Start Soon...</span>
+                <span style="position:absolute; bottom:1%; left:50%"><i id="controlMsg" class="material-icons" style="color:black; font-weight:bold; margin:0px; padding:0px;">schedule</i>
                 </span>
             </div>
         </div>
@@ -1028,26 +1028,6 @@
 
     <script src="./assets/js/app.js"></script>
     <script type="text/javascript">
-
-
-    // window.onload = function() {
-    //     video.addEventListener('loadedmetadata', function() {
-    //         if (video.buffered.length === 0) {
-    //             return console.log("buffered seconds === 0")
-    //         }
-    //         else {
-    //             startVideo();
-    //             var bufferedSeconds = video.buffered.end(0) - video.buffered.start(0);
-    //             console.log(bufferedSeconds + ' seconds of video are ready to play!');
-    //         };
-    //     });
-            
-    //     // setTimeout (function() {
-    //      // $("#controlMsg").show();
-    //      //     startVideo();
-    //     // }, 5000);
-    // }
-
     //////////////////////////////////////////////////////////////////////////
     // Start Video Control Logic
 
@@ -1057,16 +1037,16 @@
         window.onload = startVideo();
         function startVideo() {
             video.pause();
+            $("#controlPlay").show();
             $("#controlPause").hide();
-            $("#controlPlay").hide();
-            $("#controlMsg").show();
+            $("#controlMsg").hide();
 
             setTimeout( function() {
               video.play();
-              $("#controlMsg").hide();
-              $("#controlPlay").hide();
               $("#controlPause").show();
-            }, 1000 );
+              $("#controlPlay").hide();   
+              $("#controlMsg").hide();
+             }, 1000 );
 
             function endVideo() {
                 if( video.ended === true ) {
