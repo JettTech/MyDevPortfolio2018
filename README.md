@@ -27,43 +27,32 @@ These 24 weeks were my very first introduction to code and to the world of devel
 >- Bootstrap
 >- Materialize
 
-**Sound Hound:**
->An interactive website that provides the user a means to search for both venue locations as well as favorite artists to learn when and where they are playing locally. This web app incorporates Google Maps and Eventbrite API to provide listing of ticket prices and locations of venues for navigation purposes.
+**Burger:**
+>A full stack restaurant app that lets users input the names of burgers they'd like to eat, display their burger titles, and "devour" them, all within a few clicks.
+>- MySQL
+>- Node.js
+>- Express.js
+>- Handlebars
+>- Handmade ORM
 >- JavaScript
 >- jQuery
 >- HTML5/CSS3
 >- Bootstrap
 
-**iceBreakr:**
->A dynamic web application which allows individuals to create profiles and find matches based on predetermined interests. As this app is intended for those already out and about, we included geolocation by Google Maps to faciliate each user meeting his or her designated match.
->- MySQL
+**Star Wars React:**
+>A memory game based in React. This game offers an assortment of pictures for the user to select; each time an image is selected, the arrangement of photos is reorganized. The goal is to click through the entire assortment of pictures without pressing the same picture twice. Can you do it? App was built with React, JavaScript, JSX, CSS3 and React-Materialize, and hosted on Heroku.
+>- React
 >- JavaScript
->- HTML5/CSS3
->- Node.js
->- Express
+>- jQuery
+>- JSX
+>- CSS3
+>- React Materialize
+>- Materialize
 
 **Bamazon Store:**
 >This App allows shoppers to view the items for purchase, along with department, price and stock quantity, by solely using backend functionality.
 >- MySQL
 >- Node.js
-
-**Burger Time:**
->A full stack restaurant app that lets users input the names of burgers they'd like to eat, display their burger titles, and "eat" them, all within a few clicks.
->- MySQL
->- Express
->- Node.js
->- Handlebars
->- CSS3
->- JavaScript
->- Bootstrap
->- Homemade ORM
-
-**Giftastic:**
->An interative GIF-themed website that uses the Giphy API to search and dynamically display GIFs of choice. GIFs change animation state through clicking them on and off. What GIF will you find?
->- HTML5/CSS3
->- JavaScript
->- jQuery
->- Bootstrap
 
 **Friend Finder:**
 >A friend paring or date matching application. Answer a survey, find your match! Who will you befriend today?
@@ -75,20 +64,40 @@ These 24 weeks were my very first introduction to code and to the world of devel
 >- Express
 >- Materialize
 
-**Crystal Game:**
->Gem-themed math game using Javascript and jQuery. Player wins if the total score matches the random number calculated at the beginning of the game.
+**Giftastic:**
+>An interative GIF-themed website that uses the Giphy API to search and dynamically display GIFs of choice. GIFs change animation state through clicking them on and off. What GIF will you find?
+>- HTML5/CSS3
 >- JavaScript
+>- jQuery
+>- Bootstrap
+
+**Ro Sham Bo:**
+>An interactive two-player Rock, Paper, Scissors game. Additionally, both players and guests alike have a chatbox available to exchange messages realtime and interact with other users remotely. All player stats and chatbox data are stored realtime in the Firebase Database.
+>- JavaScript
+>- jQuery
+>- HTML5/CSS3
+>- Bootstrap
+>- Firebase
+
+**Sound Hound:**
+>An interactive website that provides the user a means to search for both venue locations as well as favorite artists to learn when and where they are playing locally. This web app incorporates Google Maps and Eventbrite API to provide listing of ticket prices and locations of venues for navigation purposes.
+>- JavaScript
+>- jQuery
 >- HTML5/CSS3
 >- Bootstrap
 
-**Train Scheduler:**
->A scheduling app that uses Javascript, jQuery, Firebase and Moment.js to store times and monitor the next train arrival. Users can also input their destination and/or train number to discover the time until their trian, frequency is listed in minutes
->- Firebase
->- Moment.js
->- jQuery
+**Tech News Scraper:**
+>A web scraper that scours the Technology Section of the Austin Business Journal for top stories and subsequently stores them into a MongoDB database. These fresh stories are available for you to scrape and discover on the homepage. Should you also desire to store a story for safe keeping, you may select the "Save Article" button and add the story to the "Saved Scrapes" list, which you may visit for further reading. This app was developed in MongoDB, Mongoose, Cheerio, Axios, Express.js, JavaScript, jQuery, HTML5, CSS3, Bootstrap and Materialize, and hosted on Heroku.
+>- MongoDB
+>- Mongoose
+>- Cheerio
+>- Axios
+>- Express.js
 >- JavaScript
+>- jQuery
 >- HTML5/CSS3
 >- Bootstrap
+>- Materialize
 
 - - - -
  ## Favorite Tech Events Attended ##
