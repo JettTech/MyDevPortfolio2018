@@ -10,7 +10,7 @@ Visit my [Resume](https://drive.google.com/file/d/1mXtpceVOQoXLdzVZAFKxrpo0gvfFz
  ## Getting Started: ##
 This project is a pesonal journey through my studies and work over 24 weeks as a student at the Full Stack Bootcamp with UT Austin.  Through the review and creation of my Developer Portfolio, I realized how much I truly appreciate compartmentalized code, and how fascinated I am with React.  I also learned that I am a big fan of NOSQL databases based in Javascript, such as MongoDB, and have a growing interest in Firebase.  
 
-These 24 weeks were my very first introduction to code and to the world of development. I am completely facinated and exicted by the power and agility of the MERN stack, and I look forward to growing my skills at upcoming Hackathons and community events! It is a blessing to  live in such a lively, interctive and knowledgable community with as robust resources and events as Austin. I hope to see some of you there!:D 
+These 28 weeks were my very first introduction to code and to the world of development. I am completely facinated and exicted by the power and agility of the MERN stack, and I look forward to growing my skills at upcoming Hackathons and community events! It is a blessing to  live in such a lively, interctive and knowledgable community with as robust resources and events as Austin. I hope to see some of you there!:D 
 - - - -
 
 
