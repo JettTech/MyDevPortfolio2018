@@ -113,12 +113,15 @@ These 28 weeks were my very first introduction to code and to the world of devel
 >- Heroku
 
 - - - -
- ## Favorite Tech Events Attended ##
+ ## Recent Tech Events Attended ##
 - Women Who Code 3rd Anuual Hackathon
 - ACT-W First Annual Conference
 - Austin Dev Week 2017
 - Austin Design Week 2017
 - Austin Startup Week 2017
+- The McCombs School of Business' 3P Hackathon 2018
+- Girls for Progress 2018
+- Holochain Hackathon 2018
 
 - - - -
  ## Awards Won ##
