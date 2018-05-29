@@ -26,6 +26,31 @@ These 24 weeks were my very first introduction to code and to the world of devel
 >- JavaScript ES6
 >- Bootstrap
 >- Materialize
+>- Heroku
+
+**CMS Construction.Co:**
+>An online store application for retail business. Provides administrators with options to modify inventory and web-page display, and allows users to shop inventory, select and add items to their cart, modify items in their cart, and utlimately purchase their items through Paypal.
+>- JavaScript
+>- Node.js
+>- Express.js
+>- MongoDB
+>- Mongoose
+>- Passport API
+>- Paypal API
+>- CKEditor
+>- Bootstrap
+>- Heroku
+
+**Star Wars React:**
+>A memory game based in React. This game offers an assortment of pictures for the user to select; each time an image is selected, the arrangement of photos is reorganized. The goal is to click through the entire assortment of pictures without pressing the same picture twice. Can you do it?
+>- React
+>- JavaScript
+>- jQuery
+>- JSX
+>- CSS3
+>- React Materialize
+>- Materialize
+>- Heroku
 
 **Burger:**
 >A full stack restaurant app that lets users input the names of burgers they'd like to eat, display their burger titles, and "devour" them, all within a few clicks.
@@ -38,21 +63,7 @@ These 24 weeks were my very first introduction to code and to the world of devel
 >- jQuery
 >- HTML5/CSS3
 >- Bootstrap
-
-**Star Wars React:**
->A memory game based in React. This game offers an assortment of pictures for the user to select; each time an image is selected, the arrangement of photos is reorganized. The goal is to click through the entire assortment of pictures without pressing the same picture twice. Can you do it? App was built with React, JavaScript, JSX, CSS3 and React-Materialize, and hosted on Heroku.
->- React
->- JavaScript
->- jQuery
->- JSX
->- CSS3
->- React Materialize
->- Materialize
-
-**Bamazon Store:**
->This App allows shoppers to view the items for purchase, along with department, price and stock quantity, by solely using backend functionality.
->- MySQL
->- Node.js
+>- Heroku
 
 **Friend Finder:**
 >A friend paring or date matching application. Answer a survey, find your match! Who will you befriend today?
@@ -63,6 +74,7 @@ These 24 weeks were my very first introduction to code and to the world of devel
 >- Node.js
 >- Express
 >- Materialize
+>- Heroku
 
 **Giftastic:**
 >An interative GIF-themed website that uses the Giphy API to search and dynamically display GIFs of choice. GIFs change animation state through clicking them on and off. What GIF will you find?
@@ -98,6 +110,7 @@ These 24 weeks were my very first introduction to code and to the world of devel
 >- HTML5/CSS3
 >- Bootstrap
 >- Materialize
+>- Heroku
 
 - - - -
  ## Favorite Tech Events Attended ##
